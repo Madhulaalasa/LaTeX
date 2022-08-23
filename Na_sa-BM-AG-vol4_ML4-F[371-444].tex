@@ -1,0 +1,2497 @@
+\documentclass[11pt, openany]{book}
+\usepackage[text={4.65in,7.45in}, centering, includefoot]{geometry}
+\usepackage[table, x11names]{xcolor}
+\usepackage{fontspec,realscripts}
+\usepackage{polyglossia}
+\setdefaultlanguage{sanskrit}
+\setotherlanguage{english}
+\setmainfont[Scale=0.9]{Shobhika}
+\newfontfamily\s[Script=Devanagari, Scale=0.9]{Shobhika}
+\newfontfamily\regular{Linux Libertine O}
+\newfontfamily\en[Language=English, Script=Latin]{Linux Libertine O}
+\newfontfamily\na[Script=Devanagari, Scale=0.9, Color=purple]{Shobhika-Bold}
+\newfontfamily\qt[Script=Devanagari, Scale=0.9, Color=violet]{Shobhika-Regular}
+\newfontfamily\qtt[Script=Devanagari, Scale=0.9, Color=violet]{Shobhika-Bold}
+\newcommand{\devanagarinumeral}[1]{%
+	\devanagaridigits{\number \csname c@#1\endcsname}} % for devanagari page numbers
+%\usepackage[Devanagari, Latin]{ucharclasses}
+%\setTransitionTo{Devanagari}{\s}
+%\setTransitionFrom{Devanagari}{\regular}
+\XeTeXgenerateactualtext=1 % for searchable pdf
+\usepackage{enumerate}
+\pagestyle{plain}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\usepackage{afterpage}
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{vwcol}
+\usepackage{microtype}
+\usepackage{amsmath,amsthm, amsfonts,amssymb}
+\usepackage{mathtools}% < \textendash\ new package for rcases
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{setspace}
+\usepackage{footnote}
+\usepackage{perpage}
+\MakePerPage{footnote}
+%\usepackage[para]{footmisc}
+%\usepackage{dblfnote}
+\usepackage{xspace}
+\usepackage{array}
+\usepackage{emptypage}
+\usepackage[para]{footmisc}
+\usepackage{hyperref}% Package for hyperlinks
+\hypersetup{colorlinks,
+citecolor=black,
+filecolor=black,
+linkcolor=blue,
+urlcolor=black}
+
+\newcommand\blfootnote[1]{%
+ \begingroup
+ \renewcommand\thefootnote{}\footnote{#1}%
+ \addtocounter{footnote}{-1}%
+ \endgroup
+}
+
+\begin{document}
+\fancyhead[RE]{नाट्यशास्त्रे}
+\fancyhead[CE]{\rule{0.7\linewidth}{0.5pt}}
+\fancyhead[CO]{\rule{0.6\linewidth}{0.5pt}}
+\fancyhead[LO]{द्वात्रिंशोऽध्यायः}
+\fancyhead[LE,RO]{\thepage}
+\cfoot{}
+\renewcommand{\thepage}{\devanagarinumeral{page}}
+\setcounter{page}{328}
+% ३२८ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na अष्टावादौ यस्याः सान्त्यं स्यान्नवमं\\
+दीर्धाणि स्थाप्ये शिष्टे च द्वे लघुनी~।\\
+वृत्तं ह्येतज् ज्ञेयं तज्ज्ञैर्वृत्तविधौ\\
+गीते ह्येव नित्यं विक्रान्ता जगती~॥~१६१~॥}
+
+विक्रान्ता\renewcommand{\thefootnote}{1}\footnote{Kavi does not read 'विक्रान्ता'} यथा~।
+
+{\na एसो मेहो ना(णा)\renewcommand{\thefootnote}{2}\footnote{Kavi \textendash\ (ना)}णद्दंतो धूमणिहो \\
+विज्जुज्जुत्तो धाराएहिं भूमिदलं\renewcommand{\thefootnote}{3}\footnote{Kavi \textendash\ लम्}~।\renewcommand{\thefootnote}{3a}\footnote{N. अष्टवादौ यथा स्यान्तं स्यान्नवमं~। दीर्घपादे सा विक्रान्ता वै जगती~।(V.९८ ab.N)}\\
+\renewcommand{\thefootnote}{4}\footnote{Kavi reads the seconḍ half differently as follows \textendash\ जावा (?ला)बद्धो भीमुव्विग्गो (? भीमविग्गहो) हत्थिणिहो विण्णाकाविज्झो (विदझूद्गण्णो) पीणाअन्तो णादिगओ~॥~१६२~॥~[जालाबद्धो भीमविग्रहो हस्तिनिभो विद्युद्वर्णः पीनान्तो नातिगतः ( ?)]}आसिंचन्तो भीमाआरो हतिथणिहो हत्थिणिहो \\
+संच्छादन्तो लोआलोअं आवदिदो~॥~१६२~॥}
+
+{\qt [ एष मेघो नानदन् धूमनिभो \\
+विद्युद्युत्को धाराभिर्भूमितलम्~। \\
+आसिञ्चन् भीमाकारो हस्तिनिभः\\
+संच्छादयन् लोकालोकमापतितः~॥~]}
+
+{\na अष्टावादौ दीर्धाणि (दीर्धाण्यष्टावादौ) स्युस्त्वतिजगती~।\\
+अन्त्यं दीर्धं साविज्ञेया मदनवती~॥~१६३~॥}
+
+मदनवती\renewcommand{\thefootnote}{5}\footnote{Kavi reads only यथा} यथा~।
+
+{\na एसो मेहो( ना)\renewcommand{\thefootnote}{6}\footnote{(ना) not read by Kavi}णाणध्दं (द्दं)तो \renewcommand{\thefootnote}{6a}\footnote{N \textendash\ गवलणिओ}सबि (अलक?)अचल\renewcommand{\thefootnote}{7}\footnote{अचल not read by Kavi}णिहो~।\\
+सद्दारन्तो विज्जुज्जोआ (? विज्जुज्जोदो)\renewcommand{\thefootnote}{8}\footnote{not read by Kavi} भमदि दुदम्\renewcommand{\thefootnote}{8a}\footnote{N \textendash\ दुतम्}~॥~१६४~॥
+
+एष मेघो नानादन् अचलनिभः\renewcommand{\thefootnote}{9}\footnote{Kavi \textendash\ न अलकनिभः}~।\\
+संदारयन् विद्युज्ज्योत्स्नोद्द्योतो\renewcommand{\thefootnote}{10}\footnote{Kavi ज्ज्योतो} भ्रमति द्रुतम्\\
+पञ्च त्वादै(दौ) यत्र हि गुर्वष्टमनवमम्~।\\
+अन्त्यं दीर्घं सा खलु नाम्ना विमलगतिः~॥~१६४a~॥}
+
+विमलगतिः\renewcommand{\thefootnote}{11}\footnote{Kavi \textendash\ यथा} यथा~।
+
+{\na एसो अंसं( ?अस्सिं)\renewcommand{\thefootnote}{12}\footnote{not read by Kavi} अंसुसहस्सो पवणसखो~।\\
+जालालोलो \renewcommand{\thefootnote}{13}\footnote{Kavi \textendash\ ळाळोळो (N) जालालोलो}धूमसमिद्धो भमदि\renewcommand{\thefootnote}{14}\footnote{N \textendash\ दहति वणे.} वणे~॥~१६४b~॥}
+
+{\qt [ एषोऽस्मिन्नं शुसहस्रः पवनसखः~। \\
+ज्वालालोलो धूमसमिध्दो भ्रमति वने~॥~] }
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३२९ 
+
+\begin{quote}
+{\na आद्यचतुर्थे पञ्चकषष्ठे नवदशमे \\
+पादविभत्कौ यत्र तु दीर्घं निधनकृते(तम्)~।\\
+तत्र तु बोध्या पञ्चदशाख्ये भुवि हि सदा \\
+भूतलतन्वी वृत्तविधानेत्यभिविहिता~॥~१६५~॥}
+
+भूतलतन्वी\renewcommand{\thefootnote}{1}\footnote{not read by Kavi} यथा~।
+
+{\na पादव\renewcommand{\thefootnote}{2}\footnote{Kavi \textendash\ पादप}संडं कम्पअ(य)माणो पटु(डु)णिणदो \\
+सेलतडेसुं पक्खल\renewcommand{\thefootnote}{3}\footnote{KaviN \textendash\ ळ}माणो विसमगदि(दी)\renewcommand{\thefootnote}{4}\footnote{(दी) not read by Kavi}~। \\
+रेणुसमूहं उद्धुय \renewcommand{\thefootnote}{5}\footnote{Kavi \textendash\ दधुर०}माणो रुणकविलो \\
+वाय\renewcommand{\thefootnote}{6}\footnote{avi \textendash\ वाअदि}दि वादो चण्डपवाही गगणदले\renewcommand{\thefootnote}{7}\footnote{Kavi \textendash\ ळे}~॥~१६६~॥\renewcommand{\thefootnote}{7a}\footnote{(N). Kavi \textendash\ पादवसंडं कम्पअमाणो महणिणदो~। वियदि वादी चण्डपवाही रुसिद इव~॥~(V. १०१ cd. N)} }
+
+{\qt [पादपखण्डं(षण्डं)\renewcommand{\thefootnote}{8}\footnote{(\ldots ) not read by Kavi} कम्पयमानो पटुनिनदः \\
+शैलतटेषु प्रस्खलमानो विषमगतिः~। \\
+रेणुसमूहमुद्धूय\renewcommand{\thefootnote}{9}\footnote{Kavi \textendash\ ॰द्धर \textendash\ }माणोऽरुणकपिलो \\
+वाति वातो चण्डप्रवाही गगनतले~॥~] 
+
+[आद्यचतुर्थे पञ्चमषष्ठे नवदशमे~। \\
+अन्त्यमथो दीर्घाणि तु सा स्यात् कुसुमवती~॥} इत्यन्ये~। ] 
+
+{\na आद्यचतुर्थकसप्तममन्त्यं दशमपरे~। \\
+यत्र गुरूण्यथ सा सुकुमारेत्यभिगदिता~॥~१६७~॥}
+
+सुकुमारा\renewcommand{\thefootnote}{10}\footnote{सुकुमारा \textendash\ not read by Kavi} यथा~।
+
+{\na मेहसमूहणिबध्दविदाणं जलमतिदम्(भरिदम्)~। \\
+सोइ (? ह\renewcommand{\thefootnote}{11}\footnote{Kavi \textendash\ (इ)})इंदधणुज्जलमज्झं गगणदलम्~॥~१६८~॥}
+
+{\qt [मेघसमूहनिबद्धवितानं जलभरितम्~। \\
+शोभत इन्द्रधनुरुज्ज्वलमध्यं गगनतलम्~॥~] }
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt एतत्वि}ति~। द्रुतध्रुबा~। तत्र जगत्याः प्रभृति वृत्तानि दृश्यन्ते~। {\qtt दीर्घाण्यष्टावि}त्यादि~। मत्रयसा {\qtt विक्रान्ता} मद्वयतनगाश्च {\qtt मदनिका तन्वी}~।\\
+
+भमसभसाः {\qtt सुकुमारा} त्रिभतनगा\textendash \\
+
+{\qtt विझूद्वण्णो पीणाअन्तो णादिगओ~। एसो मेहो णाणद्दन्तो अच(ल)कनि(णि)हो~। पादपसंडं कम्पयमाणो पडुणिणदो~। मेहसमूहणिबद्धविदाणं जलभरिदम्}~॥~१६१ \textendash\ १६८~॥
+
+\newpage
+%३३० नाट्यशास्त्रे
+
+\begin{quote}
+{\na यदि स्वलु पञ्चममष्टममन्त्यं दशमपरे~।\\
+चरणगतानि गुरूणि तु माला भवति तदा~॥~१६९~॥}
+
+माला\renewcommand{\thefootnote}{1}\footnote{माला not read by Kavi} यथा~। 
+
+{\na असणिरवाहदपादवकूडो धरणिधरो \\
+पगलिअकंदरनिज्झरसानु(नू?णू)\renewcommand{\thefootnote}{2}\footnote{? णू not read by Kavi}रवो(व) मुहु(ह)लो~।\renewcommand{\thefootnote}{2a}\footnote{(N): असणिरवाहद पातिदकुंडं धरणिधरो पिगलियकंदरणि इज्झर अभि अ पंकमिव~॥~(V.१०४ N)}\\
+विव(वि)\renewcommand{\thefootnote}{3}\footnote{(वि) not read by Kavi (?}हविहंगमसेविअकुंजी जह(?जव)\renewcommand{\thefootnote}{4}\footnote{(? ज व ) not read by Kavi}दलदो \\
+परहुअद(द)\renewcommand{\thefootnote}{5}\footnote{(द )not read by Kavi}चंपअ(?संचय)\renewcommand{\thefootnote}{6}\footnote{(\ldots )not read by Kavi}गीअ(द)\renewcommand{\thefootnote}{7}\footnote{(द) not read by Kavi }सणाहो हसदि विअ~॥~१७०~॥}
+
+{\qt [अशनिरवाहतपादपकूटो धरणिधरः \\
+प्रगलितकन्दरनिर्झरसानू रवमुखरः~।\\
+विविधविहङ्गमसेवितकुञ्जो यत( ?जव)\renewcommand{\thefootnote}{8}\footnote{not read by Kavi} जलदः~।\\
+परभृतचम्पकगीतसनाथो हसतीव~॥]
+
+तृतीयं च चतुर्थं च सप्तमं चाष्टमं तथा~।\\
+परभृतचम्पकगीतसनाथो हसतीव~॥}
+
+{\na तृतीयं च चतुर्थं च सप्तमं चाष्टमं तथा~। \\
+नवमं द्वादर्शं चैव नैधनं सत्रयोदशम्~॥~१७१~॥
+
+यत्र दीर्घाणि पादे तु ध्रु(धृ)तिच्छन्दःसमाश्रये~। \\
+सा ज्ञेया गीतकविधौ ध्रुवा स्खलितविक्रमा~॥~१७२~॥}
+
+स्खलितविक्रमा यथा\renewcommand{\thefootnote}{9}\footnote{स्खलित० not read by Kavi}~।
+
+{\na दिवसं सूरसणाहं खे विअ चन्दो कुमुदवणे \\
+उदिदो दीसदि एसो दप्पणबिम्बाकिदिसदिसी(सो)\renewcommand{\thefootnote}{10}\footnote{सो not read by Kavi}~।\\
+गहणे(गगणे) \renewcommand{\thefootnote}{11}\footnote{not read by Kavi}मेहविमुख्खे\renewcommand{\thefootnote}{12}\footnote{(क्खे) read by Kavi} सोम्मसहाओ रतिसुहगो\\
+वहलं विक्खिरमाणो सारदो(द)जोह्णं पजति (वजति)\renewcommand{\thefootnote}{13}\footnote{not read by Kavi} दुदम्~॥~१७३~॥}
+
+{\qt [ दिवसं सूर्यसनाथं खे इव चन्द्रः कुमुदवने \\
+उदितो दृश्येत एष दर्पणबिम्बाकृतिसदृशः~। \\
+गगने मेघविमुक्ते सोऽम्बुसहायो रतिसुभगो\\
+बहुलं विकिरन् शारदज्योत्स्नां व्रजति द्रुतम्~॥~] }
+
+{\na पञ्चमं ह्यष्टमं यत्र\renewcommand{\thefootnote}{14}\footnote{(N) चैव} त्रयोदशमथापि च~।\\
+\renewcommand{\thefootnote}{15}\footnote{(N) गुरूण्यष्टादशकृतानि च सा ज्ञेया ललिता~॥}गुरूण्यष्टादशं चैव द्रुता वै चपला तु सा~॥~१७४~॥}
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३३१
+
+\begin{quote}
+द्रुतचपला\renewcommand{\thefootnote}{1}\footnote{द्रुत not read by Kavi} यथा~।
+
+{\na पवणविध(धु)ण्णिदपङ्कज(अ)कुसुमं सरसि जलं\renewcommand{\thefootnote}{2}\footnote{Kavi \textendash\ लं}\\
+कमलिणिवत्तपसाहिदसुभहं(?सुहगं)\renewcommand{\thefootnote}{3}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi} फलिहणिहं~।\renewcommand{\thefootnote}{2a}\footnote{N) पवणविधूर्णित पंकजवअणं सरसिजलं सुमिदविहङ्गमेण पंकलअ लवलितं~॥~(V.107.N.)}\\
+वलद(?चलिद)\renewcommand{\thefootnote}{4}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi}तरंगविदाहि(रि)\renewcommand{\thefootnote}{5}\footnote{(रि) not read by Kavi}दकुसुमं (कुमुदं)\renewcommand{\thefootnote}{6}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi}चलितगद\textendash \\
+क्खुभिदविहङ्गविकम्पिदमुहलं (मुउलं ?)\renewcommand{\thefootnote}{7}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi}हसदि विअ~॥~१७५~॥}
+
+{\qt [ पवनविधूर्णितपङ्कजकुसुमं सरसि जलं\\
+कमलिनीपत्रप्रसाधितसुभगं स्फटिकनिभम्~।\\
+चलित \textendash\ तरङ्ग\renewcommand{\thefootnote}{8}\footnote{Kavi \textendash\ वलत्तरङ्गं०} विदारित कुसुमं(कुमुदं)\renewcommand{\thefootnote}{9}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi} चलितगत\textendash \\
+क्षुभितविहङ्गविकम्पिमुकुलं हसतीव~॥~] }
+
+{\na पादे पञ्चममन्त्ये(न्त्यं) च दीर्घं द्वादशमेव च~। \\
+यदाऽतिधृत्यां सा ज्ञेया चपला मुखसहिता~॥~१७६~॥\renewcommand{\thefootnote}{9a}\footnote{N \textendash\ द्वादशपरमथ शेषे निधनमपि तत इह नाम्ना तु मुखचपला~॥~(V.108. N)}}
+
+मुखचपला \renewcommand{\thefootnote}{10}\footnote{मुख० not read by Kavi}यथा~।
+
+{\na पिअसहिआ इअ(?उअ)\renewcommand{\thefootnote}{11}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi} गअणदले चपलतर(दर)\renewcommand{\thefootnote}{12}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi}मुही~। \\
+पविचरदे मदसुरभिमुही सुरवरयु(जु)\renewcommand{\thefootnote}{13}\footnote{(जु) not read by Kavi} वदी~॥~१७७~॥}
+
+{\qt [ प्रियसखि पश्य\renewcommand{\thefootnote}{14}\footnote{पश्य \textendash\ not read by Kavi} गगनतले चपलतरमुखी~। \\
+प्रविचरति मदसुरभिमुखी सुरवरयुवतिः~॥~]}
+
+{\na एता ह्यष्टौ परित्याज्या ध्रुवाणां मूलजातयः~।\\
+आभ्यो विनिस्सृताश्र्चान्या युग्मौजा विषमाः पराः~॥~१७८~॥\renewcommand{\thefootnote}{15}\footnote{Kavi \textendash\ आयतगगनतले}}
+\end{quote}
+
+\hrule
+
+\begin{center}
+ \textendash\ नज जयनलगा माला~। 
+\end{center}
+
+\begin{quote}
+{\qt स्खलिता सभमसभसयुजि चपला नजजनभंसी च~।\\
+मुखचपला नजनसननगा अष्टावेतानि द्रुतविधौ प्रयोज्यानि~॥}
+\end{quote}
+
+\begin{sloppypar}
+\noindent
+{\qtt असणिरवाहदपादवकूडो धरणिधरो~। गहणे मेहविमुक्खे सोम्मसहाओ रतिसुहजो(गो)~। पवणविधुण्णिदपंकअकुसुमं सरसिजक(ल)म्~। पविचरदे मदसुरभिमुही सुरवरयुवदी~॥~१६९ \textendash\ १७७~॥}\\
+\end{sloppypar}
+
+सर्वत्रात्र प्रतीयस्या(ता)अमूइति(ऽभूदिति)आसां विषयं निरूपयिष्यस्ततो विषयान्तरेभ्य एव द्रुतध्रुवां कल्पयेदिति दर्शयति~।
+
+\newpage
+% ३३२ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+{\na एतास्तु जातयो ज्ञेया द्रुतानां वृत्तसंश्रयाः~।\\
+देवानां पार्थिवानां च ह्यौपम्यगुणसंश्रयाः(भवाः)~॥~१७९~॥
+
+सप्तदशद्वादशकैरेकादशपञ्चमाष्टमतृतीयैः~।\\
+गुरुभिर्यस्याः पादः ता(सा) ज्ञेयाऽऽक्षिप्तिका नाम~॥~१८०~॥}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt एता ह्यष्टौ परित्यज्य ध्रुवाणां मूलजातयः~।\\
+आभ्यो विनिःसृताश्चान्या युग्मौजविषमाः पराः~॥}
+\end{quote}
+
+\noindent
+इति~। यावता जगत्यादावतिकृत्यन्ते च्छन्दसि विक्रान्ताद्या मुखचपलान्ता अष्टौ दर्शिताः~। ताः {\qtt परित्यज्य} वर्जयित्वा {\qtt परा इत्येता} वक्ष्यमाणविषयव्यतिरिक्तविषयान्तरागता अन्या {\qtt एता द्रुतध्रुवाणां मूलजातयः} योनिः इति शेषः~। {\qtt कथमन्या}\ldots \ldots इत्याह~। {\qtt आभ्यो विनिःसृता} इति~। कथमित्येवं {\qtt युग्मौजत्वेन विषमाः}~। एतदुक्तं भवति~। एतास्तावदुत्तमविषये अष्टौ तन्मध्यमाधमेषु योज्याः~। एतदीयैरेव तु यथेच्छं पादौ(दै) र्मिलितैर्विषमवृत्तस्वभावान् मध्यमाधमविषयाः कल्प्या इति~॥~१७८~॥\\
+
+नन्वासामष्टानां कोऽसौ विषय इत्याह~।
+
+\begin{quote}
+{\qt एतास्तु जातयो ज्ञेया द्रुतानां वृत्तसंश्रयाः~।\\
+देवानां पार्थिवानां च~।} इति~। 
+\end{quote}
+
+\noindent
+उत्तमानामिति वृत्तवशादपरार्थानुसरणरथगमनादिद्रुतक्रियावतामेव विक्रान्ताद्यष्टौ द्रुतध्रुवा इति~। देवपार्थिवादयोऽधिका वर्ण्यन्ते ध्रुवास्वित्याह~। {\qtt औपम्यगुणसम्भवाः}~। सादृश्यधर्मेण सम्भवो यासां ताः~। सदृशं सुरगजहंसादि तत्र वर्ण्यमिति यावत्~। {\qtt देवपार्थिवग्रहणं} प्रकरणान् {\qtt मालविकादेः (मालविकाग्निमित्रम्)~। सागरिकादे (रत्वावली)} श्चोत्तमत्वेऽपि नियमार्थम्~॥~१७९~॥\\
+
+आक्षिप्तिका नाम~। \renewcommand{\thefootnote}{1}\footnote{Not read by Kavi}अथ मध्यमाधमविषयसाधारिणीं द्रुतध्रुवामाह~। {\qtt सप्तदशद्वावशकैरिति}~। {\qtt सप्तदशा}क्षरेयम्~। मध्यमाधमसाधारण्येन {\qtt मुनिनोदा}हरणं नास्या दत्तम्~। उदाहरणाद्धि विषयसंकोचशङ्कास्यादिति~। सजजयनलगा मध्यमाधमयोर्द्रुतविषया साधारणी भवति प(प्र)वणा~। {\qtt आक्षिप्तिकेति} प्रकरणादेतध्द्रुवेत्यर्थः~॥~१८०~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३३३
+
+\begin{quote}
+{\na गुर्वादिरथलघ्वादिर्युग्मौजावथवेतरा~।\\
+एतद्द्रुतगता या तु विज्ञेया सा ध्रुवा द्रुता\renewcommand{\thefootnote}{1}\footnote{च. आक्षिप्तिका द्रुता~।}~॥~१८१~॥}
+
+{\qt आदौ द्वे गुरु(द्वे)निधने त्रीणि यस्याः पादेष्वथ चतुर्गुरुणियस्या (थ गुरूणि) स्युः~।\\
+ज्ञेया वृत्ते खलु बृहतीसंस्था(स्थे) नाम्ना सा कथित(नक)लता~॥}
+
+कनकलता\renewcommand{\thefootnote}{2}\footnote{Not read by Kavi} यथा~।
+
+{\qt \renewcommand{\thefootnote}{3}\footnote{This example is found neither in g. nor in u.}एसो मेहो सिहरिनि(णि)हो नीलो \\
+(? धारापादेहि अति (इ)भयदो भूमिम्) धारापातैरतिभयगो(दो) भूमिम्~।\renewcommand{\thefootnote}{4}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}\\
+आपूरयन्तो पटुतर(?पडुय(द)२ \textendash\ \renewcommand{\thefootnote}{5}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}सन्ना(ण्णा)\renewcommand{\thefootnote}{6}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}दो\\
+तोयापुण्णे(ण्णो)\renewcommand{\thefootnote}{7}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} गगन(ण)\renewcommand{\thefootnote}{8}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}तले (दले)\renewcommand{\thefootnote}{9}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} आभादि~॥
+
+[ एष मेघः शिखरिनभो नीलो \\
+धारापातैरतिभयदो भूमिम्~। \\
+आपूरयन् पटुतरसन्नादो \\
+तोयापूर्णो\renewcommand{\thefootnote}{10}\footnote{Kavi \textendash\ र्णे} गगनतल आभाति~। ] }
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+अथाऽस्यां बहुविषयत्वमेव यादृच्छिके तालयोजनया प्रकटयति~।
+
+\begin{quote}
+{\qt गुर्वादिरथ लघ्वादिर्युग्मौजावथवेतरा~।\\
+एतद्द्रुतगता या तु विज्ञेया सा द्रुता ध्रुवा~॥} इति~।
+\end{quote}
+
+तालगतिरिहोच्यते~। ध्रुवाबन्धस्यैत ग्रहचक्रस्य तालस्य गत्यनुबन्धस्य गीतनृत्तवाद्यादिक्रिया(प्र)बन्धस्य (इति)विकटा शङ्का न(अभ्यूहनीया)~। एतदुक्तं भवति~। द्रुतविषयो {\qtt गुर्वादिर्लघ्वादिः~। अथश}ब्दात्तन्मध्यतो वा त्र्यश्रचतुरश्रो मिश्रो वा यस्तालविशेषः स एकस्मिंस्तूक्तलक्षणे सप्तदशाक्षरे वृत्ते योज्यमिति~। तालभेदश्चलोके भङ्गलयादिर्यः प्रसिद्धः सोऽग्रे {\qtt मुनेरेव} सम्मत इति स्फुटं स्वावसरे {\qtt दर्शयिष्यामः}~॥~१८१~॥
+
+\newpage
+% ३३४ नाट्यशास्त्रे
+
+\begin{quote}
+{\na आद्ये ह्यथ निधने त्रीणि पादेऽथ यदि गुरूणि स्युः~।\\
+ज्ञेया खलु बृहती नित्यं नाम्ना कनकलताऽऽक्षिप्तिका~॥~१८२~॥
+
+कनकलताऽऽक्षिप्तिका\renewcommand{\thefootnote}{1}\footnote{Not read by Kavi} यथा~। \\
+एसो गगणदले मेहो \\
+भीमो भअजणणो दिट्ठो~।\renewcommand{\thefootnote}{2}\footnote{Kavi \textendash\ ळे}\\
+भूमिं नवजलधाराहिं \\
+सिञ्चन्तो \renewcommand{\thefootnote}{3}\footnote{(न्) read by Kavi}भुवनतलं जादि~॥~१८३~॥}
+
+{\qt सिंचेदिय सहि गज्जन्तो \renewcommand{\thefootnote}{4}\footnote{( ) read by Kavi} \\
+एष गगनतले मेघो भीमो भयजननो दृष्टः~। \\
+भूमिं नवजलधाराभिः सिञ्चन् भुवनतलं याति [सिञ्चयित्वा सखि गर्ज्जन्\renewcommand{\thefootnote}{5}\footnote{( ) read by Kavi ; not read by V.}~॥}
+
+{\na यदि खलु पञ्चममन्त्ये चरणविधौ च गुरूणि भवन्ति तु~। \\
+सा शशिलेखा भुवि बृहती प्रथिता सा~॥~१८४~॥}
+
+शशिलेखा \renewcommand{\thefootnote}{6}\footnote{Not read by Kavi}यथा~।
+
+{\na गिरिव(च)रधा(वा)रणरूपं खुभिदमहण्णव(सहस्सप) \renewcommand{\thefootnote}{7}\footnote{Not read by V. V. suggests that the letters सहस्सप are apparently due to scribal error}णादम् (वणादम्)~।\renewcommand{\thefootnote}{8}\footnote{( वणादम् ) read by Kavi}\\
+पटु(डु)पवणेण विधूदं भमदि बलाहअ(य) \renewcommand{\thefootnote}{9}\footnote{(य) not read by Kavi}जूह(थ)म्~॥~१८५~॥}
+
+{\qt [ गिरिचरवारणरूपं क्षुभितमहार्णवनादम्~। \\
+पटुपवनेन विधूतं भ्रमति बलाहकयूथम्~॥~]}
+
+{\na यदि तु खलु षष्ठमन्त्यं(न्त्ये) गुरु(रूणि)भवति(न्ति) पादयोगे~।\\
+इति निगदितादिवृत्ते सततमविचालिता सा~॥~१८६~॥}
+
+अविचाकिता\renewcommand{\thefootnote}{10}\footnote{अविचाकिता \textendash\ not read by Kavi} यथा~।
+
+{\na शशि(ससि)किरणलम्बहारा उडुगणक(कि)दावदंसा~। \\
+गहगणक(कि)दङ्गसोहा जुबदि विअ(य)भादि राई~॥~१८७~॥}
+
+{\qt [शशिकिरणलम्बहारा उडुगणकृतावतंसा~। \\
+ग्रहगणकृताङ्गशोभा युवतिरिव भाति रात्रिः~॥~] }
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३३५
+
+\begin{quote}
+{\na यदि खलु चरणविधौ लघुवसुगणकमिदम्~।\\
+भवति हि खलु बृहती मणिगुणनिकरकृता~॥~१८८~॥}
+
+मणिगणनिकरकृता बृहती\renewcommand{\thefootnote}{1}\footnote{ \textendash\ मणि०\ldots Not read by Kavi} यथा~।
+
+{\na ऋदु(उडु)गणकुसुमवदी गहगणकिदतिल\renewcommand{\thefootnote}{2}\footnote{Kavi \textendash\ ळ}का(आ/या)\renewcommand{\thefootnote}{3}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi}~।\\
+रजनि(णि)करमभिमुखी(मुही)\renewcommand{\thefootnote}{4}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi}च यदि(वजदि) विअ(य) असु णिसा~॥~१८९~॥}
+
+{\qt [उडुगणकुसुमवती ग्रहगणकृततिलका~। \\
+रजनिकरमभिमुखी व्रजतीवाशु निशा~॥~] }
+
+{\na चत्वार्यादौ गुरु निधनं ह्रस्वानि स्युर्यदि च तथा~। \\
+नाम्ना ज्ञेया जगति हि सा सिंहाक्रान्ता खलु बृहती~॥~१९०~॥}
+
+सिंहाक्रान्ता\renewcommand{\thefootnote}{5}\footnote{5. सिंहक्रान्ता \textendash\ not read by Kavi} यथा~।
+
+{\na आकम्पन्तो गगन(ण)दलं\renewcommand{\thefootnote}{6}\footnote{6. Kavi \textendash\ ळ} विक्खेवन्तो धरणिदल\renewcommand{\thefootnote}{7}\footnote{Kavi \textendash\ ळ}म्~।\\
+विज्जुज्जोदा अवविहवो (? विज्जुज्जोदयविहवो)\renewcommand{\thefootnote}{8}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi} एसो मेही (हो)पविचरिदो~॥~१९१~॥
+
+[आकम्पयन् गगनतलं विक्षिपन् धरणितलम्~।\\
+विद्युद्योतोदय\renewcommand{\thefootnote}{9}\footnote{Kavi \textendash\ ° ज्ज्योत्स्नाप}विभव एष मेघः प्रविचरितः~। ~।]\\
+बृहत्या जातयो ह्येता विज्ञेया वै प्रवेशजाः~। \\
+अत ऊर्ध्वं प्रवक्ष्यामि पङ्क्तिजातिविकल्पनम्~॥~१९२~॥
+
+आद्यचतुर्थे पर(ञ्चम)निधने यत्र गुरूणि प्रतिचरणम्~।\\
+गीतविधाने भवति हि सा पङ्क्तिकृता वै सुरदयिता~॥~१९३~॥}
+
+सुरदयिता\renewcommand{\thefootnote}{10}\footnote{सुर० \textendash\ \textendash\ \textendash not read by Kavi} यथा~।
+
+{\na पङ्कअ(ज)\renewcommand{\thefootnote}{11}\footnote{(ज) \textendash\ not read by Kavi}सण्डे विमल\renewcommand{\thefootnote}{12}\footnote{Kavi \textendash\ ळ} जले सारससंघे(केहिं)समणुगदो~। \\
+कुन्दणिकासो ससिधवलो\renewcommand{\thefootnote}{13}\footnote{Kavi \textendash\ ळो} हंसजुवाणो परिभमिदो~॥~१९४~॥}
+
+{\qt [पङ्कजखण्डे (षण्डे)\renewcommand{\thefootnote}{14}\footnote{( \textendash\ \textendash\ \textendash ) not read by Kavi} विमलजले सारसकैः समनुगतः~। \\
+कुन्दनिकाशः शशिधवलो हंसयुवा परिभ्रमितः~॥~] }
+
+{\na दीर्घाणि ह्यथ निधनगतं त्रीणि स्युर्यदि चरणविधौ~।\\
+सा ज्ञेया कुसुमसमुदिता पङ्क्तिश्चेदपि च कुमुदिनी~॥~१९५~॥}
+\end{quote}
+
+\newpage
+% ३३६ नाट्यशास्त्रे
+
+\begin{quote}
+
+\end{quote}
+कुमुदिनी\renewcommand{\thefootnote}{1}\footnote{Not read by Kavi} यथा~।\\
+
+{\na वाजन्तो(वासन्तो)\renewcommand{\thefootnote}{2}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} कुसुमसमुदितो वाद(स)न्तो कुसुमसुरहिणो~।\\
+सोसंतो पिअ(य)\renewcommand{\thefootnote}{3}\footnote{(य) Not read by Kavi}रहित(द)\renewcommand{\thefootnote}{4}\footnote{(\ldots )Not read by Kavi}जणं संपत्तो असु णवझ(स)रदो~॥~१९६~॥
+
+[वीजयन्ती (वासयन्ती ?)\renewcommand{\thefootnote}{5}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} कुसुमसमुदिता वासयन्ती कुसुमसुरभिः~॥\\
+शोषयन्ती प्रियरहितजनं सम्प्राप्ताऽऽशु नवशरद्~॥~]
+
+सप्तममाद्यचतुर्थयुतं यत्र हि नैधनमेव गुरु~।\\
+पादविधौ यदि पङ्क्तिकृता सा कथिता खलु दोधकवत्~॥~१९७~॥}
+
+दोधकं\renewcommand{\thefootnote}{6}\footnote{Not read by Kavi} यथा~।
+
+{\na एस समुण्णअमच्च(समुण्णयमम्बरके)\renewcommand{\thefootnote}{7}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi; Kavi has OnIy (म्ब)in the bracket}रके मेहरवं सुणिऊण गओ (गजो)\renewcommand{\thefootnote}{8}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi}~।\\
+रोसवसेणसमुज्जलि\renewcommand{\thefootnote}{9}\footnote{Kavi \textendash\ ळि}दो हिंडदि काणणए कुविदो~॥~१९८~॥}
+
+{\qt [ एष समुन्नतमम्बरे मेघरवं श्रुत्वा गज:~। \\
+रोषवशेन समुज्ज्वलितो हिण्डति कानने कुपितः~॥~] }
+
+{\na त्रीण्यादौ तु गुरूणि यदा स्युः षष्ठं चान्त्यमुपान्त्यतमं च~।\\
+सा ज्ञेया खलु पादविधाने पङ्त्किः सा तु कुतोद्धतनाम्ना~॥~१९९~॥}
+
+उद्धता (पङ्क्तिः)\renewcommand{\thefootnote}{10}\footnote{Not read by Kavi} यथा~।
+
+{\na अब्भं अम्बुधरेहि (हरेहि) \renewcommand{\thefootnote}{11}\footnote{Kavi \textendash\ 'इ'}पिणद्धं विज्जुजोअ(य) \renewcommand{\thefootnote}{12}\footnote{(य) Not read by Kavi}खणंतरदीवम्~। \\
+वादाघुण्णिदकंपिददन्तं उप्पा(म्मा)देदिव हत्थिसमूहम्~॥~२००~॥}
+
+{\qt [अभ्रमम्बुधरैः पिनद्धं विद्युद्योगक्षणान्तरदीपम्~। \\
+वाताघूर्णितकम्पितदन्तमुन्माद्यतीव हस्तिसमूहम्~।] }
+
+{\na आद्यचतुर्थे नैधनके न (च) पञ्चमषष्ठे यत्र तु दीर्घ~। \\
+वृत्तसमुत्था सङ्कथिता सा पङ्क्तिरथैषा गीतकबन्धे~॥~२०१~॥}
+
+\renewcommand{\thefootnote}{13}\footnote{पङ्किरथा Not read by Kavi}पङ्क्तिरथा यथा~।
+
+{\na मेहसमूहं णीणबला\renewcommand{\thefootnote}{14}\footnote{Kavi \textendash\ ळा} कं विज्जू(ज्जु)पलि (ली)\renewcommand{\thefootnote}{15}\footnote{ळि (ळी) Kavi}कं(वं)पेक्खिअ एसो~। \\
+उट्ठित(द) \renewcommand{\thefootnote}{16}\footnote{( द ) Not read by Kavi}रोसो भीमणिणादो धावदि हत्थी रुक्खवणम्मि~॥~२०२~॥\renewcommand{\thefootnote}{17}\footnote{V. 202, G.V. 205, पलेतं(प्रदीप्तम्) भुज्ज (भूर्ज)}}
+
+{\qt [ मेघसमूहं पीनबलाकं विद्युत्प्रदीपं प्रेक्ष्य एषः~। \\
+उत्थितरोषो भीमनिनादो धावति हस्ती रूक्ष(?वृक्ष) \renewcommand{\thefootnote}{18}\footnote{(? वृक्ष ) not read by Kavi}वने~॥~] }
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३३७ 
+
+\begin{quote}
+{\na यदि खलु पञ्चममन्त्यं चरणविधावपि दीर्घं स्यात्~। \\
+भवति तथाष्टममन्त्ये(नवमे) विपुलभुजा भुवि सा ज्ञेया~॥~२०३~॥}
+
+विपुलभुजा \renewcommand{\thefootnote}{1}\footnote{Not read by Kavi}यथा~।
+
+{\na जलहरणादसमुव्विग्गो पगलि\renewcommand{\thefootnote}{2}\footnote{Kavi \textendash\ लि}त(द)(?गण्ड)\renewcommand{\thefootnote}{3}\footnote{( \textendash \textendash\textendash ) Not read by Kavi}गण्ड्डुमहाणादो~।\\
+वणगहणं कुविदो हत्थी सरभसगव्विदकं याति (?जादि)\renewcommand{\thefootnote}{4}\footnote{ ( \textendash\ \textendash\ \textendash ) Not read by Kavi}~॥~२०४~॥}
+
+{\qt [जलधरनादसमुद्विग्ः प्रगलितगण्डमहानादः~। \\
+वनगहनं कुपितो हस्ती सरभसगर्वितकं याति~॥~] }
+
+{\na एतास्तु जातयः प्रोक्ताः पङ्क्त्यामेव समासतः~। \\
+अतः परं प्रवक्ष्यामि त्रिष्टुब्जोतिविकल्पनम्~॥~२०५~॥
+
+आदाविह यदि खलु गुरुणी नित्यं निधनमपि च परतः~।\\
+वृत्ते कविभिरपि निगदिता त्रिष्टुप्चपलगतिरिह सदा~॥~२०६~॥}
+
+चपलगतिर् \renewcommand{\thefootnote}{5}\footnote{Not read by Kavi}यथा~।
+
+{\na एदे खिदिधरवरसदिसा भीमा पडुपडहसमरवा~।\\
+नीला\renewcommand{\thefootnote}{6}\footnote{Kavi \textendash\ ळा}सिदखगकिदरसणा मेहा णहदल\renewcommand{\thefootnote}{7}\footnote{Kavi \textendash\ ळ}मभिपडिदा~॥~२०७~॥}
+
+{\qt [ एते क्षितिधरवरसदृशा भीमाः पटुपटहसमरवाः~॥\\
+नीलासितखगकृतरशना मेघा नभस्तलमभिपतिताः~॥~] }
+
+{\na यदि खलु मध्ये त्वथ गुरुणी पुनरपि चान्त्यं गुरु चरणे~। \\
+भवति हि नित्यं रुचिरमुखी कमलदलाक्षीति हि कथिता~॥~२०८~।}
+
+कमलदलाक्षी\renewcommand{\thefootnote}{8}\footnote{Not read by Kavi} यथा~।
+
+{\na परिधुणमाणो किरणपडं अभिरुहमाणो उदअ(य)\renewcommand{\thefootnote}{9}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}गिरिम्~।\\
+उडुगणबन्धू कुमुदसहो उदयति(दि)\renewcommand{\thefootnote}{10}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} चन्दो गगन(ण)\renewcommand{\thefootnote}{11}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}दले~॥~२०९~॥}
+
+{\qt [ परिधुन्वानः किरणपटमभिरोहमाण उदयगिरिम्~।\\
+उडुगणबन्धुः कुमुदसख उदयति चन्द्रो गगनतले~॥~] }
+
+{\na यदि खलु पञ्चमकाष्टमके पुनरपि चान्त्यमकं(गतं) तु गुरु~। \\
+चरणविधाविह वृत्तविधौ भवति हि सा द्रुतपादगतिः~॥~२१०~॥}
+\end{quote}
+
+\newpage
+% ३३८ नाट्यशास्त्रे 
+\begin{quote}
+(द्रुतपादगतिर्)\renewcommand{\thefootnote}{1}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} यथा~। 
+
+{\na ण)\renewcommand{\thefootnote}{2}\footnote{Kavi; न (ण)} तलं(दळं)\renewcommand{\thefootnote}{3}\footnote{(दळं) Not read by Kavi} गणहिंडणओ किरणसहस्सविहूसिदओ~।\\
+विहुणिअ(य)\renewcommand{\thefootnote}{4}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} मेहपडं तमसू विसइ ससी गअ(य)\renewcommand{\thefootnote}{5}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi}णे विदुअम्~॥~२११~॥}
+
+{\qt नतलाङ्गणहिण्डनकः किरणसहस्रविभूषितः~।\\
+ विधूनितमेघपटं (विधूय मेघपटं)\renewcommand{\thefootnote}{6}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} तमस्सु\renewcommand{\thefootnote}{7}\footnote{Kavi N \textendash\ सि} विशति शशी गगने विद्रुत\renewcommand{\thefootnote}{8}\footnote{Kavi; विदुरम्}म्~।] 
+
+यदि खलु षष्ठं गुरुयुगलं निधनगतं चाप्यथ गुरुकम्~। \\
+भवति हि सैवं चरणविधौ\renewcommand{\thefootnote}{*}\footnote{म. कमलनिभास्ये ह्यतिचपला~।} मुखचपला त्रिष्टु(ब)भिरचिता~॥}
+
+(मुखचपला)\renewcommand{\thefootnote}{9}\footnote{Not read by Kavi} यथा~।
+
+{\qt कुसुमसुअन्धी सुअ(? सुह)\renewcommand{\thefootnote}{10}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} पवणो विचरदि रम्मे णलिणिवने(णे)\renewcommand{\thefootnote}{11}\footnote{( \textendash \textendash \textendash ) Not read by Kavi}~।\\
+तरुवरळासे पमदवणे स्सिंण\renewcommand{\thefootnote}{12}\footnote{Kavi \textendash\ स्सिण्णा}वसरदे~॥
+
+[कुसुमसुगन्धी सुखपवनो विचरति रम्ये नलिनीवने~। \\
+तरूवरलास्ये प्रमदवने बहुकुसुमेऽस्यां नवशरदि~॥~] }
+
+{\na तृतीयमन्त्यं चतुर्थं च पञ्चमं षष्टमेव च~। \\
+गुरुणी(रूणि) त्रैष्टुभे पादे यत्र सा विमला यथा~॥~२१२~॥}
+
+(विमला)\renewcommand{\thefootnote}{13}\footnote{Not read by Kavi}यथा~। 
+
+{\na कुसुमाकिण्णे णिम्मळसळिळे णलि\renewcommand{\thefootnote}{14}\footnote{Kavi \textendash\ ळि}णीसंडे छप्पदमुहळे~। \\
+सबहूमज्झे सारसमुदिते समदो हत्थी सोम(एष)(?एस)\renewcommand{\thefootnote}{15}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} विचरिदो~॥~२१३~॥}
+
+{\qt [कुसुमाकीर्णे निर्मलसलिले नलिनीखण्डे(षण्डे)\renewcommand{\thefootnote}{16}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi}षट्पदमुखरे~। \\
+स वधूमध्ये सारसमुदिते समदो हस्ती एष विचरितः~॥~] }
+
+{\na चतुर्थं पञ्चमं पूर्वमन्त्योपान्त्ये तथैव च~। \\
+गुरूणि त्रैष्टुभे पादे यत्र सा रुचिरा यथा~॥~२१५~॥}
+
+(रुचिरा यथा~।)\renewcommand{\thefootnote}{17}\footnote{Not read by Kavi}
+
+{\na मेहविदाणं अवधुणमाणो कम्पअ(य)\renewcommand{\thefootnote}{18}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi}माणो सगअ(ल)\renewcommand{\thefootnote}{19}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} वणाइम्~। \\
+ तोअ(य)\renewcommand{\thefootnote}{20}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi}समूहं अवकिरमाणो वाअदि वादो कुविद इवासू~॥~२१५~॥~ }
+
+{\qt [मेघवितानमवधूनयमानः मवधूयमानः\renewcommand{\thefootnote}{21}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi} कम्पयमानः सकलवनानि~। \\
+ तोयसमूहमवकिरमाणो वाति वातः कुपित इवाशु (? इवासौ)\renewcommand{\thefootnote}{22}\footnote{( \textendash\ \textendash\ \textendash\ ) Not read by Kavi}~॥~] }
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३३९ 
+
+\begin{quote}
+{\na यदि खलु चरणे तु सप्तमं पुनरपि नवमं सनिधनम्~।\\
+गुरू तदपरवक्त्रमुच्यते नियतमिति निदर्शनं यथा~।~२१६~॥}
+
+1(अपरवक्त्रम् यथा ) 
+
+{\na गिरितडविवरे विघुण्णिदो असणिघन (ण)2 रवेण कम्पअम् (कम्पिदो)~॥~3 \\
+ अभिपददि दुदं महीदळं पटुतर (पडुयर) णिणा दो महारवो~॥~२१७~॥}
+
+{\qt [ गरितटविवरे विघूर्णितोऽशनिघनरवेण कम्पयन् ( कम्प्तितः~॥~)\\
+अभिपततिर द्रुतं महीतलं पटुतरनिनदो महारवः (महाघनः)6] त्रिष्टभो\\
+जातयो ह्येता जगत्यास्तु निबोधत~। }\\
+
+{\na अष्टमं नैधनं चैव ( नवमं नैधने द्वे च) गुरूणि चरणे यदि~। \\
+वृत्ते तु जगती सा तु ज्ञेया कमललोचना~॥~२१८~॥}
+
+(कमललोचना)7 यथा~।
+
+{\na दिअ( ज ) 8 गणमुनि णि) गणविव णव)(?स्सिण्णा.) 10ड्टढअतेओ (?वन्दिततेंजो)11~।\\
+पविततकिरणसहस्सपिणद्धो~। \\
+विधुणिअ( य ) 12तिमिरपडं जगदीवो \\
+उदयदि गगणदळे असु(एस) 13सूरो~॥~२१९~॥}
+
+{\qt [ द्विजगणमुनिगणवर्धिततेजाः\\
+प्रविततकिरणसहस्रपिनध्दः~।\\
+विधूनित विधूय)14 तिमिरपटं जगद्दीप\\
+उदयति गगनतले आशु (एष )15सूर्यः~॥~]}
+\end{quote}
+
+% Footnote content and text in page missing
+
+\newpage
+% ३४० नाट्यशास्त्रे यदि
+
+\begin{quote}
+{\na खलु लघुगण इह निहितं \\
+ पदि यदि गुरु .निधनगतम्~। \\
+भवति हि खलु गतिरतिचपला \\
+ त्वरितगतिरधिकमतिजगती1a~॥~२२०~॥}
+
+(अतिचपला ) 1यथा~। 
+
+ {\na विधुणिअ2 जळधरमसिदपडं \\
+ दिअ( ज)3 गणमुनि (ज ) वरपरिपडि (ठि)5 दो~।\\
+ उदअगिरिसिहरतटमुकुटे (? तड \textendash\ मडळे)6\\
+ विचरदि गगणतळमसु (?दळमसु )7रवी~॥~२२१
+
+[ विधूय जलधरमसितपटं \\
+द्विजगणमुनिवरपरिपठितः~। \\
+उदयगिरिशिखरतटमुकुटे \\
+विचरति गगनतलमसौ ( दळमसु )7 रविः~॥~]~॥~२२२~॥}
+
+{\qt यदि खलु पञ्चमनिधनगते द्वे चरणविधौ भवति तो हि गुरुणी तु~।\\
+अतिजगती भुवि कथितगुणा सा मदकलितेव निगदितनामा (म्नी) (मदकलिताः)9 यथा~।}
+
+{\na [गगन (ण)10त ( द)11लंगणमभिरुहमाणो रजतमहागिरिसिहरसरूवो~।\\
+रजत( द)12 मओ विअ( य ) 13पिअकळ ( ल) 14सोसू पिअ कुमुदोऽसू15 पविचरिदो विअ (दि हि ) णिखि चन्दो~॥~२२३~॥}
+
+{\qt गगनतलाङ्गणमभिरोहन् रजतमहागिरिशिखरसरूपः~। \\
+रजतमय इव प्रियकलशोऽसौ (?कुमुदोऽसौ) 16 प्रविचरितो वियति हि निशि चन्द्रः ] }
+\end{quote}
+
+% Footnote content and text in page missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३४१
+
+\begin{quote}
+{\na एतास्तु जातयो ज्ञेयाः प्रावेशिक्यो.द्रुतास्तथा~। \\
+समवृत्तपदानां तु वर्धमानं निबोधत~॥~२२४~॥
+
+एतासां लक्षणं पूर्वं सर्वमुक्तं विधानतः~।\\
+प्रतिष्ठादि यथाच्छन्दः सम्यक् पदविभागतः~॥~२२५~॥}
+
+प्रतिष्ठा1 यथा
+
+{\na मेहरवं णवसरदे~।\\
+णिसमिअ( य)2कुद्धो भवइ गअ( य )3वरो~॥~२२६~॥\\
+मेघरवं नवशरदि निशम्य क्रुद्धो भवति गजवरः~। }
+\end{quote}
+
+% Footnote content and text in page missing
+
+\newpage
+% ३४२ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+
+\end{quote}
+सुप्रतिष्ठा.यथा~।
+
+{\na विज्जुकसाहि अभिहतं व~। \\
+रुददिव गगअं पसमिअगहतारम्~॥~२२७~॥
+
+[ विद्युत्कशाभिरभिहतमिव~। \\
+रुदतीव गगनं प्रशमितग्रहतारम्~॥~] }
+
+गायत्री~।
+
+{\na मेघरवधातुकर (रवातुरं) (रवाउलं)2 ट्ठगु ( ग) हचन्दअं सकरं~।\\
+रुददि किअ (किळं) णहदश्ल4 म् (सं)~॥~२२८~॥
+
+[ मेघरवातुरं (?खाकुलं)5नष्टग्रहचन्द्रकं (= चन्द्रं) सकलम्~।\\
+रुदति किल नभस्तलम् (= नभः) }
+
+उष्णिक्~। 
+
+{\na पु(ळु) 8ल्लिअ(य) तरुसण्डे सुरभिस्सिण्णा.(हि)10 पवणहदे~।\\
+विअ ( य) 11रदि पमदवणे हंसौ सहअ ( य ) 12रिपरिवुदो~॥~२२९~॥
+
+[ फुल्लतरुषण्डे (खण्डे) 13सुरभिपवनहते~।\\
+विचरति प्रमदवने हंसः सहचरीपरिवृत:~॥~]
+
+वर्धमानं मयैवं तु त्र्यश्राणामपि कीर्तितम्~।\\
+पुनश्च चतुरश्राणामेवमेवं निबोधत~॥~२३०~॥}
+
+अनुष्टुप्~। 
+
+{\na [ताराबन्धवसणाहो विक्खिरमाणो मेहपडम्~।\\
+किरणसहस्सविहूसिदी दो)14 उदयदि एसो रअणिअ )15रो~॥~२३१~॥
+
+[ ताराबन्धवसनीधो विकिरन्स्सि मेघपटम्~।\\
+किरणसहस्रविभूषित .उदयत्येष .रजनिकरः~॥~] }
+
+बृहती~। 
+
+{\na 16एसो सुमेरुवणत म्मि दिअ ) 17 देवसिद्धपरिगीदो~।\\
+सुरहिसुअं णं) 18धवणचारी पविचरदिवि (?)19 णहंगणदूतवातो~॥~२३२~॥}
+
+% Footnote content missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३५३
+
+\begin{quote}
+
+\end{quote}
+{\qt [एष सुमेरुवनकम्पी (?वने )1 दिवि ( ? द्विज)2 देवसिद्धपरिगीतः~। \\
+सुरभिसुगन्धवनचारी प्रविचरतीव नभोऽङ्गणदूतवातः~॥~(?)3 ] }
+
+पङ्क्तिः~। 
+
+{\na पादप(व) सण्डं कम्पअमाणो सुरहिसुअ( ग) न्धसुवासिदओ~।\\
+उपवणतरुगणलासगओ विअरति (विचरदि) वरतणु वणपवणो~॥~२३३~॥}
+
+{\qt पादपषण्डं7 (खण्डं कम्पयमानः सुरभिसुगन्धसुवासितकः~।\\
+उपवनतरुगणलासको8 विचरति वरतनु वनपवनः~॥}
+
+त्रिष्टुप्~। 
+
+{\na कुमुदवन(ण)9 स्स विहूसणओ विधुणिअ 10तिमिरपडं.गगणे~।\\
+ उद्रअं(य) 11गिरिसिहरमहिरुहन्तो रअणिकरो उदयदि विमल 12करो~॥~२३४~॥}
+
+{\qt कुमुदवनस्य विभूषणो विधूनित (विधूय) 13तिमिरपटं गगने~।\\
+उदयगिरिशिखरमधिरोहन् रजनिकर उदयति विमलकरः~॥}
+
+ जगती~। 
+
+{\na दिअ( य) 14वरमुनि (णि) 15गणसंवुदओ (संथुदओ?) 16 तविअ (द.) 17सुवण्णपिण्डसमदेहओ~।\\
+गगणदलंगणमभिरुहमाणो.विअरदि (विचरदि) 18 एस .दिवसकरो~॥~२३५~॥}
+
+{\qt [द्विजवरमुनिगणसंवृतक संस्तुतक ?) 19स्तप्तसुवर्णपिण्डसमदेहः~।\\
+गगनतलाङ्गणमभिरोह.विचरति एषस्सिण्णा.दिवसकरः~॥~]}
+
+{\na 20 एतास्तु जातयो ज्ञेयाश्र्चतुरश्रविवर्धिताः~।\\
+अत ऊर्ध्वं प्रवक्ष्यामि गणमात्राविकल्पानम्~॥~२३६~॥
+
+त्र्यश्रायां तु (यास्तु) गणाः पञ्च सन्निपातो विधीयते~।\\
+अष्टौ चतुरश्रायाः सन्निपातो भवेत्तथा~॥~२३७~॥}
+
+% Footnote content and text in page missing 
+
+\newpage
+%३४४ \textendash\ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+{\na द्वौस्सिण्णा पादौस्सिण्णा सन्निपातश्चस्सिण्णा ध्रुवाणांस्सिण्णा परिकीर्तिताः~।\\
+द्रुतंस्सिण्णा स्सिण्णा स्सिण्णा शीर्षकंस्सिण्णा चैवस्सिण्णा हित्वान्यानिस्सिण्णा भवन्तिस्सिण्णा वैस्सिण्णा २३८~॥
+
+अक्षरपिण्डस्त्र्यश्रेस्सिण्णा पञ्चादिर्नवपरश्चस्सिण्णा विज्ञेयः~।\\
+अष्टादिश्चतुरश्रेस्सिण्णा त्रयोदशपरस्तुस्सिण्णा विज्ञेयः~॥~२३९~॥
+
+सर्वगुरुश्चाष्टादिस्त्रयोदशपरश्चस्सिण्णा सर्वलघुः~॥\\
+एषस्सिण्णा त्र्यस्सिण्णा त्वस्सिण्णा क्षरपिण्डोस्सिण्णा विज्ञेयोस्सिण्णा वैस्सिण्णा ध्रुवाविधानज्ञैः~।२४०~॥}
+\end{quote}
+
+% Text in page content missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३४५
+
+\begin{quote}
+{\na गणमात्रांशविकल्पं व्याख्यास्यामि द्रुतायाश्च स्तु)~। \\
+अर्धषष्ठगणैः (ण) पादैः (दः) सन्निपातो द्रुतास्वथ~॥~३४१~॥
+
+मात्रा द्वाविंशतिश्चैव गुरुलघ्वक्षरान्विताः~। \\
+शीर्षकाणामनियमो भवेत् पादविधानतः~॥~२४२~॥
+
+नानावृत्तसमुत्पन्नं कुर्याद्वै शीर्षकं बुधः~। \\
+गुर्वादिरथ लघ्वादिर्युग्मः सर्वलघुस्तथा~॥~२४३~॥
+
+चतुर्मात्रा (त्रो) गणो ज्ञेयः पूर्वच्छन्दो विकल्पितः~।\\
+अर्धाष्टमगणाः पादाः शीर्षकस्य भवन्ति वै~॥~२४४~॥}
+\end{quote}
+
+% Text in page content missing
+
+\newpage
+% ३४६ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+{\na चतुर्मात्राश्च विज्ञेया युग्मौजाक्षरकैः पदैः~।\\
+शीर्षकस्यैकविंशत्या षड्विंशतिपरस्तथा~॥~२४५~॥
+
+अक्षराणां भवेत् पिण्डः पादे ह्येकत्र निश्चयात्~।\\
+युग्मा ओजा मिश्रा वादौ कार्या गणास्तु चत्वारः~।\\
+नियतं सीर्षविधाने पश्र्चाल्लघुसंचयः कार्यः~॥~२५६~॥}
+\end{quote}
+
+% Text in page content missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३४७
+
+\begin{quote}
+{\na त्रीणि गणा यस्यं मुखे त्रीण्येव हि यस्य चावसानानि~। \\
+मध्ये चेद् गुरुणी द्वे तच्चपलं शीर्षकं भवति~॥~२४७~॥
+
+पूर्वार्धेऽथ (र्वे ह्यर्धे) चतुर्ह्रस्वा मिश्रा गणास्तु चत्वारः~।\\
+पादे भवन्ति नियतं पश्चाल्लघुसंचयः शेषः~॥~२४८~॥
+
+एकद्विकल (लं) त्रिकला ( श्च) तुष्कलाः षट्कलास्तथो ( तोऽ) ष्टकला(:)~। \\
+कार्या ध्रुवाविधाने प्रासादिक्यन्तराक्षेपैः~।२४९~॥}
+\end{quote}
+
+% Text in page content missing
+
+\newpage
+% ३४८ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+{\na त्र्यश्रे विरामस्त्रिकलश्चतुरश्रे चतुष्कलः~। \\
+प्रावेशिक्या ध्रुवायास्तु नैष्क्रामिक्यास्तथैव~॥~२५०~॥
+
+1 विरामो 2द्विकलोऽय (त्य ) न्तमन्तरायाः समासतः~।\\
+पादान्ते द्विविरामस्तु क्षिप्तायाश्च प्रकीर्तितः~। \\
+स्थितायाश्च तथा ३३४५र्थेप्रासादिक्यास्तथैव~॥~२५१~॥
+
+कलाकलार्धयोगेन गुरुलघ्वक्षरान्विताः~। \\
+त्रयो ध्रुवाणां विज्ञेयाः संयोगा वृत्तसंश्रयाः~। \\
+सर्वदीर्घः सर्वलघुर्गुरुह्रस्वाक्षरस्तथा~॥~२५२~॥}
+\end{quote}
+ 
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३४९
+
+\begin{quote}
+{\na गुरुप्राया स्थिता कार्या लघुप्राया द्रुता तथा~। \\
+गुरुलघ्वक्षरप्राया प्रासादिक्यन्तरा तथा~॥~२५३~॥ 
+
+एवं ध्रुवाणां कर्तव्या जातयो वृत्तसम्भवाः~। \\
+अत ऊर्ध्वं प्रवक्ष्यामि शीर्षकाणां तु लक्षणम्~॥~२५४~॥
+
+आद्यमन्त्यं तृतीयं पञ्चमं सप्तमाष्टमे~। \\
+गुरूणि यस्याः पादे तु सा श्येनी तु कृतौ (? प्रकृतौ ) 1aयथा~॥~२५५~॥}
+
+(श्येनी) 1 यथा~।
+
+{\na सागरं समुधु (द्धु) णं तो रप (व ) इव लघुगदिरभिभवदि \\
+पव्वदा समाह तो तरुसु च जणअ (य)2 दि भयमतुलम्~।\\
+रेणुजालमुक्खिवन्तो दिवसकरकिरणो [ ण उप ( व) 3कलितो दो)]4\\
+बोधअं (यं)5 पजासु कामं विचरदि वरतनु (णु)6 सुहपवणो~॥~२५६~॥}
+\end{quote}
+
+% Footnote content and text in page missing
+
+\newpage
+% ३५० \textendash\ नाट्यशास्त्रे 
+
+\begin{quote}
+
+\end{quote}
+{\qt [सागरं समुद्धुन्वन् रव इव लघुगतिरभिभवति \\
+पर्वतान् समाघ्नन् तरुषु जनयति भयमतुलम्~।\\
+रेणुजालमुत्क्षिपन् दिवसकरकिरणोपकलितो\\
+बोधयन् प्रजासु कामं विचरति वरतनु सुखपवनः~॥~] }
+
+{\na प्रकृत्यां पञ्चमान्त्ये तु ह्यष्टमैकादशे गुरू~। \\
+द्वादशं चेति विज्ञेयं नामतश्चपला यथा~॥~२५७~॥}
+
+(चपला यथा)1
+
+{\na मुनि (णि)2 गणमण्डवि (लि) बन्धि (वन्दि) दओ (ते) जो विधुणिअ ) तिमिरपडम् \\
+कमलवणाइं विबोधि(ध)4 अ (य)5 माणो गहगणपरिगण (णि)6 दो~।\\
+भुजगसहस्सविबन्धिदपासो पादो?)7 वितवित (द)8 वितकणकवपू~। उदअ ( य)\\
+9दि संपदि ताविदलोओ वरतनु (णु)10 दिवसकरो~॥~२५८~॥}
+
+{\qt [मुनिगणमण्डलि ली) 11वन्दिततेजा विधूय तिमिरपटं \\
+कमलवनानि विबोधयमानो ग्रहगणपरिगणितः~।\\
+भुजगसहस्रविबन्धितपार्श्वो विद्यो( ?वि (सु) ) 12वतितकनकवपुः~।\\
+उदयति सम्प्रति तापितलोको वरतनु दिवसकरः~।] }
+
+% Footnote content missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३५१
+
+\begin{quote}
+{\na पञ्च त्वादौ यत्र तु दीर्घं नवममपि गुरुसमयकृतं \\
+दीर्घं चान्त्यं चाष्टममन्यल्लघु विरचितमिह चरणविधौ~। \\
+वृत्ते ज्ञेया जग (जा) तिरपीयं बहुविधनिचयचितविहिते \\
+क्रौञ्च ( ?क्रौञ्चा ) 1 नाम्ना छन्दसि चोक्ता द्विजगणमुनिगण (परि) पठिता~॥~२५९~॥}
+
+(क्रौञ्चा )2 यथा~।
+
+{\na एसो चन्दो णिम्मलजोह्णा (ह्णो ) 3विधुणिअ (य) 4घणमसिदपट (ड) णिहं\\
+लोकाण6 न्दो लोकपदीवो उडुगणगहप्प (ग) णसमणुगदो~।\\
+वा (पा) 7सादाणंकारअ (य) 8माणो सित (द) 9पडणिणिवसन (ण) 10 मिव विपु(? ) 11लम्~।\\
+लोकालोकं रञ्जअमाणो विचरदि वरतणु गगणमसू~॥~२६०~॥}
+
+{\na एष चन्द्रो निर्मलज्योत्स्नो विधूय घनमसितपटनिभं \\
+लोकानन्दो लोकप्रदीप उडुगणग्रहगणसमनुगतः~। \\
+प्रासादानां कारयमाणः सितपटनिवसनमिव विपुलं\\
+लोकालोकं रञ्जयमाणो विचरति वरतनु गगनमाशु (?मसौ)12~॥}
+\end{quote}
+
+% Footnote content missing
+
+\newpage
+% ३५२ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+
+\end{quote}
+{\na आद्यचतुर्थं पञ्चमषष्ठं नवममथ च (मथ दशमं) निंधनगतं \\
+ये ततोऽन्ये येषु लघुत्वं यदि भवति चरणम (ग) तिविधौ~।\\
+सा विकृतिः स्यात् पुष्पविवृ (समृ)द्धा द्विजगणमुनिगणपरिपठिता\\
+1नामविकल्पाद् वृत्तकृता 1a 1bबुधजनबहुमत पदनियमा~॥~२६१~॥}
+
+(पुष्पसमृद्धा) यथा~। 
+
+{\na पुप्फविदाणं उद्धुणमाणो रव2 इव पटतुर द्रुत गतिरभिपत (ड) ति दि)3~। \\
+पक्खळमाणो मेहतडेसुं4 तरुसु जणयदि भयमतु (ल) 5म्~।\\
+उम्मिसहस्सं उद्धुणमाणो 6सरसखुभिदसलिलकलकतो\\
+भीमणिणादो चण्डपवाही विअरदि वरतणु 8सुहपवणो~॥~२६२~॥}
+
+{\qt [पुष्पवितानमुद्धूनयमानः (मुद्धुन्वन्)9 रव इव पटुगतिर ( द्रुतगति) 10भिपतति \\
+प्रस्खलमानो मेघ (शैल ) 11तटेषु तरुषु जनयति भयमतुलम्~।\\
+ऊर्मिसहस्रमुद्धूनयमानः (मुद्धुन्वन्) 12सरसक्षुभितसलिलकलो\\
+भीमनिनादश्चण्डप्रवाही विचरति वरतनु सुखपवनः~॥~]} 
+
+{\na अन्त्यं पञ्चमं षष्टं सप्तमं दशमं परम्~।\\
+वृत्ते सङ्कृतिसंज्ञे तु सा ( सं) भ्रान्ता नामतो यथा~॥~२६३~॥}
+
+% Footnote content missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३५३
+
+\begin{quote}
+(संभ्रान्ता) यथा~।1 
+
+{\na किरणसहस्सं विक्खिरमाणो फलि (टि)ह (क) \\
+ ? फलिइ2 मणिरुचिरधवल णिहो\\
+ कुमुदवणाइं वोहअ (य)4 माणो कुमुददळनिअ (य) 5रसदिसवपू~। \\
+गहगणबन्धू लोक6 पदीवो उडुगणगहगणसमणुगदो \\
+उदयदि चन्दो रोहिणिकन्तो णवसरद (दि)7 मुदितसुख (इ)8 जणणो~॥~२६४~॥}
+
+{\qt सरदि कुमुदि गण सुहदो \\
+किरणसहस्रं विकिरन् स्फटिकमणिरूचिरधवलनिभः \\
+कुमुदवनानि बोधयमानः कुमुददलनिकरसदृशवपुः~। \\
+ग्रहगणबन्धुर्लोकप्रदीप उड्डगणग्रहगणसमनुगत \\
+उदयति चन्द्रो रोहिणीकान्तो नवशरदि मुदितसुखजननः~॥ }
+
+{\na आद्यमन्त्यं चतुर्थं सप्तमं दशमं तथा~। \\
+गुरूण्येकादशं चैव संकृतौ वृत्तसंश्रयम्~॥~२६५~॥
+
+लघून्यन्यानि शेषाणि पादे यस्मिन् भवन्ति तु~। \\
+तज्ज्ञेयं शीर्षकं तज्ज्ञैः स्खलितं नामतो यथा~॥~२६६~॥}
+\end{quote}
+
+% Footnote content missing
+
+\newpage
+% ३५४ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+स्खलितं यथा~।
+
+{\na *वात (द) समुद्धत (द) वीचितरङ्गो फडिअ ( फलिह?)मणि णिकर [रुचिर? सदिस] जले\\
+ वीचिपरम्पर घोर णिणादो षटु (पडु ?)पवण लुलिद प विहग \textendash\ कुलो~।\\
+मीणकुलाकुलभीमतरङ्गो खुभिद \textendash\ घण \textendash\ णिवह सदिस \textendash\ रवो \\
+तुङ्गमहीधर \textendash\ माण \textendash\ णिरुद्वो रुसिदो इव सपदि सलिल \textendash\ णिधि णिही)~॥~२६७~॥~1}
+
+{\qt [वातसमुद्धतवीचितरङ्गः स्फटिकमणिनिकर (रुचिर ?)सदृशजलो \\
+वीचिपरम्परघोरनिनादः पटुपवनलुलितविहगकुलः~। \\
+मीनकुलाकुलभीमतरङ्गः क्षुभितघननिवहसदृशरव\textendash \\
+स्तुङ्गमहीधरमाननिरुद्धो रुषित इव सपदि सलिलनिधिः~॥~]}
+
+{\na अष्टावादौ दीर्घाणि स्युर्यदि पुनरपि हि भवति बहु लघुगणो \\
+भूयश्चान्ते दीर्धं त्वेकं यदि भवति पदि पदि पुनरपि तथा~। \\
+मत्ताक्रीडा विद्युन्मालेत्यपि विविधकविभिरपि बहुभिरुदिता\\
+नाम्ना छन्दोवृत्ते देवीत्यभिकृतिगतिविधिषु च नियतमभिहिता~॥~२६८~॥}
+\end{quote}
+
+% Footnote content missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३५५
+
+\begin{quote}
+मत्ताक्रीडा (विद्युन्माला)1 यथा \textendash\ 
+
+{\na एसो मेहो सेलाभोगो (ओ) असणिमुरजपदु (डु) पट (ड)ह [ ख ]2 सम रओ \\
+णाणाविज्जुज्जो आलोओ घणपडळ निचयजकळधरसम (रम) णुगदो~।\\
+णाणाष (व) 3ण्णो तोउग्गारी चरित (द) 4द (ध ) 5वलरवगविचरित (द) 6कुंमु (सु) 7मपभो \\
+संजा (च्छा)8 अ (य ) 9न्तो लोअं (यं) 10याते (तो) गिरिरिव (चल)11\\
+गिरिणिवह इव सुभसळिळो~॥~२६९~॥}
+
+{\qt सागरं समुद्धणन्तो रह (व) इव लघुगदिरभिभवहि (दि)~।\\
+मुनिगणमण्डलिबन्धि (वन्दि) द ओ (ते) जो विधुणिअ तिमिरपडम्~।\\
+एसो च्छ (च ) न्दो णिम्मकजोह्णा विधुणिअ अणुतमवन्धमिदम् (घणमसिदपटणिहम्)~। \\
+पुप्फविदाणं उद्धुणमाणो रव इव दुतगति अभिपडदि~। \\
+एष मेघः शैलाभोगोऽशनिमुरजपटुपटहरवसमरवो~।12 \\
+नानाविद्युद्योगालोको घनपटलनिचयजलधरमनुगतः~।\\
+नानावर्णस्तोयोद्गारी चरितधवलखगविचरितकुसुमप्रभः \\
+संछादयन् लोकं यातो गिरिरिव चल 13 गिरिनिवह इव शुभसलिलः~॥ }
+\end{quote}
+
+% Footnote content missing
+
+\newpage
+% ३५६ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+
+\end{quote}
+{\na पञ्चमं द्वादशं चैव दीर्घमन्त्यं त्रयोदशम्~।\\
+उत्कृत्यां तु भवेत् पादे वृत्तं वेगवती यथा~॥~२७०~॥}
+
+वेगवती यथा1~। 
+
+{\na गगणतलंगणमभिरूहमाणो उडुगणगहगणसमणुगदो\\
+यु (जु) 2वति (इ)3 ज्रणाणं (जणाणत)4सुरुचित (र) 5रूवो सुखितदयितजणमदणकरो~। \\
+किरणसहस्सवि (दि) सुरचितबन्दो (न्धो) 6रजतगिरिसिहरसदिसवपू \\
+उदअ (यु) 7दि संपदि असु जगदीवो कुमुदवणरुचिरविमल8करो~॥~२७१~॥}
+
+{\qt [ गगनतलाङ्गणमभिरोहन्नुडय्गणग्रहणसमनुगतो\\
+युतिजनानतसुरुचितरूपः सुखितदयितजनमदनकरः~।\\
+किरणसहस्रदिग्रचितबन्धो रजतगिरिशिखरसदृशवपु\textendash \\
+रुदयति सम्प्रत्याशु जगद्दीपः कुमुदवनरुचिरविमलकरः~॥~] }
+
+{\na एता ह्यष्टौ बुधैर्ज्ञेयाः शीर्षकाणां तु जातयः~।\\ 
+पुनर्नर्कुटकानां तु सम्प्रवक्ष्यामि लक्षणम्~॥~२७२~॥}
+
+% Footnote content and text in page missing
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३५७
+
+\begin{quote}
+{\na अष्टौ नर्कुटकानां तु विज्ञेया जातयो बुधैः~।\\
+दर्शनं लक्षणं त्वासां नामानि निबोधत~॥~२७३~॥ 
+
+रथोत्तरं बुद्बुदकमुद्गतं वंशपत्रकम्~।\\ 
+शिवाक्षरा हंसवती हंसास्यं तोटकं तथा~॥~२७४~॥
+
+प्रथमं तृतीयं सप्तमं नवमान्त्यके~।\\
+गुरूणि त्रैष्ठुभे यत्र नर्कुटं तद् रथोत्तरम्~।२७५~॥}
+
+(नर्कुटं रथोत्तरं) 1यथा~।
+
+{\na एसिका कमलगनब्भगेहके \\
+ रेणुपिञ्जरित (द) चारु गति (त्ति?) 2या (आ )~। \\
+सारदे मदकलोपकूजिदा\\
+ हिण्डदे सरवरम्मि छप्पदी~॥~२७६~॥}
+
+एषका(=एषा) 3कमलगर्भगेहके (=गेहे)4 
+
+{\na शारदे मदकलोपकूजिता \\
+ हिण्डति सरोवरे षट्पदी~॥\\
+पञ्चमं सप्तमं चैव नैधनं गुरूण्यथ~। \\
+पादे तु बृहतीसंस्थे यत्र बुब्दुह्य कं यथा~॥~२७७~॥}
+
+(बुद्बुदकं ) यथा~। 
+
+{\na तडिगुणबन्धणिद्धओ (अद्धो)(?णिबद्धो)7 सिदखगपंतिसोहिदो~।\\
+णहसि गजो समुग्गओ विचरदि एस मेहओ~॥~२७८~॥}
+
+{\qt [ तडिद्गुणबन्धनिबद्धो सितखगपङ्क्तिशोभितः~।\\
+नभसि गजः समुद्गतो विचरति एष मेघकः~॥~] }
+
+अन्ये तु~। 
+
+{\na सतृतीयपञ्चमनवमं त्रयोदशं षोडशं तथा\\ 
+दशमात्परं निधनं चतुर्थगम्~।\\ 
+यत्र वै गुरू भवतीह शेषलघुसंयुतं \\
+वृत्तौ स्याच्च संश्रितं प्रवदन्ति बुब्दुदकमेव नर्कुटं तद्धि नामतः~॥}
+\end{quote}
+
+% Footnote content missing
+
+\newpage
+% ३५८ नाट्यशास्त्रे
+
+\begin{quote}
+{\qt \renewcommand{\thefootnote}{*}\footnote{This Verse as given here is Very corrupt and therfore obscures. G. (P. 125, V.NO. 327)gives the text which hardly agrees with the text as presented above in the Vadodara edn. U. completely leaves out the preceding prose "अन्ये तु" and the alternative definition of बुद्बुदकम् al०g with the example given above. }चिरकालमभिसम्भरन्त(न्तं)पिअं गाणत्त मुहिदं ण रोद्धम् \\
+मुदिमाणङत्तडिदिदो काणणे धणे परिखेदिदे बहुविधे हि अणुगो बासराहरो~। \\
+तरुसन्धुवज्जुहिअए संचसि(लि)ओ भीदभीदओ\\
+असु कोधरं विसरइ(सइ) पासवा(पा)दवेच्छ दीणदीणओ~॥
+
+चिरकालमभिसम्भरन्तं प्रियगानान् मुदितं न रोध्दुं \\
+मोदमानायां तडितीतः कानते घने परिखेदिते बहुविधे ह्यनुगो वासराहरः~। \\
+तरुसन्धुवनं दृष्ट्यैतच्चषको भीतभीतक \\
+आशु कोटरं विशति पार्श्वपादपस्थो दीनदीनकः~॥}
+
+{\na तृतीयं पञ्चमं चैचैव नवमैकादशे तथा~। \\
+द्वादशं षोडशं चैव चतुर्दशमथापि च~॥~२७९~॥ 
+
+अस्मिन्नष्टिकृते पादे गुरूण्येतानि सर्वशः~।\\
+छन्दोज्ञैर्ज्ञैयमेतत्तु नर्कुटं ह्युद्गतं यथा~॥~२८०~॥}
+
+उद्गतं यथा\renewcommand{\thefootnote}{1}\footnote{1.Not read by Kavi}
+
+{\na वरणखण्डं (ण्डकं) जहदि कोसिको वायसाहदो \\
+भयभीदओ अवदि(भजदि)पादपं(वं)\renewcommand{\thefootnote}{2}\footnote{(\ldots ) Not read by Kavi} दीणदीणओ~। \\
+तरुकोटरं वसदि सम्पदं ळोळणेत्तओ\\
+समभिद्व(द्दु)\renewcommand{\thefootnote}{3}\footnote{(\ldots ) Not read by Kavi}दो णिसिअ(य)रो अअं एदि सोहिदो~॥~२८१~॥}
+
+{\qt वनखण्डकं जहाति कौशिको वायसाहतो \\
+भयभीतको भजति पादपं दीनदीनकः~।\\
+तरुकोटरं वसति साम्प्रतं लोलनेत्रकः \\
+समभिद्रुतो निशिचरोऽयमेति शोधितः~॥} 
+
+अन्ये तु~।\renewcommand{\thefootnote}{4}\footnote{(\ldots )Not read by Kavi}
+
+{\qt प्रथमे यदा तु गुरु यत्र चान्तं \\
+ तृतीयकं यदि च द्वितीय\ldots ता गुरु~।\\
+अथ षोडशाक्षरे कृते तु पादे\\
+ चतुर्थकं त्रिकमिहोद्धटम्~॥}
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३५९
+
+\begin{quote}
+{\na नर्कुटं हि तदिति यत्तु चतुर्दशमनिधनगै\textendash \\
+र्भूषितमक्षरैर्गुरुकृतैः श्रवणसुखकरैः~।\\
+तत् खलु वंशपत्रपतितं मुनिगणगदितं\\
+ नर्कुटकं वदन्ति नियमादतिधृतिरुचितम्~॥~२८२~॥}
+
+(वंशपत्रकम्)\renewcommand{\thefootnote}{1}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} यथा~। 
+
+{\qt चूदवणं पफुळ्ळतिलळकं कुरवअ(य)\renewcommand{\thefootnote}{2}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}सहिअं(यं)\renewcommand{\thefootnote}{3}\footnote{(\ldots ) Not read by Kavi}\\
+ चारुअसोअ(य)\renewcommand{\thefootnote}{4}\footnote{(\ldots ) Not read by Kavi}साळकळिदं कुसुमसमुदिदम्~।\\
+माधवकाणणं जुवदिआ (जण) मदजणणं\\
+ हिण्डति(दि)\renewcommand{\thefootnote}{5}\footnote{( ) Not read by Kavi} कोकिला फलरसासवमधुररवा~॥
+
+चूतवनं प्रफुल्लतिलकं कुरबकसहितं \\
+ चार्वशोकसालकलितं कुसुमसमुदितम्~।\\
+माधवकाननं युवतिजनमदजननं\\
+ हिण्डति कोकिला फलरसासवमधुररवा~॥}
+
+{\na तृतीयं पञ्चमं चैव नवमं नैधनं तथा~। \\
+गुरूण्येतानि पादे तु यत्र तत् प्रमिताक्षरा~।~२८४~॥} 
+
+(प्रमिताक्षरा)\renewcommand{\thefootnote}{6}\footnote{( ) Not read by Kavi} यथा~। 
+
+
+{\na कमळाअरेसु भमि\renewcommand{\thefootnote}{7}\footnote{Kavi \textendash\ म }रु(ऊ)ण बुडं (? चिरं) \\
+ भमरीमुहासवसुकक्खणओ (? पिवासुअओ )\renewcommand{\thefootnote}{8}\footnote{(\ldots ) Not read by Kavi}~।\\
+मधुभूसिदं सुरहि चूदवणं\\
+ परिहिण्डिदो सुतणु छप्पदओ~॥~२८५~॥}
+
+{\qt कमलाकरेषु भ्रान्त्वा चिरं \\
+ भ्रमरीमुखासवसुखक्षणकः~।\\
+मधुभूषितं सुरभि चूतवनं\\
+परिहिण्डितः सुतनु षट्पदः~॥}
+\end{quote}
+
+\newpage
+% ३६० नाट्यशास्त्रे 
+
+\begin{quote}
+{\qt नवमान्त्यपञ्चमतृतीय\textendash \\
+गुरुलघुशेषमक्षरगतम्~। \\
+भवति चरणं तु यस्य सततं\\
+ विविधं प्रमिताक्षरेति कथिता खलु सा~॥}
+
+{\na तृतीयपश्चमान्त्यानि प्रथमं सचतुर्थकम्~। \\
+षष्टं च नैधनं(ने) चाथ गुरूणि ध्वजिनी यथा~॥~२८६~॥}
+
+(ध्वजिनी)\renewcommand{\thefootnote}{1}\footnote{(\ldots ) Not read by Kavi} यथा~। 
+
+{\qt विलसन्तिअ(या) (विलसन्ती या ?)\renewcommand{\thefootnote}{2}\footnote{(\ldots ) Not read by Kavi} कमलष(स)\renewcommand{\thefootnote}{3}\footnote{Kavi \textendash\ स}ण्डे \\
+पुप्फसुअ(ग)\renewcommand{\thefootnote}{4}\footnote{Kavi\textendash }न्धके (ए)\renewcommand{\thefootnote}{5}\footnote{(\ldots ) Not read by Kavi} कुसुमलुद्धा \\
+तुरिअ(यं)\renewcommand{\thefootnote}{6}\footnote{( \ldots ) Not read by Kavi} पतीतमधुमत्ता छप्पदिका(या)\renewcommand{\thefootnote}{7}\footnote{Kavi \textendash\ आ Kavi \textendash\ इति}कुळं समुपयाति(दि)\renewcommand{\thefootnote}{8}\footnote{Kavi \textendash\ इति}~॥
+
+विलसन्ती\renewcommand{\thefootnote}{9}\footnote{Kavi \textendash\ खण्डे} या कमलषण्डे(खण्डे)\renewcommand{\thefootnote}{10}\footnote{(\ldots ) Not read by Kavi} पुष्पसुगन्धके कुसुमलुब्धा~। \\
+त्वरितं प्रपीतमधुमत्ता षट्पदिका कुलं समुपयाति(दि)\renewcommand{\thefootnote}{11}\footnote{(\ldots ) Not read by Kavi}~॥ 
+
+दशमं सप्तमं यत्र चतुर्थकमथ षष्ठम्~।\\
+तृतीयं निधनं गुरु कथितं(हंसास्यं) नर्कुटं जगतीगतम्~॥}
+
+(हंसास्यम्) \renewcommand{\thefootnote}{12}\footnote{Note: The definition of Haṁsāsyam, the text of the verse \textendash\ 'Dia \textendash\ haṁsa etc. (along wth chāyā) were through oversight reprinted on the next page 355 of kavi's ed. The Chāya is here transferred from P. 355 (Kavi's ed.)}यथा~। 
+
+{\qt दिंअहंसा वसन्ते सळिळासए \\
+ कुसुमासादळुद्धां कमळाअरे~। \\
+ णळिणीपत्तमज्झै परिहिण्डिदा\\
+ गमणाआसखिण्णा भमरावली~॥
+
+दिव्यहंसा(द्विज \textendash\ हंसा ?)वसन्ते सलिलाशये कुसुमास्वादलुब्धा कमलाकरे~। \\
+नलिनीपत्रमध्ये परिहिण्डिता गमनायासखिन्ना भ्रमरावली~॥} 
+
+{\na यदि चान्त्यतृतीयकषष्ठगतैर्नवमेन च भूषितमेवम्~। \\
+गुरुभिः सततं त्विह तद् घटितं तोटकमेव हि नर्कुटकम्~॥~२८८~॥}
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्याय ३६१ 
+
+\begin{quote}
+(तोटकम्)\renewcommand{\thefootnote}{1}\footnote{(\ldots ) Not read by Kavi} यथा~। 
+
+{\qt रमणीसहिदो रअ(ज)\renewcommand{\thefootnote}{2}\footnote{(\ldots ) Not read by Kavi}णीविरमे \\
+गगणंगणए खगकोसिअ(ग)\renewcommand{\thefootnote}{3}\footnote{(\ldots ) Not read by Kavi}ओ~॥}
+
+{\na अनु(णु)\renewcommand{\thefootnote}{4}\footnote{Kavi \textendash\ अ(नुवाय)स एहि}वायसएहि विघट्टिदओ\\
+परिमण्टदि कोटरंअं सुरि(हि)दम् [ तुरिदम् ]\renewcommand{\thefootnote}{5}\footnote{(\ldots ) Not read by Kavi; G. (P. 128), (V. 34b)
+तुरिदं}~॥~२८९~॥}
+
+{\qt रमणीसहितो रजनीविरमे गगनाङ्गने खगकौशिकः \\
+अनुवायसैर्हि विघट्टितः परिमण्ठति कोटरं सुहितम्(सुखितम्)\renewcommand{\thefootnote}{6}\footnote{(\ldots ) Not read by Kavi; G. (P. 128), (V. 34b)
+तुरिदं} [ त्वरितम् ]~॥
+
+दिव्यहंसा वसन्ते सलिलाशये कुसुमास्वाददलुब्धा कमलाकरे~। \\
+नलिनीपत्रमध्ये परिहिण्डिता गमनायासखिन्ना भ्रमरावली~॥} 
+
+{\na एतास्तु जातयः प्रोक्ता नर्कुटानां समासतः~।\\
+पुनश्च(स्तु) खञ्जकानां च सम्प्रवक्ष्यामि लक्षमण्~॥~२९०~॥\renewcommand{\thefootnote}{*}\footnote{Note : \textendash\ First six lines of the text of Kavi's ed. (P.355) were inadvertently repeated and reprinted here They must be dropped altogether form this page. The next two lines which are nothing but Sanskrit chāyā of the Prakrit verse 'diahaṁsā\ldots etc. are transferred to the previous page. Now the Kārikā 'eṣāstu jātayaḥ' etc. which bears consecutive No. 292 will have to be numbered as 290 the preceding to verses bearing nos. 290 and 291 dropped Conseduently the text of the commentary Abhinavabharatī will follow just below are verse No. 290}}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt रनर(भ)लगी तु रथोद्धतिरथ नजरं बुद्धुदकम्~। \\
+ सजस(य)जगुरुरुद्गतिं वंशपत्रमथ भरनभनलगम् \ldots ~।\\
+ प्रमिता सजिसौ ध्वजिनी सजसगिभरनंगौ~।\\
+ सश्रुति तोटकमुदितं हंसास्यं सरभरमित्यष्टौ~। }
+\end{quote}
+
+\noindent
+रेणुपिञ्जरिदचारुगत्तिआ~। विचरदि एस मेहओ~। भयभीदओ भअ(ज)दि पादपं दीणदीणओ~। चूदवणं पफुल्लतिळकं कुरंबअसहिअं~। कमळाअरेसु भमिऊण चिरं~। विलसन्ति या कमलसण्डे छप्पदिआ कुलं समुपयादि~। रमणीसहिदे रअणीविरभे~। (दिअहंसा वसंते सलिलासए )~॥~२७३ \textendash\ २९१~॥\\
+
+
+अथ मध्यमाधमं विषयं खञ्जकं जातीयेन प्रतिजानीते~। {\qtt पुनस्तु खञ्जकानामिति}~। प्रासादिक्यादिध्रुवा एवोत्तमाधमविषयतया शीर्षकमिति नाम्ना नर्कुटखञ्जकनामा(म्ना) च व्यवह्रियते~। तासां चोक्तरूपमिदं वैचित्र्यान्तरेणोच्यत इति {\qtt पुनः} शब्दार्थः~॥~२९२~॥
+
+\newpage
+% ३६२ नाट्यशास्त्रे
+
+\begin{quote}
+
+\end{quote}
+{\na आमोदं कञ्जनी(खञ्जकं) पूर्वं भावनी मत्तचेष्टितम्~। \\
+एतास्त्रिस्रः समाख्याताः खञ्जकानां तु जातयः~॥~२९१~॥ 
+
+आद्यचतुर्थषष्ठदशमं सषोडशमथान्त्यमेव च~।\\
+यदि द्वादशमेव यत्र चरणेषु सप्तदशकात् परं च विहितम्~।~२९२~॥ 
+
+छन्दसि चेत्तथा गुरु चेदथाकृतिगतं भवेत्तु सततम्~।\\
+भद्रकमेव खञ्जकमिदं पुनश्च कथितं प्रमोदकमिदम्~॥~२९३~॥}
+
+(आमोदम् \textendash\ प्रमोदकम्)\renewcommand{\thefootnote}{1}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} यथा~। 
+
+{\na माहवमाससोहित(द)\renewcommand{\thefootnote}{2}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}समग्गके उववणम्मि फुळळकुसुमे\\
+णिच्च (प )मत्तजुत्त(जुट्ठ्)\renewcommand{\thefootnote}{3}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}बहुपक्खिसंघपरिबुद्ध(घुट्ट)णादमुहळे~। \\
+फल्लि\renewcommand{\thefootnote}{4}\footnote{Kavi \textendash\ ळिळ} दचूदसण्डसहआरमंजरिविळोळनादपवणे\\
+हिण्डदि छप्पदानु(णु)\renewcommand{\thefootnote}{5}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}गदमग्गओ परहुदो(निणि\renewcommand{\thefootnote}{6}\footnote{णि \textendash\ not read by Kavi})विट्ठवअणो~॥~२९४~॥}
+
+{\qt माघवमासशोभितमसग्रक उपवने फुल्लकुसुमे \\
+ नित्यप्रमत्तजुष्टबहुपक्षिसङ्घपरिघुष्टनादमुखरे~। \\
+फलितचूतषण्ड(खण्ड)\renewcommand{\thefootnote}{7}\footnote{Kavi \textendash\ खण्ड}सहकारमञ्जरीविलोलनादपवने\\
+ हिण्डति षट्पदानुगतमार्गकः परभृन्निविष्टवदनः~॥}
+
+{\na आद्यपश्चमान्त्यसप्तमं स्यात् तृतीयमेव दीर्घकम्~। \\
+यस्य पादयोगतो हि सा भाविनीति खञ्जकं तथा~॥~२९५~॥} 
+
+(भाविनी \textendash\ भाविकम् )\renewcommand{\thefootnote}{8}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} यथा~। 
+
+{\na जातिफुल्लपाणमत्तओ चूदरेणुगुण्ठिदग्गओ(दंगओ)\renewcommand{\thefootnote}{9}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi}\\
+फुळ्ळपङ्कउ(जो)व्वसोहिदो छप्पओ मुदं(?दुदं)\renewcommand{\thefootnote}{10}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} पधाविदो~॥~२९६~॥}
+
+{\qt जातिपुष्पपानमत्तश्चूतरेणुगुण्ठिताङ्गकः~। \\
+फुल्लपङ्कजोपशोभितः षट्पदो मुदं(द्रूतं)\renewcommand{\thefootnote}{11}\footnote{( \textendash\ \textendash\ \textendash ) Not read by Kavi} प्रधावितः~॥}
+
+{\qt यदा तृतीयसप्तमं तदाद्यपञ्चमं लघु~। \\
+तदा तु मत्तचेष्टितं वदन्ति खञ्जकं बुधाः~॥~२९७~॥}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३६३ 
+
+\begin{quote}
+(मत्तचेष्टितम्)\renewcommand{\thefootnote}{1}\footnote{(\ldots) Not read by Kavi} यथा~। 
+
+{\na पफुळ्ळपुप्प(प्फ)पादवं विहङ्गमोप(चैव) \renewcommand{\thefootnote}{2}\footnote{(\ldots ) Not read by Kavi}सोहिदम्~। \\
+ वणं पगीदछप्पदं उवेइ एस कोकिला (?कोकिलो) [ ?कोइलो ]\renewcommand{\thefootnote}{3}\footnote{( \ldots ) Not read by Kavi}~॥~२९८~॥\renewcommand{\thefootnote}{*}\footnote{(VMK) record my thanks to Dr. M.L. Wadekar, Offg. Director and Dr.Siddharth Y. Wakankar, , Dy, Director, Oriental Institute, M.S. University, Vadodara for providing me a copy of Sri Manmohan Ghosh's article: "Prakrit Verses in the Bharata Nātyaśāstra" pub. in the Indian Historical Quarterly, Vol. VIII. ,1932 and a copy of Dr. V. Raghavan's Paper: "Music in Ancient Indian Drama" Pub. in the Journal of the Music Academy, Madras, XXV. PP. 79 \textendash\ 92. l am thankful to Dr. Tapasvi S. Nandi, formerly Professor of Sanskrit and Head, Department of Sanskrit, Gujarat University Ahmedabad for lending me a copy each of chapter XXXII on Dhruvā's in the Nāṭyaśāstra translated for the first time by Sri Manmohan Ghosh, Pub. by the Asiatic Society Calcutta. 1961 (pp. 106 \textendash\ 160) and Nāṭyaśāstra Vol. III ed. by Dr. N P. Uni. Pub. Nag Publishers Delhi. 110007. I must thank both these editors whose editions (here indicated by G. and V. ) I have consulted profitably.}
+
+प्रफुल्लपुष्पपादपं विहङ्गमोपशोभितम्~।\\
+ वनं प्रगीतषट्पदमुपैत्येष कोकिलः~॥
+
+नर्कुटानां तु खञ्जानामेता वै मूलजातयः~।\\
+ आभ्यो विनिस्सृताश्चान्या युग्मौजा विषमास्तथा~॥~२९९~॥
+
+ चतुष्षष्टिर्ध्रुवाणां तु विज्ञेया मूलजातयः~। \\
+ समवृत्ताक्षरकृता अतोऽन्या विषमा मताः~॥~३००~॥}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt भरनरनरनगि रजरी जरलगि \\
+ मोदकभाविकमत्तविचेष्टा (:) }
+\end{quote}
+
+\noindent
+{\small {\qtt खञ्जक} इति गतिवैकल्याद्वृद्धः~। {\qtt अन्ये} तु युवाऽपि विकलाङ्गोऽन्तःपुरोचित इति तद्विषयत्वात् {\qtt प्रमोदा}दित्रयं {\qtt खञ्जक}मित्युच्यते~।
+
+\begin{quote}
+{\qt णिञ्च (च्च) (प) मत्तजुत्त(जुट्ठ)बहुपक्खिसंघपरिघुट्टणादमुहले~। \\
+ जातिफुल्लपान(ण)मत्तओ~। पफ(फु)ल्लपुप्फपादवम्~।}
+\end{quote}
+
+\noindent
+{\qtt अन्ये} तु त्वाकृते(तौ)छन्दस्यधमविषयत्वं न युक्तमिति मन्वानाः {\qtt प्रमोदकस्थाने} बुद्धुदवर्ग पठितमपि {\qtt वंशपत्रपतितं} पठन्त्युभयपठितमित्युभयविषयता सिद्ध्यर्थमिति~॥~२९१ \textendash\ २९८~॥\\
+
+आभ्यो विनिसृता इति~। अर्थसमविषमरूपतयेति भावः~॥~२९९~॥\\
+
+अथ सर्वध्रुवासु गायत्रमेव प्रधानमिति दर्शयति~। {\qtt चतुःषष्टिर्ध्रुवाणां त्विति}~। षडक्षरे गायत्रे {\qtt चतुःषष्टि भेदाश्छन्दोऽध्याये} (भ.ना.अ.१४. ५५) दर्शिताः~। {\qtt समवृत्ताक्षराद्} गायत्रादेव च पादक्रमेण नीवृदि भुञ्जि द्विभागेन च सर्वच्छन्दोभेदसिद्धिः~। तथाहि~। पादचतुष्टयोपरि पूरिते षड्विंशत्यक्षरोत्कृते{\qtt श्चतुःषष्टिमूलजातयः}~। ते (ता) अनन्ताः~।अत एव गायतस्त्राय(ते )इति गायत्रमाहुः~॥~३००~॥}
+
+\newpage
+% ३६४ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na समवृत्तास्तु(त्तु) जायन्ते ध्रुवास्तिस्रस्तु नित्यशः~। \\
+ युग्मौजाश्चापि मिश्राश्च विषमाश्च समा मताः~॥~३०१~॥}
+
+{\qt सुप्रतिष्टादिकानि स्युर्बृहत्यादीनि यानि तु~। \\
+ छन्दांसि तेषां मानेन त्र्यश्रा कार्या ध्रुवा बुधैः~॥
+
+ उष्णिगादीनि यानि स्युः शक्वर्यन्तानि चैव हि~।\\
+ छन्दांसि तेषां मानेन चतुरश्रा ध्रुवा मता~॥
+
+ त्रिष्टुबादीनि यानि स्युरुत्कृत्यन्तानि चैव हि~। \\
+ छन्दांसि तेषां मानेन चतुरश्रा द्विपादिका~॥}
+
+ इत्यन्ये~। 
+
+{\na तत्रार्धविषमाणां तु षट्पञ्चाशे शते स्मृते\renewcommand{\thefootnote}{1}\footnote{च स्मृताः}~॥\\
+ एतदेव परीमाणं विषमाणां प्रकीर्तितम्~।~३०२~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+एतदेव स्फुटयति~। {\qtt समवृत्तादि} त गायत्रतालसमवृत्तादन्या समार्धसमविषमभेदात् त्रिधा ध्रुवा जायते~। तासां च प्रत्येकं तालभेदस्त्रिधा~। {\qtt युग्म ओजो मिश्रश्चेति} नवत्वम्~। एतावताऽनन्तो लक्ष्ये लयभङ्गोदाहरणेषु यो ब्रुवावृत्तप्रपञ्चो दृश्यते सोऽपि सङ्गृहीत एव~॥~३०१~॥\\
+
+केचित् पठन्ति~। 
+
+\begin{quote}
+{\qt त्र्यश्रायां सुप्रतिष्ठादिबृहन्त्यन्तादियुग्मकः~। \\
+ उष्णिग्भ्यः शक्करी यावत् त्रिष्टुभो यावदुत्कृतिः~।\\
+ युग्म एव विधातव्यः किन्तु कार्या द्विपादिका~॥}
+\end{quote}
+
+\noindent
+इति~। तत्रत्यचतुरश्रविकृष्टात्मकता विविधमण्डपभेदो विषयत्वमस्य ग्रन्थस्य व्याचक्षिरे~। तत्र हि परिक्रमे विषमार्थयोगेन बहुधा मतिपूरणमिति~।\\
+
+अथार्धसमादेः संख्यामाह~। {\qtt तत्रार्धविषमाणां तु षट्पश्चाशे शत} इति~। षट्पञ्चाशदादिकानि यत्र ते द्वे शते~॥~३०२~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३६५ 
+
+\begin{quote}
+{\na सामान्यौजाश्च जायन्ते ध्रुवा विषमपादिकाः~।\\
+ स्वेन नाम्ना तु नामानि तासां कार्याणि वृत्ततः~॥~३०३~॥
+
+ एवं तु जातयः प्रोक्ता नानावृत्तसमुद्भवाः~।\\
+ अत ऊर्ध्वं प्रवक्ष्यामि विकल्पान् पञ्चहेतुकान्~।~३०४~॥ 
+
+ जातिः स्थानं प्रकारश्च प्रमाणं नाम चैव च~। \\
+ ज्ञेयो ध्रुवाणां गानज्ञैर्विकल्पः पञ्चहेतुकः~॥~३०५~॥ 
+
+ वृत्ताक्षरप्रमाणं हि जातिरित्यभिसंज्ञिता~।\\
+ समार्धविषमाभिश्च प्रकारः परिकीर्तितः~॥~३०६~॥ 
+
+ षट्कलाष्टकले चैव प्रमाणे द्विविधे स्मृते~।\\
+ यथागोत्रकुलाचारैर्नृणां नामाभिधीयते~॥~३०७~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt स्वेन नाम्नेति}~। यत एव समवृत्तद्वयादर्धसमं तदेव तस्या नामेत्यर्थः~। यथा श्रीशङ्करभक्तिशालिना {\qtt भट्टशङ्करेणा}र्धसमवृत्तप्रकरणे दर्शितम्~। {\qtt उद्धता सभोजसमौ बलिता जवन} इत्यादि~॥~३०३~॥\\
+
+{\qtt पञ्चहेतुकानिति}~। निमित्तकृतान् पञ्चप्रकारान् वक्ष्यामीति~॥~३०५~॥\\
+
+तत्र निमित्तपञ्चकमाह~। {\qtt जातिः स्थानं प्रकारश्च प्रमाणं नाम चैवेति}~॥~३०५~॥\\
+
+वृत्तेऽ{\qtt क्षरप्रमाणं जातिः}~। स्वरूपजननात्~। {\qtt स्थानं} बहु वक्तव्यत्वादग्रतोऽभिधास्यते~। {\qtt समार्धसमविषमता प्रकारः}~॥~३०६~॥\\
+
+{\qtt षट्कलाष्टकलप्रमाणे द्विकला}भिधाने नाम~। जात्यादीनामत्र प्रयोजनमाह~। कलाधिक्येऽपि समुदायताले हि त्र्यश्रता विभाति~। अवयवताले बहुधेति~। {\qtt अन्ये} तु नात्यल्पत्वान्नातिवि(स्तृ)तत्वाच्च {\qtt षट्कलाष्टकले} वक्तव्ये इत्याहुः~। उपलक्षणमात्रमेतदित्यपरे~। अथ नामाह~। {\qtt यथागोत्रकुलाचारैरिति}~। आश्रयणेनान्वर्थयोगेनोपेतम्~॥~३०७~॥
+
+\newpage
+% ३६६ नाट्यशास्त्रे
+
+\begin{quote}
+{\qt एवं नामाश्रयोपेतं ध्रुवाणामपि चेष्यते~।\\
+ प्रवेशाक्षेपनिष्क्रामप्रासादिकमथान्तरम्~।\\
+ गानं पञ्चविधं विद्याद् ध्रुवायोगसमन्वितम्~॥~३०८~॥
+
+ नानारसार्थयुक्ता नृणां या गीयते प्रवेशे तु\renewcommand{\thefootnote}{1}\footnote{च प्रवेशेषु~।}~॥\\
+ प्रावेशिकी तु नाम्ना विज्ञेया सा ध्रुवा तज्ज्ञैः~॥~३०९~॥
+
+ अङ्कान्ते निष्क्रमणे पात्राणां गीयते प्रयोगेषु~। \\
+ निष्क्रामोपगतगुणां विद्यान्नैष्क्रामिकी तां तु~॥~३१०~॥
+
+ क्रममुल्लङ्घ्य विधिज्ञैः क्रियते या द्रुतलयेन नाट्यविधौ~।\\
+ आक्षेपिकी ध्रुवासौ द्रुता स्थिता वाऽपि विज्ञेया~॥~३११~॥}
+\end{quote}
+ 
+\hrule
+
+\vspace{2mm}
+{\qtt ध्रुवाणामपि} चेति~। न केवलं रसभावानामित्यर्थः~। किं तन्नामेत्याशङ्क्य पूर्वोक्तं स्मारयति~। {\qtt प्रवेशापेक्षे}(क्षेपे)इति~। रसाध्याये (भ.ना.अ.६. २९.३०) व्याख्यातः श्लोकः~॥~३०८~॥\\
+
+एतेषु नामान्वर्थं योजयति~। {\qtt नानारसार्थयुक्तेति~। नाना रसा भावा}अर्थाश्च विभावादयः तेषां युक्तं (क्तः) सामाजिकानां हृदयेषु प्रवेशो ययेति प्रयोजनम्~। नृणामिति~। एकशेषे नारीणां च~॥~३०९~॥\\
+
+प्रविष्टस्यावश्यं निष्क्रमणं न त्वेवमाक्षेपादित्याशयेन नैष्क्रामिकीमाह~। {\qtt अङ्कान्त} इति~। अङ्कस्य समाप्तौ~। असमाप्तेऽप्यङ्के यदा पात्राणां निष्क्रमणं तदा चेत्यर्थः~। निष्क्रमणक्रियायामुपगतो वर्ण्यत्वेनाङ्गीकृतो गुण इत्युपचरितार्थो हंसराजादिर्यस्याम्~॥~३१०~॥\\
+
+अथाक्षेपिक्याः समर्थेन स्वरूपमाह~। {\qtt क्रममुलङ्घ्येति}~। प्रस्तुतं रसम्~। {\qtt द्रुतलयेनेति}~। खलु खलंकादिवाक्यप्रयोगे (?) यारसापेक्षयोजना तद्विषयः(या) प्रयुज्यते(सा) {\qtt आक्षेपिकी}~। तत्राक्षिप्यमाणरसस्य दीप्ततया {\qtt द्रुता}~। यथा {\qtt उदात्तराघवे} रामस्य प्रस्तुतशृङ्गारक्रमोल्लङ्घनेन \\
+{\qtt अरे तापस स्थिरी(रो)भव~। केदानीं गम्यते~। }\\
+{\qtt स्वसुर्मम पराभवप्रसव एकदत्तव्यथ~।}\renewcommand{\thefootnote}{*}\footnote{अन्ये पादास्तु\textendash
+\begin{quote}
+{\qt खरप्रभृतिबान्धवोद्वलनवातसन्धुक्षितः~।\\
+तवेह विदलीभवत्तनुसमुच्चलच्छोणित\\
+क्षराच्छुरितवक्षसः प्रशममेतु कोपानलः~॥}
+\end{quote}}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३६७
+
+\begin{quote}
+{\na या च रसान्तरमुपगतमाक्षेपवशात्\renewcommand{\thefootnote}{1}\footnote{य. रसात्} कृतं प्रसादयति~। \\
+ रागप्रसादजननीं विद्यात् प्रासादिकीं तां तु~॥~ ३१२~॥
+
+ विषण्णे मूर्च्छिते भ्रान्ते वस्त्राभरणसंयमे~।\\
+ दोषप्रच्छादना या च गीयते सान्तरा ध्रुवा~॥~३१३~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+इत्यादिना (रावणवाक्येन)~। यथा ({\qtt द्रुता})वाक्याकर्णनेन वीररसस्याक्षेप्यस्य तु रसस्य मासृण्ये~। {\qtt स्थितेइति} विलम्बिता~। यथाऽ{\qtt श्वत्थाम्नो युद्धवीरे} क्रमोल्लङ्घनेन
+
+\begin{quote}
+{\qt कुतोऽद्यापि ते तातः~। (वेणीसंहारम् ३.८) }
+\end{quote}
+
+\noindent
+इति नेपथ्यश्रवणादि तस्य करुणरसस्य~॥~३११~॥\\
+
+अथ {\qtt प्रासादिकीमाह~। या च रसान्तरमुपगतमिति~। उपगत} मभ्युपगतं प्रस्तुतं रसविशेषं यदा {\qtt प्रसादयति} निर्मलीकरोति~। कथम्~। अनुक्तस्य विभावानुभावव्यभिचारिवर्गस्य {\qtt आक्षेपवशात्} स्थिरीकरणसमर्थत्वादिति~। काव्यगतेनोत्कर्षेण रागप्रसादस्य जात्यंशकगीतिवर्णालङ्कारस्य सौभाग्यकृतस्य सामाजिकहृदयं तन्मयीभावापत्तियोग्यतामात्मनो जननमिति गीतिशोभया वा प्रासादयोजनः~। प्रासादिकीं विद्यात्~। विशेषमस्या द्योतयति~। इयं हि प्रावेशिक्याक्षेपिक्या अनन्तरमवश्यप्रयोज्या भवति~॥~३१२~॥\\
+
+अथान्तरागानमाह~। {\qtt विषण्णे मूर्च्छिते भ्रान्त} इति~। अन्तरे छिद्रे गीयत इत्यन्तरा {\qtt ध्रुवा}~। तदाह~। दोषप्रच्छादन(ना) इति~। तान् दोषानुदाहरति~। {\qtt विषण्ण} इति~। अनु्कर्तुर्यदनाशङ्कितधनविषयादत्युद्धतप्रयोगश्रमवशाद्वा भ्रमादिदोषसम्भावना~। वस्त्राभरणाव \textendash\ काशदित्सया (या)गीयते सान्तरा ध्रुवा~। तत्र च प्राक्तनं भावि वा रसस्वरूपमनुवृत्तमित्यवरश्यं द्रुतमध्यविलम्बितान्यतमेन भाव्यं(व्यम्)~। श (स)एव च ताल(भ.ना.३१.५)इत्युक्तत्वात् तदाधारभूतया छन्दोनिबद्धया भाव्यम्~। केवलं छिद्राच्छादनमात्रप्रयोजनायामस्यां न सार्थकपदकदम्बयोजनमुपगीतिशुष्काक्षरैरेवेयं लक्ष्ये च लतिकादिनाम्ना प्रसिद्धा गीयत इति नाट्यधर्मी(र्म)प्रायेयम्~। यद्यपि प्रावेशिक्यादेरपि नानुकार्यविषयसम्भवस्तथापि काव्यवाक्यैकवाक्यतायां
+
+\begin{quote}
+{\qt तरलयसि दृशं किमुत्सुकाम्~।}
+\end{quote}
+
+\noindent
+इत्यादि काकतालीयश्रुतिशकुनन्यायेन लौकिकस्य सम्भवं नात्यन्तं नाट्यधर्मभावः~। एवं नाम व्याख्यातम्~॥~३१३~॥
+
+\newpage
+% ३६८ नाट्यशास्त्रे
+
+\begin{quote}
+{\na ध्रुवाणां चैव सर्वासां रसभावसमन्वितम्~।\\
+ यथास्थानं प्रवक्ष्यामि यत्र गेयं प्रयत्नतः~॥~३१४~॥
+
+ द्विविधं तु स्मृतं स्थानं परसंस्थात्मसंश्रयम्~।\\
+ यत्त्वाक्षेपसमायुक्तं तच्च मे सन्निबोधत~॥~३१५~॥
+
+ बद्धे निरुद्धे पतिते व्याधिते मूर्च्छिते मृते~। \\
+ अवकृष्टा ध्रुवा कार्या भावे च करुणाश्रये~॥~३१६~॥}
+\end{quote}
+ 
+\hrule
+
+\vspace{2mm}
+अथ {\qtt जातिः स्थानं प्रकारश्च प्रमाणं नाम} चेति श्लोके (भ.ना. ३२ \textendash\ ३०५) यत्प्रमाणमुद्दिष्टं तल्लक्षयन्नुपक्रमते~। {\qtt ध्रुवाणां चैव सर्वासा}मिति~। तत्र स्थानस्य सामान्यलक्षणमाह~। {\qtt यत्र गेयं प्रयत्नत} इति~। रसोपयोगी पात्रविशेषः स्थानमित्यर्थः~॥~३१४~॥\\
+
+ननु प्रवेशनिष्क्रमाक्षेपप्रसादच्छिद्राण्येव गेयस्थानानि~। तानि च नामनिर्वचनेन लब्धानि~। तत् किमिदानीं स्थानं नाम्ना विशिष्यत इत्याशङ्कया~। {\qtt द्विविधं तु स्मृतं} स्थानमिति~। न प्रवेशादिस्थानमत्र लक्ष्यते किन्तु प्रधानभूतो यो रसभावादिरर्थस्तदुपयोगी तावद्गानम्~। तत्र कदाचिद्यत्रैव योऽर्थस्तदुद्देशेनैव गीयते~। यथा {\qtt रामस्य सीतादिप्र}युक्तविप्रलम्भे तदाश्रयमेव कदाचित् पात्रान्तराश्रयणेन~। यथा तस्यैव विप्रलम्भे लक्ष्मणाश्रये इति(नि)तराम(मा)हुरित्यत्र तदाह~। {\qtt परसंस्थात्मसंश्रयमिति}~। परस्थगतं लक्ष्मणस्य~। आत्माश्रयं रामस्य~। तेन स्थानमिति स्थानाश्रयं गानं द्विविधमित्यर्थः~। नन्वपरस्यासौकरुण एव भवति~। न हि रामे विप्रलब्धे लक्ष्मणस्य विप्रलम्भः~। केवलं तद्युः खदुःखितस्यास्य करुण इत्याशङ्क्याह~। {\qtt यत्वाक्षेपसमायुक्तमिति}~। यदिति यस्मात्~। आक्षेपः तद्रसोपक्षेपित्वेनोपयोगः~। तेन आसमन्तात् युक्तं स्वपरसंस्थं समिति सम्यक् अवैकल्यपूर्णता तेनायुक्त्याऽऽत्मसंश्रयम्~। एतदुक्तं भवति~। लक्ष्मणस्य करुणे विनयोचितं(ते) मसृणमन्थरं(रे) गान(ने) प्रयुक्तेऽपि तु रामविप्रलम्भ एव तत्र प्रयोजकीभवति~। तथा च लक्ष्मणस्य तदुपसर्पणैव परैव तत्परा गानं प्रयोजयति~। परस्थोऽप्यसौ प्रयोजको भवति~। स वायं प्रयोगो विधिनोपदेशदिशा न शक्यं(क्यः) प्रतिपादयितुमिति दर्शयति~। {\qtt तच्च मे सन्निबोधतेति}~॥~३१५~॥\\
+
+तत्राक्षेपिक्यां तावत् स्थानद्वयोचितं लयविभागेन विशेषं यथायोगं निरूपयितुमाह~। {\qtt बद्ध} इत्यादि~। {\qtt बद्धो} निगडादिना निरुद्धोऽवष्टब्धः~। पतितो महापातकयोगात्~। मृत इति मुमूर्षा~। अवकृष्टेति विलम्बिता~। करुणाश्रय इति निर्वेदादौ~॥~३१६~॥
+
+\newpage
+%द्वात्रिंशोऽध्यायः \/ \textendash\ \/ \textendash\ \/ \textendash\ \/ \textendash\ \/ \textendash\ ३६९ 
+
+\begin{quote}
+{\na औत्सुक्ये ह्यवहित्थे च चिन्तायां परिदेविते~।\\
+ श्रमे दीने\renewcommand{\thefootnote}{1}\footnote{च. दैन्ये} (दैन्ये) विषादे च स्थिता कार्या ध्रुवा बुधैः~।~३१७~॥
+
+ एतेष्वेव तु भावेषु करुणावेदितेषु च~। \\
+ ध्रुवा द्रुता च कर्तव्या करुणे भावसंश्रया~॥~३१८~॥
+
+ यत्र प्रत्यक्षजं दुःखं मृताभिहतदर्शनम्~।\\
+ स्थिता तत्र हि कर्तव्या करुणे तु रसे बुधैः~॥~३१९~॥
+
+ उत्पातदर्शने चैव \renewcommand{\thefootnote}{2}\footnote{च. शृङ्गारा}प्रहर्षेऽद्भुतदर्शने~। \\
+ विषादे च \renewcommand{\thefootnote}{3}\footnote{च. प्रमोदे}प्रसादे च रोषे सत्त्वस्य दर्शने~॥~३२०~॥
+
+ वीररौद्रभयाद्येषु प्रत्यक्षावेदितेषु च~।\\
+ ध्रुवा द्रुतलया कार्या ह्यावेगे सम्भ्रमे तथा~॥~३२१~॥
+
+ प्रसादे(द)याचने चैव तथाऽनुस्मरणे पुनः~। \\
+ तथाऽतिशयवाक्येषु तथा च नय(चैव)सङ्गमे~॥~३२२~॥
+
+ हर्षेऽथ\renewcommand{\thefootnote}{4}\footnote{च. च प्रार्थनायां च} प्रार्थने चैव शृङ्गाराद्भुतदर्शने~।\\
+ ध्रुवा प्रासादिकी कार्या तज्ज्ञैर्मध्यलयाश्रया~॥~३२३~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt स्थितेति}~। मध्या विलम्बिता च~॥~३१७~॥\\
+
+{\qtt एतेष्वेव तु भावेषु करुणेति}~। तदाश्रयेषु {\qtt भावेषु द्रुता ध्रुवा} कार्या~। केषु पात्रेष्वित्याह~। {\qtt करुणेति}~। करुणस्यावेदनं येषु स्वयमुत्पन्नकरुणस्यावेदनं येषु~। तेन शोकस्थायिभावपरिपोषकादिव्यभिचारिसंवलितेषु परिजनादिष्विति यावत्~। अत एवाह~। {\qtt भावसंश्रयेति}~। भावप्राप्तितस्तन्निकटप्राप्तिर्निमित्तं वा {\qtt द्रुता} ध्रुवेति~॥~३१८~॥\\
+
+तर्हि परदुःखे सर्वत्रैव ध्रुवा~। नेत्याह~। {\qtt यत्र प्रत्यक्षजं दुःखमिति}~। दुःखज्ञानम्~। कुत्रेत्याह~। मृतेति~। मृतस्यापमृत्युना अभिहतस्य आकस्मिकतीव्ररोगशोकादिना अभिघातस्य च दर्शनं यस्मिन् तत् प्रत्यक्षजं दुःखम्~। तत्र विलम्बिता कार्या~। करुणे त्विति~। परसंस्थे~॥~३१९~॥\\
+
+उत्पातो भूकम्पादिः~। विषादे वृत्ते सति~। (प्रहर्षे) झटिति यः प्रमोदस्तत्र~॥~३२०~॥\\
+
+द्रुताव्यापकं लक्षणमित्याह~। आवेगे सम्भ्रमे च द्रुतेति~॥~३२१~। \\
+
+प्रसादविषये याचने~॥~३२२ \textendash\ ३२३~॥
+
+\newpage
+% ३७० नाट्यशास्त्रे 
+
+\begin{quote}
+{\na शरीरव्यसने रोषे पुनः सन्धानकर्मणि~।\\
+सानुबन्धा\renewcommand{\thefootnote}{1}\footnote{य. बन्धे~। च. बन्धैः~।} बुधैः कार्या गीतज्ञैरन्तरा ध्रुवा~॥~३२४~॥
+
+अध्रुवास्तु प्रवेशाः स्युर्गायतो रुदतस्तथा~।\\
+सम्भ्रमे प्रेषणे चैव ह्युत्पाते विस्मये तथा~॥~३२५~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt सानुबन्धेति}~। अनुन्धः त्वरा तेन {\qtt सानुबन्धे}ति द्रुतलयेत्यर्थः~। क सा क्रियते~। आह~। शरीरस्य व्यसने रोषे प्रवृत्ते सति~। {\qtt यत्पुनः सन्धानकर्म} तस्मिन्~। एतदुक्तं भवति~। शरीरव्यसनवशाद् दो(रो)षवशाद्वा यदा नटे(टो) ऽपसर्पति तदा तत्स्थानेऽन्यस्य तद्भूमिका(यां) द्वितीयस्य योजनं त्वस्याः कर्तव्यम्~। तत्र {\qtt चान्तरा ध्रुवा} द्रुतेति~॥~३२४~॥\\
+
+अथ यत्र प्रावेशिकीशून्यं तदाह~।
+
+\begin{quote}
+{\qt अध्रुवास्तु प्रवेशाः स्युर्गायतो रुदतस्तथा~।\\
+ सम्भ्रमे प्रेषणे चैव ह्युत्पाते विस्मये तथा~॥}
+\end{quote}
+
+\noindent
+इह {\qtt प्रावेशिकी} नाम प्रवेक्ष्यतः पात्रस्य स्वरूपं सामाजिकमनसि संक्षेपेण समर्पयितुं गीयते~। तत्र गायता यदा प्रविशति तदा प्रावेशिक्यां गीयमानायां प्रकृतगानं रोदनं च व्यदीय (र्य)त~। सम्भ्रान्तस्य परेण त्वरया प्रेषितस्य तूत्पातविस्मयावावेदयितुमायात्स्य त्वरयैव प्रवेश उचित इति~।\\
+
+{\qtt अन्ये} त्वाहुः~। पूर्वविष्टस्य च प्राधानपात्रस्य देवीप्रायस्य {\qtt गायतो रुदतो} वा सम्बन्धी परिजनो यदा प्रविशति तदा ध्रुवाऽस्य प्रवेशे मा भून्मुख्योपरोधकत्व इति~। कार्यान्तरव्यग्रे च प्रधानपात्रे उत्पातविस्मयाद्यावेदनाय तन्निकटमुपसर्पतो मध्यमपात्रस्यापि स(अ) ध्रुवः प्रवेशः~। प्रधानपात्रस्याऽपि सम्भ्रमे सत्यध्रुव एव~। शङ्खचूडस्येव जीमूतवाहनभक्षणाकुलगरुडनिकटमुपसर्पतः (नागानन्दम् ५. १७)~। प्रेषणग्रहणं नैष्क्रामिकीविषयं प्रसङ्गात्तेन त्वरयता प्रतीहार्यादेः प्रेषितस्याध्रुवनिष्क्रामणम्~।\\
+
+अत्र तु प्रविष्टपात्रेण गायता रुदता वा सह यदा प्रविशतो झटिति नास्ति सम्बन्धस्तदा प्रकृतासु (सू) परमो मन्तव्यः~।\\
+
+{\qtt उपाध्याया}स्त्वाहुः~। {\qtt गायतो रुदत} इत्यनेन हर्षवीरक्रोधशोकविपत्स्वेव क्रमेण लक्ष्यते~। तेन च {\qtt सम्भ्रमो} विशेष्यते~। तेन क्रोधशोकहर्षाविष्टस्य सम्भ्रमे अध्रुवः प्रवेश इति~। तथा चाग्रे वक्ष्यति {\qtt अपटाक्षेपकृता चात्ययिकी}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३७१
+
+\begin{quote}
+{\na एवमर्थविधिं ज्ञात्वा देशकालमृतुं तथा~।\\
+ प्रकृतिं भावलिङ्गं तु ततो योज्या ध्रुवा बुधैः~॥~३२६~॥
+
+ शीर्षका चोद्धता चैव ह्यनुबन्धा(द्धा) विलम्बिता~। \\
+ अड्डीता चापकृष्टा च षट्प्रकारा ध्रुवा स्मृताः(ता)~॥~३२७~॥
+
+ शिरः स्थानीयमेतद्वि यस्मात् तस्मात्तु शीर्षि(र्ष)का~।\\
+ उद्धता तूद्धता यस्मात् तस्मात् ज्ञेया ध्रुवा बुधैः~॥~३२८~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+{\qtt हर्षरो(रा)गकार्येषु} (भ.ना.३२.४११)~। एतच्च स्वस्थान एव व्याख्यास्यते~। तच्च प्रकृतरसस्योपरोधिका ध्रुवा न प्रयोज्यैवं परमिति मन्तव्यम्~॥~३२५~॥\\
+
+अथ कविशिक्षार्थमाह~। {\qtt एवमर्थविधि}मिति~। {\qtt अर्थविध्यादिकं} ज्ञात्वा ध्रुवा बुधैः कविभिर्योज्या~। तत्रार्थविधिराक्षेपप्रसादनादिप्रयोजनप्रकारं हंसगजादिरित्यन्ये~। देशः सरोऽख्यादिः~। कालं रात्र्यादिकम्~। ऋतुर्वसन्तादिः~। {\qtt प्रकृतिरुत्तमादिः}~। भावो रत्यादिः लिङ्गमनुभाववर्गः~। येषां मध्ये यदेव प्रधानमन्ते वार्धं द्विंश्स्त्रिंबशः सामान्येव वा कविना ध्रुवायां व्यावर्णनीयमिति यावत्~॥~३२६~॥\\
+
+अथ प्रावेशिक्यादिषु पश्चस्वपि प्रत्येकं प्रकारषट्कं सम्भवतीति दर्शयितुमाह~। 
+
+\begin{quote}
+{\qt शीर्षका चोद्धता चैव ह्यनुबद्धा विलम्बिता~। \\
+ अड्डिता चापकृष्टा च~।} इति~।
+\end{quote}
+
+\noindent
+{\qtt विलम्बितेति}~। द्रुतविलम्बिता ध्रुवाणामनियताक्षरका~। सा गानप्रयोगमपनयन्ती काव्यस्वरूपं परिपूरयितुं प्रयुज्यते तत्पूरणं च प्रकृतिमुखेन वा रसभावचेष्टितमुखेन वा~। तत्रोत्तमप्रकृतिः प्राधान्येन प्रवर्तमाना हि {\qtt शीर्षका}~। उत्तमसमाश्रयो हि रसभावादिरनन्तपरिजनादिगतचित्तवृत्त्यन्तरजीवितकल्पः~। अतोऽस्य शिर इति व्यपदेशः~। विचित्रप्रकृतिचित्रवृत्तिकल्पत्वेन प्राधान्यात्~। चेष्टितप्राधान्येनोद्धतसङ्गतां समस्तविभावानुभवव्याभिचारिसम्पदं सूचयत्यनुबद्धा~। अधममध्यमनीचैरित्यादिस्थिता तु भिन्नां प्रकृतिचित्तवृत्तिं भिन्नं च तद्गतं चेष्टितं सूचयति {\qtt द्रुतविलम्बिता}~। सापेक्षभावरूपं संविद्विकाससुन्दरं रसमाश्रयत्यड्डिता~। तद्विपरीताऽपकृष्टेति प्रतिध्रुवं {\qtt षोढा} विभागः~॥~३२९~॥\\
+
+तस्माद्धेतोरेतत् संगतं {\qtt शिरःस्थानीयं} प्रधानं भवति~। तस्माच्छीर्षकेति सङ्गतिः~। {\qtt उद्धता तूद्धतेति} गमागमभ्रमणादिप्राधान्यात्~। अन्ये तु वीररौद्रविषयेयमित्याहुः~॥~३२८~॥
+
+\newpage
+%३७२ नाट्यशास्त्रे
+
+\begin{quote}
+{\na यतिं लयं वाद्यगतिं पदं वर्णान् स्वराक्षरम्~। \\
+ अनुबध्नाति यत्रैवमनुबद्धा भवेत्तु सा~।~३२९~॥ 
+
+ आक्री(पी)डितप्रवृत्तो यश्चतुर्थलयकारकः~। \\
+ नाट्योपचारजनितः सोऽनुबन्धः प्रकीर्तितः~॥~३३०~॥}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt यतिं लयं वाद्यगतिं पदं वर्णान् स्वराक्षरान् (रम्)~। \\
+ अनुबध्नाति यत्रैवमनुबद्धा भवेत्तु सा~॥}
+\end{quote}
+
+\noindent
+इति~। {\qtt यतिः} समाद्या~। {\qtt लयो} द्रुतादिः~। वाद्यगतिश्चतुर्विधातोद्यवैचित्र्यम्~। पदं वृत्तगो यत्यात्मा विराम:~। वर्णो वृत्तगत एव गुरुलघुभेदः~। स्वर्यते यथोचितं गीतक्रियायां विस्तार्यते यतः स्वरशब्देन वर्णाङ्गरूपा गीतिः~। अक्षरं गीयमानं पदम्~। अन्ये तु चश्चत्पुटादितालमक्षरमाहुः~। न क्षरति न साम्याच्च्यवते गीतवृत्तादिकं येनेति~। एतद्यत्याद्यक्षरान्तम्~। यस्यां ध्रुवायामेवमिति प्रयोगौचित्येन कविर्नाट्याचार्यो वर्णकविर्गाता नटो वा यत्रानुबध्नाति सा ध्रुवा अनुबद्धा~॥~३२९~॥\\
+
+{\qtt अनुबन्धनं} व्याचष्टे~।
+
+\begin{quote}
+{\qt आपीडितप्रवृत्तो यश्चतुर्थलयकारकः~। \\
+ नाट्योपचारजनितः सोऽनुबन्धः~॥}~इति~।
+\end{quote}
+ 
+अनुबन्धमापीडितमन्योन्यसंश्लिष्टं कृत्वा प्रकर्षेण प्रवर्तनं यत्यादीनामक्षरान्तानां यतो भवति तदा क्रियाविशेषोऽनुबन्धः~। स च कवेस्तथोचित्रुवार्थयोजनम्~। उचितश्च ध्रुवार्थः~। तत्र विभावादिपूर्णसंविद्रूपः~। तस्मिन् योजना पानकमिव रसं प्रसूते~। तद्योजनार्थश्च यत्यादेरक्षरान्तस्य व्यामिश्रीकरणात्मा वर्णकवे: क्रियाविशेषः~। गातुश्च तथैवाविकलो लयात्मा~। आचार्यस्य सम्यक् तदर्थयोजने किमपि तत्त्वान्तरमिव विद्यत आत्मा~। पात्रगतपात्रस्य तदा पात्राङ्गेन निर्वहणम्~। अत एव परस्परयतीनां योजने अन्येच (न) यतिवस्तु~। यतिलयानां च योजने द्रुतादिव्यतिरिक्त एव लयो भवेत्~। एवं पाकविद्यादीनामपि स्वतः परस्परतश्च योजने किमपि तत्त्वान्तरमिव विद्यत आत्मा~। पात्रगतपात्रस्य तदा पात्राङ्गेन निर्वहणम्~। अत एव च परस्परयतीनां गुडमरीचादिरसयोजनमयेऽपि पानक इव रसान्तरत्वम्~। तदाह चतुर्थेति~। चतुर्थलयो द्रुतादिभ्योऽन्यं करोति स्फुरयतीति~। लयग्रहणं प्राधान्यात्~। {\qtt लय एव हि} तालमित्युक्तमसकृत्~। लयेन सर्वं वैचित्र्यं लक्ष्यते~। अत एवायमनुबन्धो नाट्यव्यवहारेणैव जनितः~। सर्वथैवातिलौकिकत्वान्नाव्यस्य च रसस्योपचरणहेतुः~।
+
+\newpage
+% द्वात्रिंशोऽध्यायः \textendash\ ३७३
+
+\begin{quote}
+{\na नाट्ये त्वरितसञ्चारा नाट्यधर्ममनुव्रता~। \\
+ सविलम्बितसञ्चारा भवेद् द्रुतविलम्बिता~॥~३३१~॥
+
+ अड्डिता तूत्कटगुणा शृङ्गाररससम्भवा~।\\
+ यस्मात् सा न (स्थाने) प्रसन्ना च तस्मादेषाड्डिता स्मृता~॥~३३२~॥
+
+ अन्यभावेषु कृष्टश्च(ष्टा च)कृष्टहेतुषु\renewcommand{\thefootnote}{1}\footnote{च. हेतुर्हि } गीयते~।\\
+ यस्मात् कारुण्यसंयुक्ता ह्यवकृष्टा भवेत् ततः~॥~३३३~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+विभावादिसम्पत्तिजनितं {\qtt नाट्योपचारं} चनाट्यायितमुपचारादिसामान्याभिनयकथितम्~। {\qtt तैर्जनितो} लब्धसत्ताको नाट्यायितप्रयोजनबहुल इति~। ईदृक् कियाविशेषोऽनुबन्धनमित्युच्यते~। तद्योगाद् ध्रुवाऽनुबद्धेति~॥~३३०~॥\\
+
+एवमनुबद्धां व्याख्याय {\qtt द्रुतविलम्बितामाह~। नाट्ये त्वरितसञ्चारेति}~। त्वरितो द्रुतः सञ्चारो यस्या सह कि२२३म्बेम सञ्चारेण वर्तते प्रकृतिभेदात्~। अत एव नाट्यधर्मीकृत्य चित्रं रसादिवैचित्र्यं च अनु तदौचित्येन व्रतं नियमो विद्यते~। तस्येति मत्वर्थीयोऽच् (अष्टा. ५.२.२७) तेन कृत्प्रयोगान्ता वा द्वितीयैव~॥~३३१~।\\ 
+
+{\qtt अड्डिता तूत्कटगुणेति}~। उत्कटोऽतिस्फुटो गुणोऽनुभाववर्णः शृङ्गाररससम्बन्धी यस्यां व्यावर्ण्यति सा उत्कटगुणा~। अत् (त) (पा.धा.पा. ३८) अतिक्रमे~। अतिशयेन क्रमणमाक्रमणं व्यापारं च रसस्य (विभावादिभिः सञ्चितम् )~। उक्तं शरीरं व्याप्यते तेन (भ.ना. ७.७) इत्यत्र~। अन्तरे शृङ्गारग्रहणं सुखप्रधानं हास्याद्भुताद्युपलक्षणम्~। तेन हृदयस्थेन विवक्षारूढेन सम्भवो िर्माणं यस्या अस्याः~। अड्डितत्वे निर्वचनं स्फुटयति~। {\qtt यस्मात् स्थाने प्रसन्नेति}~। स्थानस्य चित्तवृत्त्यवस्थात्मनः प्रकृष्टं सन्नं व्यापनं यस्माद् भवतीति~॥~३३२~॥\\
+
+{\qtt अन्यभावेषु कृष्टा} चेति~। {\qtt कारुण्ये} सम्यगु(ग्यु)क्ता उचिता प्रकृष्टा यस्मात् कृष्टमुत्थानं कृत्वा गीयते~। किं करुण एवेत्याह~। अन्येषु च {\qtt कृष्टहेतुषु}~। कर्मणि चित्तवृत्त्यवसादरूपे मान्थर्यकारणेषु भावेषु विप्रलम्भभयानकादिषु व्यभिचारिभूतेषु निर्वेदग्लानिशमचिन्ताप्रभृतिषु~। चो भिन्नक्रमः~॥~३३३~॥ 
+
+\newpage
+% ३७४ नाट्यशास्त्रे
+
+\begin{quote}
+{\na या तु प्रावेशिकी दीप्ता सा कार्या तूद्धता नृणाम्~। \\
+ या तु प्रासादिकी नाम स्त्रीणां कार्याऽड्डिता तु सा~॥~३३४~॥
+
+ या स्थिता साऽवकृष्टा तु या द्रुता सा विलम्बिता~।\\
+ याऽन्तरा सानुबन्धा च प्रकारास्तु प्रवेशजाः~॥~३३५~॥
+
+ शीर्षका चोद्धता चैव देवपार्थिवयोर्भवेत्~।\\
+ दिव्यपार्थिववेश्यानां स्त्रीणां योज्या तथाड्डिता~॥~३३६~॥
+
+ मध्यमानां प्रवेशे तु ज्ञेया द्रुतविलम्बिता~। \\
+ नीचानां चैव कर्तव्ये नृणां ये खञ्जनर्कुटे~॥~३३७~॥ 
+
+ \renewcommand{\thefootnote}{1}\footnote{च. खञ्जकम्~।}खञ्जं च नर्कुटं चैव स्थाने प्रासादिकी तु सा\renewcommand{\thefootnote}{2}\footnote{च. तथा }~। \\
+ कस्माल्ललितभावत्वाद्धास्यशृङ्गारयोर्यतः~॥~३३८~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+अथ सम्भवानुसारेण विष(य) दिशमासां दर्शयति~। {\qtt या तु प्रावेशिकीत्यादि}~। प्रावेशिकीग्रहणमुपलक्षणार्थम्~। नृणामिति चेष्टाबाहुल्यसम्भवात्~। {\qtt अन्ये} तु नियमपरत्वं व्याचक्षते~। तच्चेद(दृ)ष्टाङ्गं लक्ष्यविरुद्धमित्युपेक्ष्यमेव~। परसंस्थत्वाशयेनायं ग्रन्थ इतीतरे~। {\qtt प्रासादिकी नामाड्डित्यु}(तो)पलक्षणम्~।३३४~॥\\
+
+{\qtt प्रकारास्तु प्रवेशजा} इति~। स्त्रीणाम(मि)इति वर्तत इति {\qtt केचित्~। या द्रुता} सा विलम्बिता याऽन्तरा सा स्त्रीणामनुबन्धेति~। अन्ये तु नियमपरत्वं व्याचक्षते~। अवकृष्टेत्येतच्च शीर्षका चोद्धता चैव देवपार्थिवयोरित्युत्तरग्रन्थेन योजयन्ति~। वक्ष्यते इत्यध्याहार्यः(म्)~॥~३३५~॥\\
+
+{\qtt दिव्यपार्थिववेश्यानामिति}~। अप्सरसां गणिकानां च~। स्त्रीणामिति~। कुलाङ्गनानामपि~॥~३३६~॥\\
+
+{\qtt मध्यमानां नीचानां च सम्प्रवेशे द्रुतविलम्बिता}~। तस्यां च खञ्जनर्कुटे कृते कार्यं इति सङ्गतिः~। तुरप्यर्थे~॥~३३७~॥\\
+
+{\qtt प्रासादिक्यपि स्थानेऽवसरे} खञ्जनर्कुटरूपा~। {\qtt अवसरमाह}~। हास्यशृङ्गारयोरिति~। अत्र हेतुर्ललितभावत्वादिति~। तौ रसौ सुन्दरस्थायिभावौ~। खञ्जनर्कुटे च ललितभावे~। लालितभावे लालित्यं भावयतः श्रव्ये इति~॥~३३८~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः \/ \textendash\ ३७५
+
+\begin{quote}
+{\na कुर्यान्नीचे मृते चैव त्वनुबन्धं\renewcommand{\thefootnote}{1}\footnote{च. बन्ध} लयाश्रयम्~। \\
+ स्त्रीणां राजन्यवैश्यानामब(प)कृष्टां तथैव च~॥~३३९~॥
+
+ सन्निपातास्तु चत्वारः प्रावेशिक्या भवन्ति हि~।\\
+ शेषा हि सन्निपातास्तु शीर्षि(र्ष)काः षट्पराः स्थिताः~॥~३४०~॥
+
+ स्थितं चाप्यड्डितं चैव नीचानां न हि कारयेत्~।\\
+ सर्वभावाश्रयगतैस्तेषां कायं तु नाटकम्~॥~३४१~॥ 
+
+ त्रयो भावा भवन्त्येषां हासशोकभयात्मकाः\renewcommand{\thefootnote}{2}\footnote{च. भयानकाः}~।\\
+ एवं भावान् विदित्वा तु ध्रुवा कार्या प्रयोक्तृभिः~॥~३४२~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt मृते} कस्मिंश्चिन्नीचपात्रविषयः~। तथा स्त्रीणामनुबन्धं लयाश्रयम्~। चतुर्थलयकारकं कुर्यात्~। नीच एव हि करुणे बहुविधेति दर्शितम्~। 
+
+\begin{quote}
+{\qt स्थैर्येणोत्तममध्यानां नीचानां परिदेवितैः~। }
+\end{quote}
+
+\begin{center}
+ (भ.ना. ७.६३) 
+\end{center}
+
+\noindent
+इति~। {\qtt राजन्यवैश्यानामिति}~। उत्तममध्यमानामपि अपकृष्टा करुणे~॥~३३९~।\\
+
+मानमाह~। {\qtt चत्वारः सन्निपाताः प्रावेशिक्या} इति~। चत्वारस्तालपरिवर्तना इति यावत्~। शेषा नैष्क्रामिक्यादेः सन्निपाताः~। अत्रैवमपवादमाह~। शीर्षका षट्पदे(रा इ)इति~। द्वौ परिवर्तौ~। तत्रावरता षट्परता~॥~३४०~॥\\
+
+अथ मन्थरभावावसरे प्राप्तमपि स्थिताड्डितयोः प्राप्तमभिदध्यात्(धत्) पूर्वोक्तं स्मारयति~।
+
+\begin{quote}
+{\qt स्थितं चाप्यड्डितं चैव नीचानां न हि कारयेत्~।}
+\end{quote}
+
+\noindent
+इति~। नाट्यो(ट्या)चार्योऽत्र प्रयोजकः~। तेषां तु यन्नटनं प्रयोगसम्पादनं तदाश्रिता(त)विषयत्वेनोचितैः खञ्जनर्कुटैः कार्यः(र्यम्)~। कीदृशैः सर्वे भावा येषां व्यङ्ग्यत्वेन तैः~। उद्धतप्रयोगे तैरेव द्रुतलयैर्ध्रुवाप्रयोगे तैरेव विलम्बिते(तैरि)त्यर्थः~॥~३४१~॥\\
+
+तत्र किम्भावरूपैरेषां प्रधानपदाश्रयेण भूयसा मानमित्याह~। त्रयो भावा इति~। हास्यशोकभया ओजरपप्राचुर्येणेत्यर्थः~॥~३४२~॥ 
+
+\newpage
+% ३७६ नाट्यशास्त्रे
+
+\begin{quote}
+{\na वस्तु प्रयोगं प्रकृतिं\renewcommand{\thefootnote}{1}\footnote{च. प्रकृतं} रसभावानृ(वृ)तुं वयः\renewcommand{\thefootnote}{2}\footnote{च. भावश्रितं च यत्~।}~।\\
+ देशं कालमवस्थां तु ज्ञात्वा योज्या ध्रुवा बुधैः~॥~३४३~॥
+
+ \renewcommand{\thefootnote}{3}\footnote{ब. वस्तुदेश~। ड. समर्थं तु~।}वस्तूद्देशसमुत्थं तु पुन(नाग)रारण्यसम्भवम्~।\\
+ प्रयोगश्चैष विज्ञेयो दिव्यमानुषसंश्रयः~॥~३४४~॥
+ 
+ उत्तमाधममध्या तु त्रिविधा प्रकृतिर्मता~। \\
+ रसभावौ तु पूर्वोक्तावृतुः कालकृतस्तथा~॥~३४५~॥
+
+ \renewcommand{\thefootnote}{4}\footnote{ब. बाल्य}शिशुयौवनवृद्धत्वं वयश्चैव प्रकीर्तितम्~।\\
+ \renewcommand{\thefootnote}{5}\footnote{ब. कक्ष्यादिभा\textendash }कक्ष्यादिग्भागजनितो देशस्तु द्विविधो मतः~॥~३४६~॥
+
+ कालो रात्रिन्दिवकृतो \renewcommand{\thefootnote}{6}\footnote{ब. रात्रिर्दिनकृतो}यामकालविनिर्मितः\renewcommand{\thefootnote}{7}\footnote{ड. मासपक्षविनिर्मितः ब. यामभाग}~।\\
+ अवस्था चैव (या तु) विज्ञेया सुखदुःखार्थसम्भवा\renewcommand{\thefootnote}{8}\footnote{र. समुद्भवा}~॥~३४७~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+पूर्वमुक्तं लक्षयितुं पूर्णं चाभिधातुं स्मारयति~। {\qtt वस्तु प्रयोगमित्यादि}~।~३४३~।\\
+
+एतत् क्रमेण लक्षयति वस्तूद्वेशसमुत्थमित्यादिना अवस्था या तु {\qtt विज्ञेया सुखदुःखार्थसम्भवा} इत्यन्तेन~। उद्देशसमुत्थं यदुद्विश्य गानकार्यस्य समुचितमुत्थानं प्रसरणम्~। नागरः कीरहंसादिः~। आरण्यो हिंस्रादिः~। प्रयोगो दिव्यमानुषाश्रय इत्येकशेषेण~। तं वेति दिव्यमानुषाद्या तृतीयाऽपि स्वीकृता~। तभ्देदेन गजादेर्भेदः~। काव्ये तद्यथा~। दिव्ये सुरगजे इत्यादि~।~॥~३४४~॥\\
+
+{\qtt उत्तमादिका प्रकृतिः}~। तद्भेदाद् रथाङ्गचक्रवाकमधुकरादिवर्णनम्~। {\qtt रसभावौ तु पूर्वोक्ताविति}~। रसाध्यायोक्तौ (भ.ना. ६)~। जातिवाचिनोरेकवचनं तयोरद्व(योर्द्व)न्द्वः~। कालकृतः कालवशात् कुसुमादिविशेषोद्भेदरूप ऋतुरित्यर्थः~॥~३४५~॥\\
+
+वयः शिशुयौवनवृद्धत्वमिति~। शिशुशब्देन निःशेषे समाहारे द्वन्द्वः~। कक्ष्याविभागेन जनितः कल्पितः~। पर्वते चाग्रहादतिदेशः~। दिग्भागजनितः पूर्वोत्तराविति {\qtt द्विविधो देशः}~॥~३४६~॥\\
+
+{\qtt रात्रिःदि(त्रिन्दि)ना(चैव)कृत} इति~। सामान्यविषयः कालः~। यामकालकृतस्त्वहरष्टधा विभज्य रात्रिमष्टधेत्यनेन~। येन राजादिविशेषविषया सुखदुःखादर्थ(खार्थ)नारूपा चार्थिता~। चैव(त)त्सम्भवोऽस्या इति त्रिधाऽवस्था सुखित्वं दुःखित्वमर्थित्वं चेति यावत्~॥~३४७~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३७७ 
+
+\begin{quote}
+{\na स्थानान्येतानि तु बुधैर्नानावस्थानि नित्यशः~।\\
+ प्रयोगे सम्प्रयोज्यानि रसभावौ समीक्ष्य तु~॥~३४८~॥
+
+ यानि वाक्यैस्तु न \renewcommand{\thefootnote}{1}\footnote{ब. ब्रूयात्}ब्रूयास्ता(त्ता)नि गीतैरुपा(दा)हरेत्\renewcommand{\thefootnote}{2}\footnote{ब. उदाहरेत्}~।\\
+ न तैरेव तु वाक्या(काव्या)र्थैरन्यैः प्रवकेवला(न्यैरौपम्यसं)श्रयैः\renewcommand{\thefootnote}{3}\footnote{ब प्रोक्ता तथाश्रयैः}~॥~३४९~॥
+
+ ध्रुवाणामाश्रयाः कार्या औपम्यगुणसम्भवाः~।\\
+ उत्तमाधममध्यानां नृणां स्त्रीणामथापि च~॥~३५०~॥
+
+ \renewcommand{\thefootnote}{4}\footnote{ब. चन्द्राग्निसूर्य\textendash }आदित्यसोमपवना देवपार्थिवयोर्मताः~।\\
+ दैत्यानां राक्षसानां च मेघपर्वतसागराः~॥~३५१~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+एतदुपसंहरन्नेव योजयति~। {\qtt स्थानानीति~। स्थानानीति} त्वनिमित्तानीत्यर्थः~। नानावस्थानीत्यपरिसंख्येयावान्तरभेदानीति यावत्~। यस्त्वादिमध्ये च रसभावौ प्रधानमित्याह~। रसभावौ समीक्ष्य त्विति~। तुरन्येभ्योऽनयोर्विशेषकः~। न केवलं गीतिभावोऽत्र रुञ्जनोपयोगित्वात् प्रधानं यावत् कार्यभावोऽविकृतरसगतस्य वाच्येनास्पष्टस्यानुभावस्य व्यभिचायदिः पूरणमिति दर्शयति~॥~३४८~॥
+
+\begin{quote}
+{\qt यानि वाक्यैस्तु न ब्रूयात्तानि गीतैरुदाहरेत्~।}
+\end{quote}
+
+\noindent
+इति~। यस्त्व शक्यो वर्णयितुमित्यर्थः~। काव्यवाक्यैर्वर्णयितुं कुतश्चिन्निमित्तवशान्न शक्यन्ते ते गीतवाक्यैरुदारर्तुं कथयितुं शक्याः~। तर्हि नाटककाव्यवद् गीतकाव्ये सन्धितदङ्गनिर्वहणादिप्रयाससम्भवः~।(न) {\qtt तैरेवेइति}~। राजादिवर्णनया न तानि गानेऽपि तत्सदृशरसादिवर्णने 
+
+\begin{quote}
+{\qt न तैरेव तु काव्यार्थैरन्यैरौपम्यसंश्रयैः~। }
+\end{quote}
+
+\noindent
+इत्युक्तम्~॥~३४९~॥\\
+
+तत्र कस्य केनौपम्यमिति प्रस्तावयितुमाह~। {\qtt ध्रुवाणामाश्रया} इति~। वर्णनीयाः~। वौ(औ){\qtt पम्यं} सादृश्यं तदेव गुणः~। प्रकृतोपयोगसम्भवप्राप्तिरौचित्यं येषामित्यर्थः~॥~३५०~॥\\
+
+कस्य किमुचितमिति दर्शयति~। {\qtt आदित्यसोमपवना} इत्यादि~। अत्रापि प्रतापाहलादकत्वशैध्र्याद्यवस्थान्तरं राजादेरन्वेष्यम्~। एवं सर्वत्र~॥~३५१~॥
+
+\newpage
+% ३७८ \ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na सिद्धगन्धर्वयक्षाणां \renewcommand{\thefootnote}{1}\footnote{ब. ग्रहर्द}ग्रहोडुवृषभा मताः~।\\
+ तपःस्थितानां सर्वेषां सूर्याग्निपवना मताः~॥~३५२~॥
+
+ हव्यवाहस्तु विप्राणां ये चान्ये तपसि स्थिताः~।\\
+ \renewcommand{\thefootnote}{2}\footnote{ब. एतेषां चैव भार्याणाम्}एतेषामेव या नार्यस्तासामौपम्यसंश्रयाः~॥~३५३~॥
+
+ विद्यादुल्कार्करश्म्याद्या\renewcommand{\thefootnote}{3}\footnote{ब. रश्मिश्च दिव्यानां} (दिव्या )नामपि च स्मृताः~।\\
+ देवानां तु प्रयोज्या ये नृपाणामपि ते स्मृताः~॥~३५४~॥
+
+ नागर्सिहवृषार्थाश्च\renewcommand{\thefootnote}{4}\footnote{ब. वृषाश्चान्ये~।} नैते दिव्येषु कीर्तिताः~।\\
+ महिषारुरुरसिंहाश्च\renewcommand{\thefootnote}{5}\footnote{ड. शलभासिंह~। ब. रुरुशार्दूल} क्रव्यादाः पशवश्च ये~।~३५५~॥
+
+ \renewcommand{\thefootnote}{6}\footnote{ब. सिंह}हिस्रसत्त्वेषु ते कार्या यक्षराक्षसजातिषु\renewcommand{\thefootnote}{7}\footnote{ब. भूतजाः}~।\\
+ उत्तमानां प्रयोक्तव्या नानारससमाश्रयाः~॥~३५६~॥
+
+ मत्तमातङ्गसहिता राजहंसाश्च योक्तृभिः~।\\
+ शिखिनः सारसाः क्रौञ्चाश्चक्राह्वाः कुमुदाकराः~।\\
+ मध्यमानां प्रयोक्तव्या\renewcommand{\thefootnote}{8}\footnote{ब. प्रकीर्तन्या} औपम्यगुणसंश्रयाः~॥~३५७~॥
+
+ कोकिलं षट्पदं ध्वाङ्क्षं कुररं कौशिकं \renewcommand{\thefootnote}{9}\footnote{ब. शारिकाम्~।}बकम्~।\\
+ पारावतं \renewcommand{\thefootnote}{10}\footnote{ब. कारण्डं~। र. कारण्डमवलोकश्च}सकादम्बमधमेषु प्रयोजयेत्~॥~३५८~॥
+
+ एवमेषां प्रयो(यु)क्तानां स्त्रियो यास्तु भवन्ति हि~।\\
+ उत्तमाधममध्यानां तासां चैव निबोधत\renewcommand{\thefootnote}{11}\footnote{ब. दुर्बला ये तु भवति प्रवक्ता चैव तथैव हि~। इत्यथिकः पाठः~।}~॥~३५९~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt ग्रहा} जीवादयः~। उडुवृषभास्तिष्यादयः काला इति सम्यगाहुः~॥~३५४~॥\\
+
+{\qtt ये चान्य} इति~। क्षत्रियाद्याः~॥~३५३~॥\\
+
+{\qtt रश्मिः} प्रकृतेः स्रीलिङ्गतात्पर्यापवादिदीधितिमरीचिप्रभाद्या अचेतनाः~। अधमा विषयास्ते सहकाराद्या अपि~॥~३५४ \textendash\ ३५५~॥\\
+
+{\qtt हिंस्रसत्त्वेष्बिति}~। द्दिसाप्राधान्ये विवक्षिते क्रव्यादः(दाः)~। अत एव {\qtt राक्षसेषु}~॥~३५६~॥
+
+\newpage
+% द्वात्रंशोऽध्यायः ३७९
+
+\begin{quote}
+{\na शर्वरी च सुधा ज्योत्स्ना नलिनी करिणी नदी~।\\
+ नृपस्त्रीणां भवन्त्येता औपम्यगुणसंश्रयाः~॥~३६०~॥
+
+ दीर्धिका कुररी वल्ली सारसी शिखिनी मृगी~।\\
+ मध्यमानां भवन्त्येता वेश्यास्त्रीणां\renewcommand{\thefootnote}{1}\footnote{ड. वेश्यादीनां} च नित्यशः~॥~३६१~॥
+
+ षट्पदीं कुररीं ध्वाङ्क्षीं परपुष्टां च योजयेत्~।\\
+ \renewcommand{\thefootnote}{2}\footnote{ड. अधमानां}अधमाः स्युर्ध्रुवा ह्येताः प्रयोक्तव्याः प्रयोक्तृभिः~॥~३६२~॥
+
+ \renewcommand{\thefootnote}{3}\footnote{र. गत्यामगमजा कार्या चलपादा~। ड. गत्यापगम\ldots चापलाये~।}गत्यर्थोपमिता याश्च चलनार्था भवन्ति हि~।\\
+ प्रावेशिक्या बुधैरेव नैष्क्रामिक्यास्तथैव च~॥~३६३~॥
+
+ प्रावेशिक्याश्रया यास्तु\renewcommand{\thefootnote}{4}\footnote{ब. आश्रये ये तु} पूर्वाह्णार्धे तु\renewcommand{\thefootnote}{5}\footnote{ब. अर्धास्तु} ताः स्मृताः~।\\
+ नक्तन्दिव\renewcommand{\thefootnote}{6}\footnote{ब. दिन}समुत्थास्तु नैष्क्रामिक्याः \renewcommand{\thefootnote}{7}\footnote{ब. स्तु}स्वकालजाः~॥~३६४~॥
+
+ सौम्याः पूर्वाह्णकाले तु मध्याह्ने दीप्तिसंश्रयाः~।\\
+ अपराह्णे तथा मध्याः [ सशोकाश्च] सन्ध्यायां करुणाश्रयाः~।\\
+ \renewcommand{\thefootnote}{8}\footnote{ब. गमना}चलनार्था हि ये प्रोक्ता \renewcommand{\thefootnote}{9}\footnote{ब. प्रावेशिक्या}आक्षेपिक्या भवन्त्यपि\renewcommand{\thefootnote}{10}\footnote{इतः परं ब. पुस्तके स्थावराणां च ये प्रोक्ताः स्थावराश्चार्थयोगतः इत्याधिकः पाठः}~॥~३६५~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+({\qtt कुमुदाकराः}) समुद्राः (?)~। तदभावविषया उक्ताः~॥~३५९ \textendash\ ३६४~॥\\
+
+{\qtt गत्यर्थोपमिता} इत्यादिना क्रियात्विति(विषय)त्वं प्रावेशिक्यादिविषयमाह~। {\qtt गत्यर्थस्तूपमितं} सामाजिकहृदयसमीपे प्रक्षेपो यैश्चलनार्थैर्धातुभिस्तेऽत्रापि प्रवेशे~। दर्शनीयमिति~। {\qtt तथैव चेति}~। प्रदर्शनप्रवेशादिप्रकारेणैवेत्यर्थः~। कामिभिर्दर्शयितुमात्मानं गूहयितुमित्यादिभेद इत्यर्थः~॥~३६३~॥\\
+
+भूयस्त्वाभिप्रायेण कालौचित्यमाह~। {\qtt प्रावेशिक्याश्रया यास्तु(पू)रा(र्वा)ह्णा (र्ध)}इत्यादि~। तत्काले कार्याभ्युत्थानस्य भूयसा दर्शनात्~। तदाह~। नक्तन्दिवेति~। तुर्यद्यपीत्यर्थे~। प्रावेशिक्यामर्थत्वेनाश्रीयमाणायां कार्यविशेषा यद्यपि रात्रौ दिने च समुत्तिष्ठन्ति~। तथाहि(पि) भूयस्त्वाश्रयेणेदमुक्तम्~। एतदुक्तं भवति~। प्रकृतं कायं यत्र काले भवत्युपमानं तु पूर्वाह्णेयोज्यम्~। एवमौचित्यात् प्रवेशः स्फुटं सूचयतीत्यर्थः~॥~३६४~॥\\
+
+एवं {\qtt सौम्या पूर्वाह्णे दीप्तिर्मध्याह्ने} शोकाद्यपराह्णे वर्णनीयमित्याह~।
+
+\newpage
+% ३८० \ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na आक्षेपा एवमेव स्युर्द्रुतस्थितगता\renewcommand{\thefootnote}{1}\footnote{ड. कृता}स्तथा~।\\
+ रोषामर्षादिसम्पूर्णाः\renewcommand{\thefootnote}{2}\footnote{ब. र्षसमुद्भृताः}(म्भूताः) शोकाभ्दुतभयानकाः~॥~३६६~॥
+
+ यद् द्रव्यं वसुधासंस्थमृते दैवतमानुषान्\renewcommand{\thefootnote}{3}\footnote{ड. गुरुदैवतमानुषैः}~।\\
+ तत्सर्वमुपनेयं\renewcommand{\thefootnote}{4}\footnote{ब. उपमेयं तु गाने} तु गानयुक्त्योपमाश्रयम्~॥~३६७~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+{\qtt अन्ये} सौम्यं वस्तु पूर्वाह्णकाले प्रयोज्यमिति प्रयोगकालनियमोऽयमिति मन्यन्ते~। अन्ये तु बन्दिमागधादीनां सौम्या(म्य)दीप्तादिवस्तुविषय(: स्तुत्यादिते(:)कालनियमोऽयमिति~। प्रतिपन्ना जलक्रीडाऽक्षक्रीडादयोऽर्था {\qtt आक्षेपिक्याः}~॥~३६५~॥\\
+
+अत्र हेतुः~। {\qtt आक्षेपा एवमेव} स्युरिति~। एवमेव लयभिन्ना अ(इ)त्याक्षेपाः~। सामञ्जस्ये द(त्विय)मुद्धता क्रिया~। {\qtt एवमेवेति}~। चलनादिरूपकतयैव भवतीति सम्भाव्यते~। कुतस्त इत्यादिविशेषा भवन्तीत्याह~।
+
+\begin{quote}
+{\qt रोषामर्षादिसम्भूताः शोकाद्भुतभयानकाः~।}
+\end{quote}
+
+\noindent
+इति~। पु(ल्लिङ्ग) \ldots त्वान् मत्वर्थीयोऽच् (अष्टा. ५.२.२७)शोकः पुत्रशोकादयः कारणत्वेन येषां सन्ति~। अत एव शोककृताक्षेपमध्ये विलम्बितलयस्य सम्भवः~॥~३६६~॥\\
+
+यदुक्तमस्माभिरादित्यसोमेति (भ.ना. ३२. ३५३)~। एवं स्थितिरि (ते इ) त्यादि (भ.ना. ३२.३७४)दिकप्रदर्शनमिति~। तदर्थमाहं~। {\qtt यद् द्रव्यं वसुधासंस्थ}मृते दैवतमानुषांश्च (षान्~। तांश्च) वर्जयित्वा~। आदित्यादयस्तु परिदृश्यमानस्वभावा एवोपमानत्व उचिताः~। मनस्त्वधिष्ठातृदेवतास्वरूपं दैवतम्~। तद्वर्ज्यम्~।\\
+
+ननु किमतो नियमाद् दृष्टं भवतीत्याशङ्क्य हेतुमाह~। {\qtt तत्सर्वमुपनेयं} त्विति~। तुर्हेतौ~। यस्माद् गजेन्द्रपवनादीनां विशिष्टे प्रवेशादिके श्रूयमाणे स्वयमनधिकारिशरीरत्वादव्यग्रत्वाच्च न तावन्मात्र एव वाक्यार्थे सामाजिकस्य प्रतीतिर्विश्राम्यति~। अपि तु प्रस्तुतप्रशंसिन्यायेनाधिकारिणि प्रकृते चित्तवृत्तिर्धावति~। अतश्च तद्वस्तूपनेतुं प्रकृतार्थं प्रति सङ्गमयितुंशक्यं भवति~। किञ्च नाट्योत्पत्तौ रसाध्याये (भ.ना.६) प्रतीतिविश्रान्ता आहार्यदे(रधिकं) न प्रयोज्यत्वमपितु चित्तवृत्ति(त्ते)रिति वितत्य दर्शितम्~। तत्राधिकारशरीरव्यतिरिक्तस्याद्यस्य पुस्तचित्रालेख्यप्रख्यस्य चित्तवृत्तिं प्रति ग्रासीकारयोग्यत्वादुत्तानतया भासमानाऽसौ सर्वत्र विशेषेणोपनेतु शक्या यदुपनयाद्रसास्वादः~। यथोक्तं भट्टतोतेन~। 
+
+\begin{quote}
+{\qt संविशिष्टेन केनाऽपि ग्रासीकारादपह्नुतिः~।\\
+ प्रकाशतेऽत उत्ताना सर्वस्यास्वादनिर्भरम्~॥}~इति~।
+\end{quote}
+
+\newpage
+% द्वात्रिंशोऽध्याय \ ३८१ 
+
+\begin{quote}
+{\na \renewcommand{\thefootnote}{1}\footnote{र. स्थिरेषु स्थावरां~।}स्थावरैः स्थावरं कुर्याद्गत्यर्थैश्चपलाश्रयम्\renewcommand{\thefootnote}{2}\footnote{ड. गत्यर्थेषु चलं तथा~।}~।\\
+ सुखदुःखकृतैर्भावैरौपम्यगुणसंश्रयात्\renewcommand{\thefootnote}{3}\footnote{ब. कृता भावा\ldots संश्रयाः~।}~॥~३६८~॥
+
+ भूमिस्थ\renewcommand{\thefootnote}{4}\footnote{य. रथ~।}वाजिकुञ्जरमृगपशु\renewcommand{\thefootnote}{5}\footnote{य. पशुपक्षि~।}शिबिकाविमानानाम्\renewcommand{\thefootnote}{6}\footnote{ब.विमानयानेषु~।}~।\\
+ गतिविभ्रमं हि दृष्ट्वा कर्तव्या तु ध्रुवा तज्ज्ञैः~॥~३६९~॥
+
+ \renewcommand{\thefootnote}{7}\footnote{ब. रथसिद्धयक्षशिबिकान्तरिक्ष~। ड. रथसिद्धपक्षिवानरविमानशिबिकान्तरिक्षः~।}रथपत्रवाजिवारणविमानशिबिकास्थपक्षियानेषु~।\\
+ द्रुतपदवर्णावर्णैः\renewcommand{\thefootnote}{8}\footnote{ब. वर्णविशेषाः~।} कर्तव्या तु ध्रुवा तज्ज्ञैः~॥~३७०~॥
+
+ ओजस्कृता तु सा वै गुरुवर्णा वृषगजेन्द्रसिंहेषु\renewcommand{\thefootnote}{9}\footnote{ड. सिंह्यर्क्षाः~।}~।\\
+ सारसवानरहंसे \renewcommand{\thefootnote}{10}\footnote{ब. हंसैर्विमना मयूरैः~। ड. हंसैर्विना मयूरैः~।}तथा मयूरे विधातव्या~॥~३७१~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+{\qtt इन्द्रादेरर्जुनादेश्च} गानकाव्यार्थनेतुः स्वयमेवाधिकारित्वात्तावन्मात्रविश्रान्तिसम्भावान्नोपमेयत्वमिति~। गानयुक्त [काव्यगी]तिनाटकगानोभयकाव्यार्थोचितस्य गीतिविशेषस्याभियोजना तु संवित्साधारणी भवति~। गीतेश्चित्तवृत्तिमात्रद्योतका [कृत्वा]दिति~॥~३६७~॥\\
+
+अत्रापि शिक्षान्तरमाह~। {\qtt स्थावरैः स्थावर}मिति~। एकोऽर्थशब्दोऽपरो रूढिशब्दस्तेनावस्थानशीले सहकाराद्युपमानं भवति~। {\qtt सहकारतरुः} शोभत इति~। न धावतीति~। तत्र तेषु स्थानेष्ववश्य(श्यं)स्थायिनी गतिः~॥~३६८~॥\\
+
+सा च विभज्य वर्णनीया~। उपमानं च तत्रोचितमाश्रयणीयं सत्कविभिरिति दर्शयति~। भू(मि)स्थेत्यादि~। भू(मि)स्थः पादचारी~। {\qtt गतिविभ्रमो} गतिवैचित्र्यम्~।३६९~॥\\
+
+तदुदाहरति {\qtt रथपत्रेति}~। पत्रं युग्यादि~। पक्षिभिर्गरुडाद्यैर्यानं येषाम्~। रथादिशिबिकाश्च (स्थाः) पक्षियान (ना)श्चेति द्वन्द्वः~। काव्ये पद(दं)द्रुत(तं)लघुवर्णम्~। वर्णो गीतिः~। साऽपि द्रुतवर्णा इति~। स्फुटवर्णपर्युदासेन तत्सदृशा अवर्णा पौष्करा वर्णानुहाराः तेऽपि द्रुता लघुबहुलाः~। द्रुतैः {\qtt पदवर्णावर्णै}रुपलक्षिताः~। द्रुतेति सम्बन्धः~॥~३७०~॥\\
+
+{\qtt आजस्कृतेति}~। दीप्तार्था तेभ्यः~। {\qtt गुरुवर्णेति}~। वर्णशब्दोऽत्राग्रे वर्णयेदि (र्ण्येते) इति तालाक्षरेषु~। सेति ध्रुवा~॥~३७१~॥
+
+\newpage
+% ३८२ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na द्रुतगमने लघुवर्णा विलम्बितगतौ च दीर्घवर्णकृता~। \\
+ एवंस्थितद्रुतानां ज्ञात्वा भावं ध्रुवा\renewcommand{\thefootnote}{1}\footnote{ब. द्रुता}कार्या~॥~३७२~॥
+
+ नास्ति किंञ्चिद् वृत्तं तु \renewcommand{\thefootnote}{2}\footnote{ब. पादं गानकृत्ता}पदं गानसमाश्रयम्~।\\
+ \renewcommand{\thefootnote}{3}\footnote{ब. तस्माद्गान}तस्माद्गीतिमभिप्रेक्ष्य तद्वृत्तं(त्तां)योजयेद् ध्रुवाम्~।३७३~॥
+
+ तस्माद्वाहनगत्यर्थैर्ध्रुवा कार्याक्षैरैस्तथा~।\\
+ अङ्गानां समता यत्र \renewcommand{\thefootnote}{4}\footnote{ब. ताण्ड}भाण्डवाद्ये करिष्यति~॥~३७४~॥
+
+ यद्वृत्तौ (त्तो)वाहनगतौ ध्रुवापादो विधीयते~।\\
+ तद्वृत्तं तु \renewcommand{\thefootnote}{5}\footnote{य. भवेच्चाद्य}भवेद्वाद्यमङ्गवाद्यसमं तथा~॥~३७५~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+एतदेव व्याप्त्या दर्शयति~। 
+
+\begin{quote}
+{\qt द्रुतगमने लघुवर्णा विलम्बितगतौ च दीर्घवर्णकृता~। इति~॥~३७२~॥}
+\end{quote}
+
+यस्मादविद्यमानं गुरुलघुवर्तनं यत्र पदे सादृश्यस्य नास्ति {\qtt तस्माद्} गानस्य गीतिस्थानगतस्योद्धतमसृणादेराश्रयणाद्या गीतिर्वर्णाङ्गरूपा विलम्बिताद्यौचित्येनायाति तां विचार्य तद्वत्यां तदुचितगुरुलघुनियमां ध्रुवां वृत्तमिति योजयेद् गीतावसानतया सम्बन्धयेदिति~॥~३७३~॥\\
+
+ त्रितयसाम्यमेव स्फुटयति~। \\
+
+\begin{quote}
+{\qt तस्माद्वाहनगत्यर्थैर्ध्रुवा कार्याक्षरैस्तथा~। \\
+ अङ्गानां समता यत्र बा(भा)ण्डवाद्ये करिष्यति~॥}
+\end{quote}
+
+पुष्करवाद्याक्षैैः सेति~। {\qtt अङ्गानां} वर्णानां गानमेककादीनां श्येनविन्द्वाद्यलङ्काराणां च {\qtt समतामुचितल}यत्वं करिष्यतीति चिकीर्षितम्~। {\qtt तस्मादिति}~। भाण्डवाद्यं हृदयेनावलम्ब्य वाहनगत्यर्थैरक्षरैः पदैरुपलक्षिता ध्रुवा~। तथेति~। तत्प्रकारैरेव {\qtt कार्येति} सम्बन्धः~।\\
+
+एतदुक्तं भवति~। इदमत्र वाहनगत्यादि वर्णनीयम्~। ईदृशेनात्र वर्णाङ्गेनभाव्यम्~। तत्र चेदृशेन भाण्डवाद्येन तत्र चेदमुचितं ध्रुवावृत्तमिति पर्यालोचनम्~। कवि ( ता )ध्रुवाङ्गमत्र पदत्रयस्य साङ्गोपाङ्गमुत्तर (क्तं) श्रवणादिति केचित्~॥~३७४ \textendash\ ३७५~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३८३ 
+
+\begin{quote}
+{\na पूर्वं गानं ततो वाद्यं ततो नृत्तं प्रयोजयेत्~।\\
+ गीतवाद्याङ्गसंयोगः प्रयोग इति संज्ञितः~॥~३७६~॥
+ 
+ हृदयस्थस्तु यो भावः \renewcommand{\thefootnote}{1}\footnote{ब. सोऽङ्गाद्यभिनयैः}सोऽङ्गाभिनयनैरथ~।\\
+ निवृत्त्यङ्कुरसूचात्तु(सु) कार्यस्त्वभिनयान्वितः\renewcommand{\thefootnote}{2}\footnote{र. सूचाभिरभिनेया ध्रुवास्त्वथ}~।\\
+ तत्र प्रासादिकी योज्या \renewcommand{\thefootnote}{3}\footnote{ड. प्रकर्ष}प्रहर्षार्थगुणोद्भवा~॥~३७७~॥
+
+ आकाशपुरुषो\renewcommand{\thefootnote}{4}\footnote{ड. पुरुषा} यत्र यत्र चाकाशभाषणम्~।\\
+ अन्वर्था तत्र कर्तव्या ध्रुवा ह्याभाष(काश)संश्रिता\renewcommand{\thefootnote}{5}\footnote{ब. संश्रयाः}~॥~३७८~॥}
+\end{quote}
+
+\hrule
+
+अथ साम्यकलमाह~। {\qtt पूर्वं गान}मिति~। पूर्वं प्रधानमपि रञ्जकत्वसाधारणीकरणाभ्यां रसस्यान्तरङ्गत्वाद्यत्र लयसाम्यार्थं वाद्यं तदनुवर्ति च पात्रस्य गत्यादिरूपं गात्रविक्षेपात्मकं वृ(नृ)त्तम्~। यद्यपि {\qtt गत्या वाद्यानुसारिण्या} (भ.ना. ४.२७४) इत्यत्र नाट्येऽङ्गविक्षेपं (पस्ततो) गीतवाद्यं न तु विपर्यय इत्युक्तम्~। तथापि सिद्धे प्रयोगे न तदत्रोचितमिति प्रतिवक्तुः प्रतीपंभिप्रायं (यो)मन्तव्यम्(व्यः)~। प्रयोगस्य तु सिद्धिरेतद्यदा क्रियते तदा प्रयोक्तुव्यवहारस्थिता(ते) गीतवाद्ये पूर्ववद् व्यव(हार)स्थापितो(ते)ऽपि रूपे यदा भवतस्तदा द्रुतं तदपेक्षी भवत्येवेत्यलं बहुना~।\\
+
+एवं गीतानां सम्यग् योजन प्रयोगं प्रकृष्टं योजनमिति कृत्वा ये तु ताण्डवाभिप्रायमेतद्यथाश्रुतं नाट्यविषये पूर्वं नृत्तं प्रयोज्यमिति वर्णयन्ति न ते प्रकरणं प्रयोगहृदयं च पराम(म) र्शुरित्यास्ताम्~॥~३७६~॥\\
+
+अथ प्रासादिक्यां वक्तव्यं विशिष्टं पूरयितुमाह~। हृदयस्थं तु (स्थस्तु)यो भाव इति~। {\qtt तुरेवार्थ}~। अथेति चार्थे~। हृदयस्थ एवं गतिर्भू (भू) त एवं (चैव) न तु पृथग् वाच्यार्थतां प्रायोभावचित्तवृत्त्यात्मिका(को)चेष्टात्मा वा~। अत एवैभिरङ्गाभिनयैरेव साध्य इत्यङ्कुराभिनयेषु सूचाभिनयेषु च यो भावोऽभिनयात्मकोऽभिनयमात्रसारस्तत्काले काव्यस्य व्यापारात्~। तत्रैतेष्वङ्कुरनिवृत्त्यङ्कुरसूचाविषयेषु भावेषु {\qtt प्रासादिकी} ध्रुवा योज्या योजनमर्हति~। प्रहर्षलक्षणः प्रीतिलक्षणः सामाजिकानां योऽर्थः प्रयोजनं स एव गुणो यत्र साध्यं तस्योद्भवो यस्या इति प्रयोजनमन्वर्थत्वं चोक्तम्~॥~३७७~॥\\
+
+विषयान्तरमप्यस्य दर्शयति~। {\qtt आकाशपुरुषो} यत्रेति~। प्रविष्टेनाऽपि सता येन सम्भाषणमादौ ततः
+
+\newpage
+% ३८४ \/ \textendash\ नाट्यशास्त्रे
+
+\begin{quote}
+{\na \renewcommand{\thefootnote}{1}\footnote{म. प्रसादना}प्रा(प्र)सादिक्या(दना)श्रया चापि हीर्ष्याक्रोधाश्रयाऽपि वा~।\\
+ शृङ्गाररसमासाद्य ध्रुवाऽन्वर्था प्रयोगतः~॥~३७९~॥
+
+ यानि प्रासादिकानि स्युः स्थानानि रससंश्रयात्~।\\
+ अन्वर्था तत्र कर्तव्या ध्रुवा प्रासादिकी तथा~॥~३८०~॥
+
+ भाषां तु शौरसेनीं हि ध्रुवाणां सम्प्रयोजयेत्~।\\
+ \renewcommand{\thefootnote}{2}\footnote{ब. भाषायां चैव मागव्यां कर्तव्यं नर्कुटं बुधैः~। र. भाषा चैव तु कर्तव्या मागध्या नर्कुटं तथा}यदाऽपि मागधी यत्र कर्तव्यं नर्कुटं तथा~॥~३८१~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+प्रवेक्ष्यमाणता या साऽऽकाशभाषणेनेह लक्षिता~। यस्तु नैव प्रवेक्ष्यति भाणादाविवोन्मादादि कल्पन्त(ल्प्यत) एव वा स आकाशपुरुष उक्तः (भ.ना.२२.३२१) तत्राकाशसंश्रयाव्यवधानं सूचिकैवार्थानुगता ध्रुवा कार्या~।
+
+\begin{quote}
+{\qt कम तुं तरिअं णिअ सहअरिअ सग्गइ सामु \\
+ पुरिओसु अरसु अयदि~॥~(?) 
+
+ (कं त्वं तरिरिव सहचरि स्वगते स्वामिनि \\
+ पुरीष्वरसमयसि~॥~) (? )~॥~३७८~॥}
+\end{quote}
+
+अपि सर्वपरासादिकी भवति तथापि धीरादौ भाण्डवाद्यकोल(ला)हलादिघ्राधान्यमिति शृड्गारे सा प्रधानभूतेति दर्शयितुमाह~। {\qtt प्रा(प्र)सादनाश्रया वा(चा)पीति}~॥~३७९~॥\\
+
+अन्यरसविषयत्वात् सम्भवत्येवेति दर्शयति~। {\qtt यानि प्रासादिकानीति}~। रसप्रसकतिः प्रयोजनं येषां काव्यस्थानां तेषु प्रासादिकी अन्वेक्ष्यति~। सा हि तत्प्रयोजनेति भावः~॥~३८०~॥\\
+
+अथ प्रकृतिषु भाषा ध्रुविषयत्वाद् विभजति~। {\qtt भाषां तु शौरसेनीमिति} सामान्यविधिः~। मागध्यां 
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३८९ 
+
+\begin{quote}
+{\na दिव्यानां संस्कृतं गानं \renewcommand{\thefootnote}{1}\footnote{र. प्रमाणं}प्रमाणैस्तु विधीयते~। \\
+ अर्धसंस्कृतमेवं तु मानुषाणां \renewcommand{\thefootnote}{2}\footnote{र. पार्थिवानां}प्रयोजयेत्~॥~३८२~॥
+
+ ये त्वौपम्यकृता दिव्या यदि तेषां प्रयोगतः~।\\
+ प्रवेशो नाटके तु स्याच्छृणु तेषां समाश्रयम्\renewcommand{\thefootnote}{3}\footnote{ब. कार्यस्त्वेषां समाश्रयः}~॥~३८३~॥
+
+ यस्त्वेषां सात्त्विको भावः कर्मसङ्कीर्तनं च यत्~।\\
+ तत् कायं गानयोगेऽपि प्रमाणगु\renewcommand{\thefootnote}{4}\footnote{य.विधि}ण संश्रयम्~॥~३८४~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+तु {\qtt नर्कुटमिति} साधर्म्यविषयेयमित्युक्तं भवति~। नर्कुटस्यैतद्विषयत्वेनाभिधानात्~॥~३८१~॥\\
+
+दिव्यानां तु देवनृपाणां प्रमाणैर्व्याकरणादिलक्षणैरुपेतं {\qtt संस्कृतं गानं} शुद्धम्~। मनुष्याणा {\qtt मर्धसंस्कृतम्~। (अन्यत्) त्रिगर्व (वर्ग)}प्रसिद्धं पदमध्ये संस्कृतं मध्ये देशभाषादियुक्तं तदेव कार्यम्~। {\qtt दक्षिणापथे} मणिप्रवालमिति प्रसिद्धम्~। काश्मीरे शाटकुलमिति~। अन्ये तु सकललोकप्रसिद्धैर्व्याख्यानानपेक्षिभिः {\qtt संस्कृतैः} कृतमर्धसंस्कृतमाहुः~। अपरे वररुच्यादिप्रणीतप्राकृतलक्षणान्वितं शौरसेन्या दिदेशभाषाद्यतिरिक्तं प्राकृतमेवार्धसंस्कृतमिति मन्यन्ते~। यस्य या पाठे भाषा तयैव तस्य गीतमिति मुनिमतमित्य(त्यु)पेक्ष्यम्~॥~३८२~॥\\
+
+ननु ये पूर्वमादित्याग्निसोमादय उपमानत्वेनोक्तास्तेषां यदा प्रयोगवशादिवृत्तौचित्यात् {\qtt साक्षादेव प्रवेशो} भवति यथा रामाभ्युदये मेदकस्तथा ध्रुवायां किं वर्णनीयमित्याशङ्क्याह~। ये त्वौपम्यकृता इति~। गणिकास्तेषां समाश्रयं वर्णनीयत्वे शृण्वित्यवधारयेति मुनीन् प्रति प्रत्येकं भरतमुनिराह~। न तेषामुपमानमुखेन वर्णनमपि तु स्वरूपेणैव ध्रुवा~। तदन्यः(न्य)पात्रवदेव त्रयेष्वपीति केचित्~। अन्ये त्वधिष्ठान देवतायाः प्रवेश एवाश्रयो लोकपरिदृश्यमानभूतरूप उपमानमिति प्रतिपन्नाः~। अभियुक्तास्तु स्वयमाश्रय इत्युपमागत वर्ण एवाश्रय उचितत्वादाश्रयेणे(त्य)र्थः~। उपमानत्वेन सजातीयत्वाच्च स्वतन्य(न्त्र)ता~। अग्नेर्मध्याह्वादित्यः स एवोपमानतया कार्यं इति वर्णयन्ति स्वेनोपमानाश्रयमिति~। अन्ये तु गानधुवा तावदन्यपात्रपदै (रन्य) \textendash\ त्रैतद्दृष्टेत्यधिशा(धीश)स्तुतिर्ध्रुवा प्रयोज्येति~। एतदनेन ग्रन्थेनोच्यत इति~। एतदेव च युक्ततरं देवस्तवसूचनात्~॥~३८३~॥\\
+
+यस्त्वेषां सात्त्विक इत्यादिना विकलं तत्स्वरूपं च वर्ण्यमिति दर्शयति~। {\qtt प्रमाणगुणसंश्रयमिति}~। सकललक्षणोपेतमित्यर्थः~। स्वरूप(त)स्तु प्रमाणं गान्धर्वशास्त्रं तद्गणैरविकृतैरेव जात्यंशकैरदृष्टप्रमाणकथनैस्तथाविधेषु गानं कार्यम्~॥~३८४~॥
+
+\newpage
+% ३८६ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na छन्दभ्रमाणसंयुक्तं दिव्यानां गानमिष्यते~।\\
+ \renewcommand{\thefootnote}{1}\footnote{ब. स्तुत्याश्रयेण यत्~।}पुण्याश्रयं च तत् कायं कर्मसङ्कीर्तनादपि~।\\
+ ध्रुवा \renewcommand{\thefootnote}{2}\footnote{ब. नाद्य~।}पदविधौ कायं यच्च पुण्यं गुणाश्रयम्\renewcommand{\thefootnote}{3}\footnote{ब. या च पुण्यगुणाश्रया~।}~॥~३८७~॥
+
+ \renewcommand{\thefootnote}{4}\footnote{ब. मला वक्त्रपुटो वृत्तं चूलिकाऽनुष्टबेव च~।}माला वक्त्रं पुटं वृत्तं विश्लोका \renewcommand{\thefootnote}{5}\footnote{ड. चूर्णिका~।}चूलिका तथा~।\\
+ उद्गताऽपरवक्त्रा च कर्तव्या वै \renewcommand{\thefootnote}{6}\footnote{य. वक्त्रेव कर्तव्यानि~।}प्रयोक्तृभिः~॥~३८६~॥
+
+ विधानं छन्दसामेतन् \renewcommand{\thefootnote}{7}\footnote{ब \textendash\ एषाम्~।}मया पूर्वमुदाहृतम्~।\\
+ जयाशीर्वादयुक्तानि \renewcommand{\thefootnote}{8}\footnote{य \textendash\ कर्तव्यान्यत्र~।}कार्याण्येतानि दैवते\renewcommand{\thefootnote}{9}\footnote{र. दैवतैः~।}~॥~३८७~॥
+
+ ऋग्गाथाः पाणिकाश्रैव \renewcommand{\thefootnote}{10}\footnote{ब. चेष्टव्याः~। ड. बोद्धव्याः~।}द्रष्टव्यास्तु प्रमाणतः~।\\
+ \renewcommand{\thefootnote}{11}\footnote{ड. विश्राव्यश्रैव\ldots तस्माद्गीतेषु~। ब. असर्वश्रायास्ता यस्मात् तं वृत्तेषु प्रयोजयेत्~। र. तासां तालविधानस्तु सम्यक् वृत्तानि योजयेत्~।}सुश्रवश्चैव यस्मात्तु तस्माद्गीतं प्रयोजयेत्~॥~३८८~॥
+
+ \renewcommand{\thefootnote}{12}\footnote{ड. षड्जमध्यम~।}गान्धारमध्यमयुताः पञ्चमयुक्तास्तु जातयो यास्तु~।\\
+ ताभिः प्रमाणगानं कर्तव्यं दैवतोपेतम्~॥~३८९~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+एवं पुण्यनिमित्तत्वं लक्ष्यत इत्याहुः~। {\qtt कर्मसंकीर्तनादपि} पुण्यनिमित्तं केवलं गान्धर्वयोगादित्यपि शब्दार्थं वर्णयति~॥~३८५~॥\\
+
+माला वक्त्रमित्यादिना विकलं प्रवृत्तिविधिमाह~। स च {\qtt उक्तभावे}(चैव इ)त्याह~। {\qtt पूर्वमिति~।} अन्ये आत्मि(चूलि)केत्यत्र चूर्णिकेति पठन्ति~। वृत्तान्तं {\qtt वृत्तचूर्णिकेत्याहुः}~। जयाशीवदिति~। स जयतु पायादित्यादियुक्तानि~। तदर्थमेव हि तेषां (विधिः)~। तमिह वदेदिति नाप्रकृतमेतदिति शङ्कितव्यम्~। आ(अ)र्हेति कार्याणीति अर्हे कृत्यः (अष्टाः ३.३.१६९)~। गान्धर्वमपि योज्यमानं सुकुमारमेव योज्यम्~। रञ्जनार्थत्वाद् (ग)न्धर्वाणामिति~॥~३८६ \textendash\ ३८७~॥\\
+
+ऋग्गाथाः पाणिका इति~। चकारोऽन्यदपि सुकुमारं च चतुष्पदां सङ्गृह्णाति~। (? व्यवच्छिनत्ति)एवकारः सुकुमारंव्यवच्छिनन्ति (? व्यवच्छिनत्ति)~। {\qtt सुश्रव इत्ययं} हेतुः~। इत्ययमृग्गाथादिसम्बन्धी तालविधिः~॥~३८८~॥\\
+
+स्वरविधिस्तर्हिवक्तव्य इत्याह~। {\qtt गान्धारमध्यमयुताः} पञ्चमयुक्तास्त्विति~। गान्धारी मध्यमा पश्चमी 
+
+\newpage
+% द्वात्रिंशोऽध्याय ३८७
+
+\begin{quote}
+{\na प्रासादिकं स्थितं चैव \renewcommand{\thefootnote}{1}\footnote{ब. सनिष्क्रामप्रवेशनम्}नैष्क्रामं सप्र(म्प्र)वेशनम्~। \\
+ प्रमाणमपि कर्तव्यं चतुःस्थानसमन्वितम्~॥~३९०~॥
+
+ प्रायशः संस्कृतं योज्यमनुष्टुप्च्छन्दसा कृतम्~।\\
+ नानादैवतकार्येषु \renewcommand{\thefootnote}{2}\footnote{ब. कायं च}ह्यन्तरा या विना तथा~॥~३९१~॥
+
+ वक्त्रं चापरवक्त्रं च माला चेति प्रवेशजम्~।\\
+ पुटं च चूलिका चैव नैष्क्रामिकमथेष्यते~॥~३९२~॥
+
+ प्रासादिक्युद्गता\renewcommand{\thefootnote}{3}\footnote{ब. वृत्तं}वृत्ति(:)स्थितं चानुष्टभीष्यते\renewcommand{\thefootnote}{4}\footnote{ब. ष्टुविष्यते ड. आनुष्टुभेष्यते}~।\\
+ स्थानान्येतानि बोध्यानि\renewcommand{\thefootnote}{5}\footnote{ब. कार्याणि ड. योज्यानि} प्रमाणस्य बुधैरथ~॥~३९३~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+चेति~। अत एव गान्धारपश्चमे भिन्नं यत् पञ्चमं न चोक्षपञ्चमेन प्रयोक्तृगीतिः~॥~३८९~॥\\
+
+दिव्यविषये चतस्रो ध्रुवा इत्याह~। {\qtt प्रासादिकं स्थितं} चेति~। प्रमाणमिति तालपरिच्छिन्नं गानम्~। तदपेक्षमेव प्रासादिकमित्यादौ नपुंसकम्~। स्थितस्य रसान्तराक्षेपः कार्यमिति स्थितमत्राक्षेपिकं गानम्~। अन्तरत एवान्तरगतविषयस्याभावाच्च स्थान(स्थिति) गानं स्यात्~॥~३९०~॥\\
+
+यदा बहुतरं तदङ्गं प्रविष्टस्य रङ्गे स्थितिस्तदाऽन्तरध्रुवाऽपि भवति~। तत्र च {\qtt संस्कृतमनु}ष्टब्गानम्~। मार्गदीर्घकलायां तु स्थितौ सा नैव भवतीत्याह~। विना तथेति~। अन्तरघ्रुवापीत्यर्थः~। गुरवस्तु मन्यन्ते~। नैष्क्रामिकं सम्प्रवेश(न)मिति~। साहित्यसूच(चि)तेन प्रावेश(शि)की नैष्क्रामिकी च दिव्येष्ववश्यं भाविनी~। कृतेआ(ताबा)पदासम्भ्रमादेर्ध्रूवान्तरं तु कालपर्या(य)सापेक्षमिति~॥~३९१~॥\\
+
+अथ वृत्तानि विभजति~। वक्त्रं चेति~। वक्त्रापरवक्त्रमालाः प्रावेशिक्यो देवानाम्~। पुटचूलिके निष्क्रामे~॥~३९२~॥\\
+
+{\qtt प्रासादिक्य}(क्या)मुद्गता~। आक्षेपिक्यामनुष्टप्~।~३९३~॥
+
+\newpage
+%३८८ नाट्यशास्त्रे
+
+\begin{quote}
+{\na यदनुष्टुप्कृतं गानं स्थितस्थानसमाश्रयम्~।\\
+ \renewcommand{\thefootnote}{1}\footnote{ब शाप~। र. स्वर्ग~।}स्वपनभ्रंशाश्रयकृतं चिन्तादुःखसमन्वितम्~॥~३९५~॥
+
+ गुरुप्रायाक्षरकृतं \renewcommand{\thefootnote}{2}\footnote{ब. करुणं स्वर~। ड. करुणस्वर~।}करुणश्रुतिजातिकम्~।\\
+ \renewcommand{\thefootnote}{3}\footnote{य. अवककृष्ट~।}प्रकृष्टवर्णबहुलं स्थितस्थानं तु तद्भवेत्~॥~३९५~॥
+
+ \renewcommand{\thefootnote}{4}\footnote{ब. उन्मादनार्थं~।}उत्पादनार्थं नृणां तु तथा विहरणेष्वपि\renewcommand{\thefootnote}{5}\footnote{ब. कालापहरणेषु च~।}~।\\
+ दिव्यान्वयं तु कर्तव्यं गानं पात्रसमाश्रयम्\renewcommand{\thefootnote}{6}\footnote{ब. मानुष्टुभाश्रयम्~।}~॥~३९६~॥
+
+ मानुषेष्ववतीर्णेषु मर्त्यस्य\renewcommand{\thefootnote}{7}\footnote{ब. दिव्यस्य~।} स्मरणाश्रयम्~।\\
+ \renewcommand{\thefootnote}{8}\footnote{ब. प्रमाणगानं कर्तव्यं दिव्येष्वेव प्रयोक्तृभिः~।}प्रायेण गानं कर्तव्यं दिव्यस्य स्मरणाश्रयम्~॥~३९७~॥
+
+ \renewcommand{\thefootnote}{9}\footnote{ब. तस्यैव दुःखविषये~। 10. ब. क्षराश्रयम्~।}अस्यैव दुःखविषयं शोकचिन्ताविनाशजम्~।\\
+ प्रमाणगानं कर्तव्यं शोकावस्थान्तराश्रयम् 10~।\\
+ नरान्वयेन कर्तव्यं गानं मानुषकादिषु~॥~३९८~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+नत्वाक्षि(न्वाक्षे)पिकी स्थितिलया यदा भवत्येषां सा का(ला)वकाशवशादित्याशङ्क्याह~। {\qtt स्वप्नभ्रंशाश्रयकृतमिति}~। यथा कर्श्रिदा)श्च्यर्थि कश्चिदेव स्वामिनां भगवद्रुद्रविष्णुविरिञ्चदीनां परवश एव भ्रष्टदिव्यभावो बहुतरं कालं विभज्यते~। तथोग्रदुःखयोगे स्थितलयस्य शोकोचितस्यान्तरा स्वस्थानशरणाद्युपवर्णनेष्वस्त्यवकाश इति तात्पर्यम्~। नत्वत्र शापादिनास्वर्गभ्रंश इति भ्रमितव्यम्~। तदानीं दिव्यत्वव्यपगमे करुणेऽस्मिन्न वक्तव्यं स्यात्~।३९४ \textendash\ ३९५~॥\\
+
+ननु किमर्थं दिव्यानां मा(म)नुष्यमध्ये प्रवेश इत्याशङ्क्येतिहासवृत्तान्तस्मरणयो(णेनो)त्तरं ददाति~। उत्पादनार्थमिति~। इन्द्रस्यावतरणमर्जुनजन्मनेत्यादि~। विहरणं क्रीडन (ना) यानुसरणम्~॥~३९६~॥\\
+
+योऽपि दिव्यो मर्त्यधर्मेण वर्तते यथा भगवान् कृष्णो रामो वा तदा\renewcommand{\thefootnote}{*}\footnote{Abh GOS. सदा (यदा ?)} स्वं स्वरूपं स्मरति तदास्य दिव्योचितप्रमाणेन शास्त्रविधिना तु लौकिकस्य च्छन्द(न्दो)रीतिक्रियया गानं कार्यम्~।~३९६ \textendash\ ३९८~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः ८०९
+
+\begin{quote}
+{\na ध्रुवाणां हि विधान(कार)स्य \renewcommand{\thefootnote}{1}\footnote{ब. द्व्याश्रयस्य विभागतः}ह्याश्रयस्य विशेषतः~।\\
+ यथा प्रयोगः कर्तव्यस्तच्च मे सन्निबोधत~॥~३९९~॥
+
+ स्थापिते भाण्डविन्यासे त्रिसाम्नि परिकीर्तिते~।\\
+ आश्रावणाद्यं कर्तव्यं बहिर्गीतप्रयोगजम्\renewcommand{\thefootnote}{2}\footnote{र. पूर्वरङ्गं प्रयोजयेत्}~।\\
+ प्रयुज्य च बहिर्गीतं पूर्वरङ्गं प्रयोजयेत्~॥~४००~॥
+
+ पूर्वरङ्गे \renewcommand{\thefootnote}{3}\footnote{ब. प्रयुक्ते तु नाट्याचार ड. नाट्यपारं समाश्रयेत्}प्रयुज्ये(क्ते) तु नाट्याचार्यसमाश्रये~।\\
+ ध्रुवा तत्र प्रयोक्तव्या प्रकृतीनां प्रवेशजा~॥~४०१~॥
+
+ गत्याश्रयेण नाट्यज्ञैः पादैरनुगतैस्तथा\renewcommand{\thefootnote}{4}\footnote{ब. गानस्य परिवर्तना~।}~।\\
+ परिक्रमेण रङ्गस्य \renewcommand{\thefootnote}{5}\footnote{य. तथैव}गानेनार्थवशेन च~॥~४०२~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+अन्यदा तूत्तरप्रयोगिन्यो ध्रुवा उत्थाप(पि)न्यादिकाः {\qtt पञ्चमाध्याय}वर्णितस्वरूपा वक्तव्यशेषेण पूरणीयाः~। तत्प्रस्तावप्रयोगे सम्बन्धे च दर्शनव्याजेन भणाही(नी)इति {\qtt ध्रुवाणां विकारस्य} प्रकारपञ्चकस्य च आश्रयो नाट्यप्रयोगस्तस्य पूर्वेण(पूर्वरङ्गे)सहायः प्रकृष्टो योगः स यथा कर्तव्यस्तं निबोधत~। चकारोऽत्र वक्तव्यशेषं सूचयति~॥~३९९~॥\\
+
+{\qtt स्थापिते भाण्डविन्यासे} इत्यर्थेन प्रत्याहारावतरणे सूचिते आश्रावणाद्यमित्यर्धेनान्तर्यवनिकाङ्गानि पूर्वरङ्गे प्रयोजयेदिति बहिर्यवनिकाङ्गजा तत्प्रसङ्गेन गानान्तरिता ध्रुवा सोप(वर्णिता)~॥~४००~॥\\
+
+{\qtt नाट्याचार्य}कलितानां तु पूर्वरङ्गाङ्गवदनादिगान्धर्ववेदपरिदृष्टा(नाम्)~। {\qtt प्रकृतीनामिति~।} उत्तमादिपात्राणां प्रवेशः प्रावेशिकी~॥~४०१~॥\\
+
+अथ पूर्वरङ्ग उत्थापनादिषूक्तं {\qtt परिवर्तास्तु चत्वारः पाणयस्त्रयः} (भ.ना. ५.४१) इत्यादि तच्चानुद्धिन्नमुद्भेदनीयमित्याशयेन पूर्वरङ्गविषये वक्तव्ये शेषा अभिधानार्थमुत्तमाङ्गक्रमस्या (प्रा)यास्तं) (तान्)निरूपयति~। गत्याश्रयेणेत्यादि~। ये परिवर्तास्तत्रोक्तास्तैः पादैरनुगतैरिति चारीभिस्तालप्रमिताभिर्गतेराश्रयणेन तथैव परिवर्ताः प्रयोज्याः~। कथम्~। रङ्गस्य त्र्यश्रचतुरश्रविकृष्टमेदत्रयस्य य उचितः परिक्रमः (स) किन्निमित्तः परिवर्तकानामित्याह~। गानेनार्थवशेन चेइति~। गान इ(मि)इति सामवेदम्(दः)~। अथ(र्थः)प्रयोजनम्~।
+
+\newpage
+% ३९० नाट्यशास्त्रे 
+
+\begin{quote}
+{\na परिवर्ताः प्रयोक्तव्याः पादैरनुगतैरथ\renewcommand{\thefootnote}{1}\footnote{ब. षडेव तु तथा बुधैः}~॥\\
+ ध्रुवा तत्र प्रयोक्तव्या देवताभिर्युता बुधैः~॥~४०३~॥
+
+ तत्र पाताः प्रयोक्तव्या एकविंशरतिरेव च~।\\
+ त्र्यश्रा वा चतुरश्रा वा ध्रुवा नाट्ये प्रयोगतः~॥~४०४~॥
+
+ त्रिकलं पादपतनं त्र्यश्रायास्तु(यां तु)विधीयते~।\\
+ चतुष्कलं तु पतनं चतुरश्रागतं भवेत्~॥~४०५~॥
+
+ उत्तमे चतुरश्रा चत्र्यश्रा चैव तु मध्यमे~।\\
+ \renewcommand{\thefootnote}{2}\footnote{ब. खञ्जं}त्र्यश्रं नर्कुटकं चैव ह्यधमेषु प्रयोजयेत्~॥~४०६~॥}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt एकस्मिन् परिवर्ते तु गते प्राप्ते द्वितीयके~। }
+\end{quote}
+
+\begin{center}
+(भ.ना. ५.३९) 
+\end{center}
+
+\noindent
+इत्यादि {\qtt पञ्चमाध्या} ये दर्शितम्~। तेन परिवर्तबहुलगतिः~। सामवेदप्रभवत्वं जर्जरग्रहणं तन्मन्त्रजपनादिकं च प्रयोजनं परिवर्तेषु निमित्तमित्यर्थः~॥~४०२~।\\
+
+तत्र च {\qtt ध्रुवा देवताभिर्युता}~। देव (ता)बहुवचनेन मत्राङ्ग ? मन्त्रत्राङ्गे) यादृशी क्रियमाणत्वेन देवतोक्त सैव तत्र ध्रुवायां स्तुत्येति दर्शयति~। वन्दे पितामहमित्यादिना (भ.ना. ३२.४०५)~॥~४०३~॥\\
+
+गतिं स्मारयति~। तत्र पाता इति~। पादपाताः {\qtt पञ्चमेऽध्याये वामवेधस्तु (तत्रापि)विक्षेपो दक्षिणस्य} च (तु)(भ.ना.५.८४) इत्यादि षड्विंशतिः~। एकविंशतिः त्र्यश्रा वा चतुरश्रा वा द्विप्रकारतां पूर्वरङ्गस्य स्मारवति~। नाट्यविषयात् प्रयोगात् प्रागयं क्रमः~। अन्ये तु ध्रुवा नाट्ये ध्रुवेति च~। (नाट्या) भिनयप्रक्रमादावयं विधिरिति~॥~४०४~॥
+
+\begin{quote}
+{\qt त्रिकलं त्र्यश्रायां पादपतनम्~। अन्यत्र चतुष्कलम्~॥~४०७~॥}
+\end{quote}
+
+{\qtt अत्रोत्तमत्वं} देवताविषयम्~। मध्यमत्वं राजादिविषयम्~। प्रशास्त्विमां महाराजः पृथिवीमित्यादौ~। अधमत्वं विदूषकादेः~।त्रिगतकथितकादौ~। अन्येतुदेवतानामेव प्रकृतित्रयं योज्यमित्याहुः~। मध्यमाधमस्य(योः) स्यान्न तेन विशेषः~। त्र्यश्रता तुल्यतै(तयै)चैव तयोः~॥~४०६~॥
+
+\newpage
+page content missing
+
+\newpage
+% ३९२ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na ये पूर्वोक्ता भावाः \renewcommand{\thefootnote}{1}\footnote{ब. समाश्रया}स्थिताश्रया वा द्रुताश्रया वापि~।\\
+ तेषां पात(द)निपातं ज्ञात्वा सम्यग् बुधैः कार्यम्~॥~४१०~॥}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt असङ्ख्यानि सहस्राणि कोटीनामयुतानि च~।\\
+ तालद्वयप्रभेदेन पुरा प्रोक्तानि शम्भुना~॥}
+\end{quote}
+
+\noindent
+इति~। एवं मिश्रभेदोऽप्यनुसर्तव्यः~। अत एव त्र्यश्रचतुरश्रमिश्राणां षट्पितापुत्रकस्य च मूलप्रकृतितया ध्रुवाशब्दवाच्यानां भञ्जिनाट्ये प्लुतगुरुलुद्रुतमयास्ताला विरामभेदा विचित्राः~। तथा भङ्गव्यपदेशेन यदाहुः~। {\qtt ध्रुवाणां भञ्जनाद्भङ्गा} इति~। एवं त्रिचतुष्ष(ड) ष्कध्रुवातालभञ्जनं भङ्गानां रूपस्य~। उपभङ्गास्तु सङ्कीर्णस्वरूपेभ्यः कलाः पञ्चे (भ.ना. ३१.२४)त्यादिनोक्तस्य भञ्जनादपि भवन्ति~। तथाऽभिनयनकाले त्र्यश्रा~। त्र्ययगत्र्यद्वैगुण्या~। मिश्रा च दशकलाचतुष्कं वलयमथ गत्रयमित्येव (वं) रूपी (पिणी)~। यत्र तु द्विविधत्वाद् गुरुलघुप्लुतद्रुतविरामादिरूपेण भञ्जनं तेऽपि भङ्गाः~। लयभेदेन तु यत्र वैचित्र्यं तद्यथा द्विविधानां चित्रपदानां गुरुरूपप्रस्तारसाम्येऽपि लयकृतविभेदः~। एवं भङ्गोपभङ्गविभङ्गलयरूपा तावच्चतुर्था तालजातिर्गोबलीवर्दवृत्त्या लक्ष्यते~। तद्व्यपदेशाद्विभक्ताः संव्यवहारसिद्धये कोहलाचार्यप्रभृतिभिः~। भट्टगोपालभट्टलोल्लटप्रभृतिभिस्तु तथाविभागं विनियोगशेषं च दूषितम्~। तद् द्वयं तु नास्मभ्यो रुचितम्~। पूर्वप्रसिद्धिर्हि यथोपपद्यते तथा मतिचतुरिमा संहरणीयः~। एवमेव गणभेदभङ्गस्तस्य च प्रस्तार आचार्यप्रस्तारवद्यथोक्तया दण्डापूपाचरितै(तये)चैव~। कथं तर्हि कु(क)लिकं पादपतनमि (भना \textendash\ ३१.४१०) त्याह~।
+
+\begin{quote}
+{\qt एवं साम्यं कुर्याद् भाण्डेन समं च गानेन~। }
+\end{quote}
+
+\noindent
+इति~। भाण्डवाद्यगानाभ्यां सहगतेः~। एवमिति~। कलाद्वयकलार्थकलारूपेण {\qtt साम्यं कार्यम्}~। तत्र ध्रुवा समवायितव्या~। तथा हि~। हितार्थस्य षष्टिः~। तालगतभेदद्वयगत्या गतं च~। अपि तु गीतवाद्ययोस्तावत्यवान्तरविदारीयोगः कार्यं इति तत्र तात्पर्यम्~॥~४०९~॥\\
+
+लयत्रयवैचित्र्यमपि चात्र भवतीति दर्शयति~। ये पूर्वोक्ता भावा इति~। पूर्वरङ्गमहाचार्यादौ यथामन्थरत्वरितरूपा चित्तवृत्तिस्तत्सम्बधिनं तत्सूचितं पादपाताद्वा परिक्रमणं कार्यम्~।~४१०~॥\\
+
+\begin{center}
+अथानेन प्रसङ्गेन सामञ्जस्यं न क्वचिदपि युक्तमिति दर्शयति~।
+\end{center}
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३९३
+
+\begin{quote}
+{\na \renewcommand{\thefootnote}{1}\footnote{ब. पाद \textendash\ ड . अपदा}अपटाक्षेपकृता चेदात्ययिका(की) हर्षरागशोकाद्याः\renewcommand{\thefootnote}{2}\footnote{ब. शोकशेषाद्यैः~। च. शोकान् यः} (कोत्थैः)~।\\
+ \renewcommand{\thefootnote}{3}\footnote{ब. तत्र परिच्छेदसमः}विच्छेदस्तत्र समः कार्यस्तज्ज्ञैः प्रवेशे तु\renewcommand{\thefootnote}{4}\footnote{ब. प्रवेशस्तु}~॥~४११~॥
+
+ एवमेते बुधैर्ज्ञेयाः प्रयोगपरिवर्तकाः~।\\
+ अतः परं प्रवक्ष्यामि भाण्डग्रहविकल्पनम्\renewcommand{\thefootnote}{5}\footnote{ड. गृहान् भाण्डसमाश्रयात्}~॥~४१२~॥
+
+ अभाण्डमेव\renewcommand{\thefootnote}{6}\footnote{ब. एकं} गानस्य परिवर्तं प्रयोजयेत्~।\\
+ चतुर्थे \renewcommand{\thefootnote}{7}\footnote{ब. सन्निपाते}परिवर्ते तु तस्य भाण्डग्रहो भवेत्~॥~४१३~॥
+
+ सन्निपातग्रहाः काश्चित् काश्चिद्वै तर्जनीग्रहाः~।\\
+ तथाऽऽकाशग्रहाः काश्चित् ध्रुवा गाने भवन्ति हि~॥~४१४~॥}
+\end{quote}
+
+\hrule
+
+\begin{quote}
+{\qt अपथा(टा)क्षेपकृता चेदात्ययिकीहर्षरागशोकोत्थैः~। \\
+ यो वि(वि)च्छेदस्तत्र समः कार्यस्तज्ज्ञैः प्रवेशे तु~॥}
+\end{quote}
+
+\noindent
+इति~। चेदिति यद्यप्यर्थे~। तुरप्यर्थे~। करणं कृत्~। अत्यये भवे (वा){\qtt आत्ययिका}(की)~। अप्रयुज्यमानं तदीयं योजनाहर्षादिभिरुपलक्षिते पात्रप्रवेशे पदाक्षेपकस्याकरणेन यद्यपि प्रावेशिकी ध्रुवा सम्भवति~। {\qtt अध्रुवास्तु प्रवेशजा} (भ.ना. ३२.३२७) इत्युक्तत्वात्तत्रेत्यविद्यमानध्रुवास्थानेऽपि प्रविशतः पादस्तालेन समीकर्तव्यः~। एवं वलनिकादिना ततः कलिकेनापीति~॥~४११~॥\\
+
+एवं प्रसङ्गादुक्तम्~। प्रकृतं पूर्वरङ्गमेवानुसरनुक्तमुपसंहरनन्यदासूत्रयति~। {\qtt एवमेते (बुधैर्ज्ञेयाः प्रयोग) परिवर्तका} इति~। भाण्डग्रहविकल्पनं प्रवक्ष्यामीति च~॥~४१२~॥\\
+
+{\qtt अभाण्डमेव गानस्य} परिवर्तनं प्रयोजनम्~। {\qtt चतुर्थे} सन्निपातम्~। भाण्डग्रहणे सन्निपातः~। परिवर्तनेन तुर्ये परिवर्तने भाण्डग्रहाद्यास्त्रयः शून्या इति~। अन्ये त्वाद्य एव परिवर्तो भाण्डशून्यः~। तदानी यावत्य सन्निपातकलाः सन्धीनां त्रयोऽन्ये भाण्डवाद्यमुक्ता इति~॥~४१३~॥\\
+
+{\qtt सन्निपातग्रहाः काश्चिदिति~।} ध्रुवा हस्तद्वयहननजैरक्षरैस्तर्जनीप्रहतिभिः कृते लक्षणशन्यवर्तनामात्रेण वा भाण्डवाद्यस्य ध्रुवानुग्रह इति त्रिधा~। अन्ये त्वाहुः~। एककले ताले सन्निपातान्त्यकलातो द्विकले चतुष्कले च ध्रुवायास्तित्व तर्जन्या इति~। तदुपलक्षिततुर्यपादे
+
+\newpage
+%३९४ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na ध्रुवायास्तु ग्रहो यस्मात् कलाकाललयान्वितः~।\\
+ स तु भाण्डेन योक्तव्यस्तज्ज्ञैर्गतिपरिक्रमे~॥~४१५~॥
+
+ \renewcommand{\thefootnote}{1}\footnote{ब. शीर्षकं चोद्धता या च}शीर्षकोद्धतयोश्चैव प्रदेशिन्या ग्रहो भवेत्~।\\
+ विलम्बितास्थितायोगे सन्निपाते तृतीयके~॥~४१६~॥
+
+ नर्कुटस्याड्डितायां च प्रासादिक्यास्तथैव च~।\\
+ सन्निपातग्रहः कार्या द्रुतायाश्चोच्चके \renewcommand{\thefootnote}{2}\footnote{ब. उद्धतग्रहाः}ग्रहः~॥~४१७~॥
+
+ नैष्क्रामिक्यनुबन्धानां ग्रहे(हो)गानसमो भवेत्~।\\
+ \renewcommand{\thefootnote}{3}\footnote{ब. एतेषां}नत्वसौ परिवर्तस्तु कार्या गाने प्रयोक्तृभिः~॥~४१८~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+{\qtt भागप्रथमकलान्तः}~। एककलादिनियमाभावे तु आकाशाच्छून्याद् गीत एव {\qtt नामभाण्डग्रह} इति~। {\qtt अस्मत्परमगुरुभिश्च} श्रीमदुत्पलदेवपादैरयमेव प्रतिपन्नोऽर्थः~॥~४१४~॥\\
+
+गानसम(भ.ना.३२.४२२) इति सन्निपातश्च शम्याचे(भ.ना. ३२.४२१)त्यकारणं भाण्डस्यैव साक्षीति~। भाण्डवाद्यशा(शी)ले च गतिपरिक्रम इति दर्शयति~। {\qtt ध्रुवायास्त्विति~।} कला(काललयान्वितः)~। {\qtt कालश्चित्रादिभेदेन} त्रिधा~। तथा लयो द्रुतादिः~। तदन्वितो यः~। भाण्डेन ततिः परिक्रमविषये योजनीया~॥~४१५~॥\\
+
+{\qtt शीर्षकोद्धतयोः प्रदेशिन्या द्रुतविलम्बितार्थस्थितयोस्तृतीयपातान्त्यात्}~॥~४१६~॥\\
+
+{\qtt नर्कुटादीनां प्रासादिकी}~। द्रुतानामूर्ध्वके आद्ये वा देयः सन्निपातः~। तत ऊर्ध्वके मुरज इति केचित्~॥~४१७~॥\\
+
+{\qtt नैष्क्रामिकमित्यनुबन्धयोर्गानसम} एव ग्रहः सन्निपातादेतस्माज्जायते गानकाले~। एवं तर्जन्यादिग्रहणोक्तः~। न मुरजाक्षराणि~। अनयोश्च परिवर्तो न कार्यः~।~४१८~॥
+
+\newpage
+%द्वात्रिंशोऽध्यायः ३९५
+
+\begin{quote}
+{\na नर्कुटस्यापि चत्वारो ग्रहाः कार्याः प्रयोक्तृभिः~।\\
+ सन्निपातश्च शम्या च तालश्चाकाशजस्तथा~॥~४१९~॥
+
+ सम्भ्रमावेगहर्षेषु प्रवेशा ये भवन्ति हि~।\\
+ ग्रहो गानसमस्तत्र सोद्धात्यः सम्प्रकीर्तितः~॥~४२०~॥
+
+ भूषणवासः पतने वैकल्ये विस्मृते परिश्रान्ते~।\\
+ दोषाच्छादनहेतोरुद्धात्यः\renewcommand{\thefootnote}{1}\footnote{ब.उद्धात्यो अन्तरायास्तु~।} सम्प्रयोज्यस्तु~।~४२१~॥
+
+ एवं प्रयोक्तृभिः कायं ध्रुवाणां सम्प्रवेशनम्\renewcommand{\thefootnote}{2}\footnote{ब. सन्निवेशनम्}~।\\
+ यथास्थानाश्रयोपेतं यथानृत्तकृतं तथा~॥~४२२~॥
+
+ यथा वर्णादृते चित्रं न शोभोत्पादनं भवेत्\renewcommand{\thefootnote}{3}\footnote{ब. शोभने च निवेशितम्}~।\\
+ एवमेव \renewcommand{\thefootnote}{4}\footnote{ब. विभागानां}विना गानं नाट्यं \renewcommand{\thefootnote}{5}\footnote{ब. रङ्गं}रागं न गच्छति~॥~४२३~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt नर्कुटस्य शम्याया}स्तालः~। सन्निपाताच्छून्यादेव भाण्डग्रहः~। शम्यातालाभ्यां सव्यापसव्यहस्तप्रहारजान्यक्षराण्येवेति~। अन्ये एतत् पूर्वरङ्गविषयं परिवर्ताद्युत्थापनादि ध्रुवासु तत्तल्लक्षणाङ्गदर्शनेन शीर्षकोद्धतादिव्यवहारयोगास्त्विति~। अन्ये तु दृष्टप्रयोजनेऽपि नियमाददृष्टप्रयोजनेऽपि नियमाददृष्टं भोजनप्राङ्मुखत्ववदिति~॥~४१९~॥\\
+
+{\qtt स्थितानां भागानां} विषयं(य)प्रसङ्गादेतदुक्तम्~। (द्रुतायां नोक्त)मित्याशङ्क्याह~। {\qtt सम्भ्रमेत्यादि}~। सम्भ्रमादौ प्रवेशे गानसमो ग्रहः~। उद्धात्येन उद्रेकहननार्हेण खलखलकेन~॥~४२२~।\\
+
+{\qtt भूषणवासः पतनादावपि} खलखलकस्य प्रयोगः~॥~४२१~॥\\
+
+{\qtt एतदुपसंहरति}~। एवं प्रयोक्तृभिरिति~। यथास्थानं यथाश्रयं च प्रवेशादावुत्तमादौ नाट्यध्रुवागानं यथानृत्तगतं पूर्वरङ्गध्रुवागानं कुर्यात्~॥~४२२~॥\\
+
+ननु पूर्वरङ्गगतं त्वदृष्टसिद्धये नाट्ये तु किं तेनेत्याशङ्क्योपरञ्जकत्वेन रसोपयोगितामप्याह~। यथा {\qtt वर्णादृते चित्रमिति}~। वर्णो हरितालादिः~। वैचित्र्यान्निवेशितमिति~। घटिकामात्रादिनेति भावं(वः) रसभावोक्तिरनेन सूचितेति टीकाकाराः~। अस्माभिस्तु रसतत्त्वं विमृष्टपूर्वमेव~॥~४२३~॥
+
+\newpage
+% ३९६ \ नाट्यशास्त्रे 
+
+\begin{quote}
+{\na पूर्वरङ्गविधाने तु कर्तव्यो \renewcommand{\thefootnote}{1}\footnote{ब. षाडवो}रागजो विधिः~।\\
+ देवपूजाधिकारस्तु तत्र सम्परिकीर्तितः~॥~४२४~॥
+
+ ततश्च काव्यबन्धेषु नानाभावसमाश्रयम्~।\\
+ ग्रामद्वयं तु कर्तव्यं (यगतं कार्यं)\renewcommand{\thefootnote}{2}\footnote{ब. तथा साधारण क्रिया}यथासाधारणाश्रयम् (स्थानरसान्वितम् )~॥~४२५~॥
+
+ मुखे तु मध्यमग्रामः षड्जः प्रतिमुखे भवेत्\renewcommand{\thefootnote}{3}\footnote{ब प्रयोक्तव्यं द्विजोत्तमाः~। तथाऽवंमर्शने चैव कायं कैशिकमध्यमम्}~।\\
+ साधारितस्तथा गर्भे ववि(ऽव)मर्शे चैव पञ्चमम्~॥~४२६~॥
+
+ कैशिकं च तथा कायं गानं निर्वहणे बुधैः~।\\
+ \renewcommand{\thefootnote}{4}\footnote{ब. एवं सन्थिषु कर्तव्यं}सन्निवृत्ताश्रयं चैव रसभावसमन्वितम्~॥~४२७~॥
+
+ \renewcommand{\thefootnote}{5}\footnote{ब.यथा रसगता वा स्युः}तथा रसकृता नित्यं ध्रुवाः प्रकरणाश्रिताः~।\\
+ नक्षत्राणीव गगनं नाट्यमुद्योतयन्ति ताः~॥~४२८~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+{\qtt पूर्वरङ्गेऽदृषटऽप्यप्रयोजनं} तदाह~। {\qtt देवपूजाधिकारस्त्विति}~। तुरप्यर्थे~॥~५२५~॥\\
+
+ननु किं तत्र स्वरगतमित्याह~। {\qtt ग्रामद्वयगतमिति}~। अष्टादशजात्यात्मकमित्यर्थः~। यथास्थानरसान्वितमिदमिति चारीमहाचार्यादौ यत्र रसं प्रत्यनुल्बणत्वं यथा यौगन्धरायणप्रवेशे रत्नावल्याम् (अङ्कः १)~॥~४२५~॥\\
+
+तत्र शरदाश्रयं गानमिति दर्शयन् तत्र युक्तं परमतमप्रतिषिद्धमनुमतं अंशो \ldots सुगतं चेति नीत्या काश्यपमुनिप्रभृतिभिर्निरूपितमपि ग्राम(राग)नागरगानं स्वीकरोति~। मुखे मध्यमग्रामः~। षड्जः {\qtt प्रतिमुखे} गर्भे साधारितः~। पञ्चमोऽवमर्शे~॥~४२६~॥\\
+
+{\qtt प्रधाननिर्वहणे कैशिक}मिति~। {\qtt गानापेक्षया नपुंसकप्राचुर्यम्}~। शुद्धानां ग्रहणमित्यन्ये~। भिनं {\qtt गौडानामपीत्यपरे}~।\\
+
+पूर्वरङ्गविधाने तु {\qtt कुर्याद्वै चोक्षषाडवम्}~। (भ.ना३२.४२६) (? ) इति~।~४२७~॥\\
+
+{\qtt अवश्यप्रयोज्या} ध्रुवा इति दर्शयति~। य(त)था रसकृताइति~। प्रकरणं प्रवेशादिपदार्थस्य वर्णयितुम्~॥~४२८~॥
+
+\newpage
+% द्वात्रिंशोऽध्यायः ३९७
+
+\begin{quote}
+{\na मागधी प्रथमा गीतिस्तथा चैवार्धमागधी~।\\
+ सम्भाविता तृतीया स्यात् पृथुला च तथा परा~॥~४२९~॥
+
+ त्रिनिवृत्त्या पदानां तु मागधी समुदाहृता~।\\
+ चित्रेऽर्धमागधी चैव द्विनिवृत्तपदाश्रया~॥~४३०~॥
+
+ वृत्तौ सम्भाविता प्रायो लघुवाद्याक्षरान्विता~।\\
+ पृथुला दक्षिणे तु स्यात् गुरुवाद्याक्षरान्विता~॥~४३१~॥
+
+ गानयोगे चतस्रस्तु योज्याः सर्वत्र गायनैः~।\\
+ यथाक्षरकृता ह्येताः प्रयोज्यास्ते(ज्यन्ते)ध्रुवास्वपि~॥~४३२~॥
+
+ पूर्णस्वरं चाऽ\renewcommand{\thefootnote}{1}\footnote{ब. तत्र विलम्बि} विचित्रवर्णं\\
+ त्रिस्थानशोभि त्रिलयं त्रिमार्गम्~।\\
+ रक्तं समं श्लक्ष्णमलङ्कृतं च\\
+ सुखं \renewcommand{\thefootnote}{2}\footnote{ब. प्रसन्नं}प्रशस्तं मधुरं च गानम्~॥~४३३~॥}
+\end{quote}
+
+\hrule
+
+\vspace{2mm}
+पूर्वरङ्गे पूर्वरङ्गध्रुवा गाने गान्धर्वे चित्रं गीतिचतुष्टयमिति प्रयोगानुसारेणावश्ययोजनीयमित्याशयेन स्थानान्तरपूर्वोक्तमपि तत् पुनरिह दर्शयति~। {\qtt मागधी}त्यादि~।~४३१~।\\
+
+{\qtt आद्याविति}~। अर्धमागधी निवृत्तावृत्तौ~॥~४३२~॥\\
+
+{\qtt सम्भाविता लघुवाद्याक्षरा~। दक्षिणे पृथुला गुर्वक्षरा}~। वीणामुरजयोर्यथारूपादि करणानीति~। \ldots विधयश्च नाममात्रेण तद्वत्स्थानान्तरोक्ता गतयो गुणदोषसम्बन्धार्थमिहोक्ता न गीतिभिः परमार्थतो भेदेऽपीति केचित्~। {\qtt तदयुक्तम्}~। दृष्टान्तदार्ष्टान्तिकयोर्लक्षणभेदासिद्धेर्यथा पुष्कराध्याये (भ.ना. ३४)वक्ष्यामः~॥~४३३~॥\\
+
+एताश्च गीतयो न केवलं पूर्वरङ्गे यावन्नाट्यध्रुवागानेऽपीत्याह~। {\qtt गानयोगे चतस्रस्तु योज्याः} सर्वत्रेति~। तत्र हेतुमाह~। यथाक्षरकृता इति~। अक्षर शब्देन तदर्थ उच्यते~। नार्थानुसारात् परिवर्तयोगोऽपि विलम्बितादियोगोऽपीति~॥~४३४~॥\\
+
+अथ {\qtt गुणनिरूपणाध्याय} (भ.ना.अ. ३३) स्तत्रार्थमुद्दिशन्ति~। {\qtt पूर्णस्वरमित्यादि}~। पूर्णः स्फुटो 
+
+\newpage
+% ३९८ नाट्यशास्त्रे
+
+\begin{quote}
+{\na गीते प्रयत्नं(त्नः)प्रथमस्तु\renewcommand{\thefootnote}{1}\footnote{ब. प्रथमं च~।} कायं (र्यः) \\
+ शय्यां हि नाट्यस्य वदन्ति गीतम्\renewcommand{\thefootnote}{2}\footnote{ब.शम्यादि नाट्यस्य परं त्रिगीतम्~।}~।\\
+ गीतेऽपि वाद्येऽपि च सम्प्रयुक्ते\\
+ नाट्यप्रयोगो न विपत्तिमेति~॥~४३४~॥
+
+ एतदुक्तं मया सम्यग् ध्रुवाणां लक्षणं महत्~।\\
+ अत ऊर्ध्वं(तः परं) प्रवक्ष्यामि गातृवादकयोर्गुणान्~॥~४३५~॥}
+\end{quote}
+
+\begin{center}
+इति भारतीये नाट्यशास्त्रे ध्रुवाविधानो नाम \renewcommand{\thefootnote}{3}\footnote{च.य. त्रयस्त्रिंशोध्यायः~। ब. र. ड.मातृकासु विभागो नास्ति~। परन्तु गुणदोषाध्यायान्ते ब. मातृकायामेकोनविंशोऽध्यायः~। र. मातृकायामेकत्रिंशत्तमः ड. मातृकायां द्वात्रिंशोध्याय इति च वर्तते~।}द्वात्रिंशोऽध्यायः~॥
+\end{center}
+
+\hrule
+
+\vspace{2mm}
+\noindent
+वर्णः स्थाय्यादिः~। {\qtt स्थानत्रयमुरः} प्रभृति~। {\qtt समं} तालयुक्तश्चक्ष्णमस्फुटितम्~। {\qtt मधुरं} श्रोत्रयोः~। {\qtt रक्तं} तु नाट्योपरञ्जकम्~। एवंभूतं गानं प्रशस्तम्~॥~४३३~॥\\
+
+यतः सूचयति {\qtt शय्यामिति}~। रसस्य गानेन प्रथमं ततः प्रभृत्यासूत्रणात्~। तदस्य भित्तिकल्पमित्यर्थः~॥~४३४~॥\\
+
+अथाध्यायमुपसंहरन्नन्यं(न्यत्)सूचयति~। {\qtt एतदुक्तमिति}~। अतः {\qtt परमिति}~॥~४३५~॥
+
+\begin{quote}
+{\qt ध्रुवाया विवृतिर्लघ्वी वस्तुनिर्देशिनीकृता~। \\
+ कृताऽभिनवगुप्तेन शिवदास्यैकशालिना~॥}
+\end{quote}
+
+\begin{center}
+ इति महामाहेश्वराभिनवगुप्तविरचितायां नाट्यवेदवृत्तावभिनवभारत्यां ध्रुवाध्यायो द्वात्रिंशः समाप्तः~॥
+\end{center}
+
+\newpage
+\thispagestyle{empty}
+
+\begin{center}
+\textbf{\LARGE ॥~श्रीः~॥}\\
+
+\vspace{2mm}
+\textbf{\LARGE अथ त्रयस्त्रिंशोऽध्यायः~।}
+\end{center}
+
+\begin{quote}
+{\na गुणात् प्रवर्तते गानं दोषं चै (षाच्चै)चैव निरस्यते~। \\
+ तस्माद् यत्नेन विज्ञेयौ गुणदोषौ समासतः~॥~१~॥}
+\end{quote}
+
+\hrule
+
+\begin{center}
+ अथ त्रयस्त्रिंशोऽध्यायः~। 
+\end{center}
+
+\begin{quote}
+{\qt ज्ञानक्रियादिगुणवर्गविधानहेतु\textendash \\
+ र्दोषापवर्जनपटुः किल भक्तिभाजाम्~।\\
+ आनन्दपूर्णपरशाङ्करसारसिन्धु\textendash \\
+ धारास्थितिर्विजयतां परमेश्वरोऽसौ~।}
+\end{quote}
+
+एवं गान्धर्वस्वरूपं यदुपयोगित्वेन प्रदर्शितं तत् प्रकृतनाट्योपयोगिध्रुवागानमभिधाय तत्रैव द्वये परतत्त्वं निरूपयितुमध्यायान्तरमारभ्यते~।\\
+
+अथ {\qtt केचित्} मन्यन्ते~। उपरञ्जनात्मनि गान एव सुतरां गुणग्रहणं दोषाववर्जनं चादृत्य उपरञ्जनप्राणं हि गानम्~। उपरञ्जनं न गुणदोषायत्तविवेकायत्तम्~। अत एव तद्विवेकस्य गानं प्रति प्राधान्यं प्रयोजयितुं पृथक्त्वं प्रत्यध्यायारम्भः~। गान्धर्वे तु रञ्जना न तथा प्रधानमपि तु चञ्चत्प्रयोक्तुरदृष्टफलं तदिति~।\\
+
+नैतत्~। तथाहि~। यथास्वरूपं विकलं प्रवृत्तो विधिः फलं प्रसूते~। शारीरपौ (दा) रवस्वरस्वरूपसम्पत्तिरेव च रक्तकण्ठस्वदितहस्तत्वादिना विना कथं लयादितत्त्वज्ञानम्~। याऽत्र विकृता कालसम्पत्तिरतत्त्वज्ञानस्य च का सङ्गतिरदृष्टफलसङ्गत्या~। उक्तं हि~। 
+
+\begin{quote}
+{\qt वीणावादनतत्त्वज्ञः श्रुतिस्मृति(जाति)विशारदः~। }
+\end{quote}
+
+\begin{center}
+ (या.स्मृ. ३.१.११५) 
+\end{center}
+
+\noindent
+इति~। {\qtt तालज्ञ} इति च~। तस्माद् गान्धर्वे सुतरां गुणदोषविवेका(कोऽ)र्थवान्~। स्वरस्य हि तावदपरुषमधुररञ्जनात्मकमेव लघुः(घु) तालस्यापि गानं प्राणास्तदुभयमपि गुणायत्तं तदायत्ता वाऽदृष्टसिद्धि~। {\qtt विशाखिलाचार्य}: साम्यादिह सिद्धिः परत्रेति वदन् प्रादीदृशन् (त्)~। अथ ब्रूयात् तालादिस्वरूपाविशेषे गान्धर्वाद् गानस्य को भेदः~। यद्यनेकलक्षणं तन्त्रतोऽभिपद्यते स्वरूपमिव च तथा च गानाभिमतं गान्धर्वं स्वरूपेणेति
+
+\newpage
+% ४०० नाट्यशास्त्रे 
+
+\noindent
+ततो निगदस्य हि व्यापकं ततो भिन्नलक्षणत्वम्~। अन्यथा भेदापातापत्तेस्तु च(तन्) नोपलभ्यतेऽधुनेति व्यापकतानुपलब्धिः~। तथाऽसिद्धो हेतुः~। {\qtt स्वरतालात्मकं गान्धर्वमिति} (भ.ना.२८.११) गेयाधिकारारम्भ एव मुनिना सङ्गीतगानस्य न(च) तत्स्वररूपादिकं लक्षणमुक्तम्~। इदानीं तत्रोच्यते~। इहायं गान्धर्वशब्दो लोके शास्त्रे च द्विविधो नाटकशब्दवत्~। सामान्यविशेषेणास्य प्रयोगदर्शनात्~। गान्धर्विक इति~।
+
+\begin{quote}
+{\qt गान्धर्वमेतत् कथितं मया वः पूर्वं यदुक्तं प्रपितामहेन~।}
+\end{quote}
+
+\begin{center}
+(भ.ना.३३.२३)
+\end{center}
+
+\noindent
+इत्यध्यायान्ते नाट्योत्पत्तौ सामान्येन गीतिरित्युक्ते गान्धर्वं गानमपि~। अत्र विशेषे तु गान्धर्वः~। अत्रेत्यादौ गान्धर्ववेद इति च~। तत्राद्ये पक्षे सिद्धसाधनपरमे त्वसिद्धो हेतुः~। न ह्येतावदेव गान्धर्वस्य लक्षणं बालगोपालसारमादि (रस) बाला(बलाका) दिगीतेऽपि गान्धर्वापत्तेः~। तथा च तत एवादृष्टलाभेऽयं न वैय्यर्थ्यप्रसङ्गो यदा(द)यमग्नेर्दयन्तः(हतः) फलाद् व्यतिरेकाच्चेति~।\\
+
+नन्वेवं गान्धर्वस्य किं लक्षणमुक्त{\qtt मध्यायचतुष्टयेषु मुनिना}~। तथाप्यनुसन्धानवन्ध्यो महाभो(भा)गं बोधयितुमनुसन्धीयते~। स्वरतालपदविशेषात्मकं प्रवृत्तिनिवृत्तिप्रधानदृष्टादृष्टफलसामवेदप्रभवमनादिकालनिवृत्तमन्योन्योपरञ्जनगुणताविहीनं गान्धर्वमिति स्वरूपफलात् कालाद् धर्माच्च भिद्यमाना(नम)वश्यं गानवैलक्षण्यं भेदैकसम्पादनम्~। तदुभयानुग्रहयोगाच्च वाद्यानाम्~। गाने तु काकल्यन्तरश्रुतिपरिभ्रमणाद् विचित्रश्रुतिग्रहणम्~। स्वराणां मालवकैशिके चतुश्श्रुतिकाङ्गस्य दर्शनात् कियद्वा रागभाषाविभाषादेशीमार्गादिगतानां स्वराणां श्रुतिवैचित्र्यं ब्रूमः~। उक्तमपि च प्रतीतमनुचित्रा(त्री)यते~। प्रतीतानामप्यलक्षणज्ञानां बालविज्ञानवद् वेद्यम्~। परतन्त्रतपा(त)याऽविषयो दिग्दर्शनात्~। तस्मादपि तथेति~। किं चान्तरालनियमोऽन्तःप्रमाणस्थानस्वरकालांशवधान्न(शाद)सारतया गान्धर्वेऽवश्यसंवेद्यः~। न त्वेवं गाने~। लोपोऽपि नियतगान्न्धर्वे दर्शितो ग्रामद्वयभेदेन च जात्यंशभेदेन दर्शितः~। गाने तु रक्त्यनुसारेण प्रवेन्ते(वृत्ते)रसावनियतः~। तथापि गा्न्धर्वे यस्मादनादित्वमेव समर्थितं तस्यापि मध्यमस्य भिन्नषड्जकालिन्यां लोपो दृश्यचतुस्स्वरपश्चगन्धर्वानभ्युपगममपि~। अन्तरमार्गो(र्गे)ऽपि विधायिवर्ग( गा )गान्धर्ववेदगीता ये शोभानुरोध एव तत्र करणम्~। नटकैशिकलो(ला)टन(ना)गरादावृषभगान्धारयोर्भूयसाऽनवलोकनात् सप्तचत्वारिंशदधिकजात्यंशकोचितसङ्गितवशविचित्रीभवदेकैकस्वरस्वरूपयोगात् त्रिस्वरोनमध्यगतं स्वराणां गान(म्~।) \textendash\ गार्न्धर्वे गाने शुद्धभिन्नगौडराग (वेसर) साधारणभाषाविभाषान्तरभाषारूपगीत्यष्टकोचितललित \textendash
+
+\newpage
+\fancyhead[LO]{त्रयस्त्रिंशोाऽध्यायः}
+%त्रयस्त्रिंशोाऽध्यायः ४०१ 
+
+\noindent
+गीतनादि(द)स्वरस्वरूपलाभे प्रत्येकदर्श(श)पूर्णषट्पश्चचतुःस्वरभेदयोगाद् द्वात्रिंशता सह त्रिंशतेः स्वराणामुक्तसङ्गतिवैचित्र्यात् स्वराणां येऽङ्कनाद्यष्टचत्वारिंशत्तानि तावत् प्राधान्येऽन्यस्व(र)संरवभट्टगान्धर्वे च मूर्छनाश्चतुर्दश तानाश्चतुरशीतिरिति~। यदैवं स्वरस्वरूपसम्पत्तिं गाने तु द्विस्वरात् प्रभृति पूर्णस्वरपर्यन्तं द्विधा षोढा चतुर्विशतिधा तथा विंशसप्तशतधा चत्वारिंशत्पञ्चसहस्रधेति कथितनीत्या यः कूटनभेदस्तत्कृतं स्वरवैचित्र्यं वर्णावृषीणा(त्तीना)मेव च ह्येतत्~। बिन्दुप्रभृतीनामलङ्काराणां प्रयोगो न तद्विपरीतानां मन्द्रतारप्रसन्नादीनाम्~। एतेन गान्धर्वे स्वरः प्रधानं तदाधारत्वेन गुणभूतं पदमिति यत् तद्विपरीतं गान्धर्वेर्थसंवेदयोगेन पदस्य प्राधान्यात् तदुपरञ्जनाच्च गुणभावात् स्वरस्यैतदपि ह्याकर्णितं भवति~। वैणस्वराणां च धातुप्रयोगनियमानपेक्षो रक्त्यतिशयप्रवाहाय न प्रयोगभेदोचित एव प्रयोगो वैणवानामप्ययमेव पन्थाः~। एतेन गान्धर्वे देवताविशेषपरिभाषानुसारिणि विनियोगो यथेच्छं वा~। गाने तु रसभावनियमौचित्यविशेषो दर्शित एवेति स्वरगते तावद्विशेषः~। तालोऽपि गान्धर्वे नियतत्वेन संख्यापरिमाणं भ(र)ञ्जनं परिच्छेदोपायं यतिस्वरैर्वृत्तिमेव मेलनमातोद्ययोगमङ्गाङ्गिभावव्यावरुध्यमानः साम्यमात्रफलमिति न शक्यं वक्तुम्~। तथाहि~। चञ्चत्पुटादिष्टनियता चतुरादिका कला संख्यापरिमाणाय चित्रादिभेदे मात्रालयादिभञ्जनमपि~। एककलाऽपि त्रयस्थित्या चतुष्कलान्तत्वेऽपि~। एकरसलघुप्रस्तारयोगोऽपि प्लुतलघुभेद्यप्येकरसगुरुपर्यन्तमेव~। परिच्छेदोऽपि वा योऽपि कालायातरूपो नियतो नियतक्रमश्चायतेरपि मध्ये स्रोतोगता यती(तिरि)त्यादावदृष्टोपयोगप्रधानत्वे~। परिवृत्तिरपि विशाला सङ्गता चेत्यादावुपवर्तनभेदे च नियतैव~। गेयात्मना मेयेन च गान्धर्वतालस्य मेलना~। पाणित्रयवैचित्र्येणातोद्यधाटो(द्याधारो)ऽप्यभाण्डमेकं गात्र(न)स्येति(भ.ना३२.४१५)चतुर्थे सन्निपात(भ.ना. ३२.४१५)इत्यादौ विचित्र एवाङ्गानां योगोऽपि~। वर्धमानासारिताया वर्धमस्त(मान)बद्धगीतपाणिकादौ नियत एव तु तस्य भेदमुपनिवहनं वस्त्विदं वास्वे(स्ये)दं शीर्षकमिति वैचित्र्यविधिरेव प्रभवति~। यतो गाने पुनरुत्तमादिभेदभिन्नप्रकृतित्रयमतयथोचितमसृणमन्थरोद्धतादिभेदभिन्नसङ्गीतप्राणवलन एवोपाङ्गपरिस्यन्दितपरिक्रमणाद्यनुसारेण साम्यसम्पादनफलयोगे कलासंख्यादिभेदेन प्लुतगुरुलघुभावभञ्जनद्रुतबिन्दुपर्यन्तभङ्गसम्भवान्न कलापर्यन्तकमप्राधान्यम्~। न यतेराकस्मिकत्वेनादृष्टमात्रफलता~। नापि परिवर्तितपाणिरुभयभाण्डग्रहणान् न वाङ्गाङ्गिभावेन वितनितं तालमकारारम्भकण(क)मनुरुध्यत इति सोऽपि विलक्षण एव~। पदमपि विनियुक्तादिभेदत्रयस्य कुलकादिभेदत्रयगुणनया नवधा भवेद् देवस्तुतौ प्रधानम्~। गान्धर्वे तत्रैवार्थानुसारमनवेक्ष्यैव जात्यन्तरविरचितवर्णाङ्गाधारभासं तालप्रमितस्वरप्रधानतया गुणत्वेन प्रतिपाद्यते~। गाने पुनश्छेद्यकामे मूल 
+
+
+ \end{document}
